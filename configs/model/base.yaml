@@ -1,0 +1,31 @@
+name: ???
+hf_path: ???
+default_role: 'LLM'
+dtype: float32
+instruct: True
+temperature: auto
+
+access: # HuggingFace Token (can obtain from https://huggingface.co/settings/tokens)
+  token: ""
+
+spec: # HF Component Specification (params for the model)
+  module: model
+  encoders: layers
+  submodules:
+    att: self_attn
+    mlp: mlp
+    norm: norm
+    head: lm_head
+
+tokens: # params for the tokenizer
+  end: auto
+
+query: # HF Roles in the chat prompt template
+  system: system
+  user: user
+  assistant: assistant
+
+probe: # what layer to use for the probe method
+  sawmil: # what layer to use for the sawmil method
+    layer: -1 
+

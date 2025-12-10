@@ -1,0 +1,83 @@
+# @package prompt
+type: with_roles_list
+version: 1.0
+engine: jinja2
+
+#Variable definitions with defaults and validation
+variables:
+  role:
+    type: str
+    required: true
+    description: "Agent's role in the network"
+  probe:
+    type: str
+    required: true
+  statement:
+    type: str
+    required: true
+    description: "Statement being evaluated"
+  agents:
+    type: list
+    required: false
+    description: "Neighbor belief states"
+
+template:
+  system: |
+    You are {% if role[0]|lower in 'aeiou' %}an{% else %}a{% endif %} {{ role }} in a social discussion network. 
+    You may receive short summaries of what your friends believe. 
+    Based on this information and your own knowledge, {% if probe == 'zeroshot' %} reply with the number corresponding to the option you believe is correct. {% else %} restate the statement in a way that you believe is correct. {% endif %}
+
+  user:
+    intro: |
+      Your friends are discussing the following statement: {{ statement }}
+    
+    agree: |
+      {% if agents|length == 1 %}
+      {{ agents[0] }} agrees with this statement.
+      {% elif agents|length == 2 %}
+      {{ agents[0] }} and {{ agents[1] }} agree with this statement.
+      {% elif agents|length > 2 %}
+      {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} agree with this statement.
+      {% endif %}
+    
+    disagree: |
+      {% if agents|length == 1 %}
+      {{ agents[0] }} disagrees with this statement.
+      {% elif agents|length == 2 %}
+      {{ agents[0] }} and {{ agents[1] }} disagree with this statement.
+      {% elif agents|length > 2 %}
+      {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} disagree with this statement.
+      {% endif %}
+    
+    neutral: |
+      {% if agents|length == 1 %}
+      {{ agents[0] }} is unsure about this statement.
+      {% elif agents|length == 2 %}
+      {{ agents[0] }} and {{ agents[1] }} are unsure about this statement.
+      {% elif agents|length > 2 %}
+      {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} are unsure about this statement.
+      {% endif %}
+    
+    instruction: |
+      {% if probe == 'zeroshot' %}
+      What do you think about the statement your friends are discussing?
+      
+      Select one of the following options:
+       1. The statement is correct
+       2. The statement is incorrect
+       3. I do not have sufficient knowledge about the statement
+       4. The statement is too ambiguous to provide a reliable answer
+       5. All of the above options are correct
+       6. None of the above options are applicable
+      {% else %}
+      Restate this statement in a way you believe is correct.
+      {% endif %}
+
+  agent: |
+    {% if probe == 'zeroshot' %}
+    The final answer is number " 
+    {% else %}
+    {% endif %}
+# " at the end, forces model to respond with a number only
+aggregation: 
+  method: list_all

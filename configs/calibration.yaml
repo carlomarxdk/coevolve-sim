@@ -1,0 +1,16 @@
+# @package _global_
+hydra:
+  run:
+    dir: outputs/hydra_logs/experiment/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+defaults:
+  - _self_
+  - callbacks # load all the callback modules
+  - prompt: woR_C #without roles
+  - probe: sawmil
+  - model: llama-base
+
+seed: 814183 #RADLAB
+backend: hf
+model_pool_capacity: 1
+device_pool: [cuda] # mps for Mac
