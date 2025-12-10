@@ -1,4 +1,4 @@
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2506.23921-b31b1b.svg)](https://arxiv.org/abs/2506.23921) -->
+[![DOI](https://zenodo.org/badge/1113345522.svg)](https://doi.org/10.5281/zenodo.17875304)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Email](https://img.shields.io/badge/Email-g.savcisens@northeastern.edu-orange)](mailto:g.savcisens@northeastern.edu)
 
