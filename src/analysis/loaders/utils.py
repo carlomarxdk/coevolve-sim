@@ -189,8 +189,8 @@ def gaussian_te_f_test(
 
 
 def gaussian_te_pairwise(
-    x: np.ndarray, 
-    y: np.ndarray, 
+    x: np.ndarray,
+    y: np.ndarray,
     bias_corrected: bool = False
 ) -> float:
     """Compute Gaussian Transfer Entropy from time series x (source) to y (target).
@@ -393,7 +393,7 @@ def compute_te_matrix_by_role(
 def alignment(b_i: np.ndarray, b_j: np.ndarray) -> float:
     """
     b_i, b_j: belief score time series, shape (T,)
-    Returns Pearson correlation between the pull i exerts 
+    Returns Pearson correlation between the pull i exerts
     and the update j makes.
     """
     pull   = b_i[:-1] - b_j[:-1]   # b_i(t) - b_j(t)

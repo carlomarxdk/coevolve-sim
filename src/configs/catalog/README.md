@@ -25,7 +25,7 @@ This allows us to scale populations while still supporting heterogeneous or spec
 catalog:
   mode: procedural | explicit
 
-  role_templates: {} 
+  role_templates: {}
   counts: {}
   explicit: []
 
@@ -116,7 +116,7 @@ catalog:
       name: llama-hermes
       role: "Strategic Planner"
       prompt: ${prompt}
-    
+
   random_roles_spec: {}
 
 name: example_explicit
@@ -216,4 +216,3 @@ Violations cause catalog construction to fail.
   2. the **materialized catalog** (runtime output)
 
 This ensures experiments are reproducible and auditable.
-

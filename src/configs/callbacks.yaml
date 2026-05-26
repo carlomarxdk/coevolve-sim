@@ -1,6 +1,6 @@
 # @package callbacks
-metrics: 
-  network: ["degree_distribution", 
+metrics:
+  network: ["degree_distribution",
             "average_path_length",
             "betweenness_centrality",
             "eigenvector_centrality",
@@ -9,11 +9,11 @@ metrics:
 
 logging: ""
 
-stopping: 
+stopping:
   _target_: utils.StoppingCriteria
   max_rounds: ${experiment.max_rounds}
   patience: 3
-io: 
+io:
   out_dir: 'data/outputs/runs'  # Base directory for all experiment runs
   save_text: True
   save_activations: False

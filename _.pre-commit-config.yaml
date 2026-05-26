@@ -1,0 +1,31 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: mixed-line-ending
+      - id: detect-private-key
+      - id: check-added-large-files
+
+
+  - repo: local
+    hooks:
+      - id: forbid-hf-tokens
+        name: forbid hugging-face tokens
+        entry: hf_[A-Za-z0-9]{20,}
+        language: pygrep
+        types: [text]
+
+      - id: forbid-absolute-user-paths
+        name: forbid absolute local user paths
+        entry: /Users/(?!REDACTED/)[A-Za-z0-9._-]+/|[A-Za-z]:\\\\Users\\\\(?!REDACTED\\\\)[A-Za-z0-9._-]+\\\\
+        language: pygrep
+        types: [text]
+
+      - id: generated-artifact-sanitization-check
+        name: generated csv/json sanitization check
+        entry: python scripts/sanitize_generated_csv_outputs.py --check --root data/outputs
+        language: python
+        pass_filenames: false

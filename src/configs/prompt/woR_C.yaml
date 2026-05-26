@@ -3,7 +3,7 @@ type: without_roles
 version: 1.0
 engine: jinja2  # Engine to format the templates
 description: >
-  Prompt template that counts the number of agreeing, disagreeing, 
+  Prompt template that counts the number of agreeing, disagreeing,
   and neutral agents without listing their roles.
   Agent IS NOT informed about its role.
 
@@ -24,27 +24,27 @@ description: >
 
 template:
   system: |
-    You are participating in a social discussion network. 
-    You may receive short summaries of what your friends believe. 
+    You are participating in a social discussion network.
+    You may receive short summaries of what your friends believe.
     Based on this information and your own knowledge, {% if probe == 'zeroshot' %} reply with the number corresponding to the option you believe is correct. {% else %} restate the statement in a way that you believe is correct. {% endif %}
 
   user:
     intro: |
       Your friends are discussing the following statement: {{ statement }}
-    
+
     agree: |
       {% if n > 1 %}{{ n }} of your friends agree{% else %}{{ n }} friend agrees{% endif %} with this statement.
-    
+
     disagree: |
       {% if n > 1 %}{{ n }} of your friends disagree{% else %}{{ n }} friend disagrees{% endif %} with this statement.
-    
+
     neutral: |
       {% if n > 1 %}{{ n }} of your friends are{% else %}{{ n }} friend is{% endif %} unsure about the statement.
 
     instruction: |
       {% if probe == 'zeroshot' %}
       What do you think about the statement your friends are discussing?
-      
+
       Select one of the following options:
        1. The statement is correct
        2. The statement is incorrect
@@ -55,10 +55,10 @@ template:
 
   agent: |
     {% if probe == 'zeroshot' %}
-    The final answer is number " 
+    The final answer is number "
     {% else %}
     {% endif %}
 # " at the end, forces model to respond with a number only
 
-aggregation: 
+aggregation:
   method: count

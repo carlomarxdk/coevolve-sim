@@ -1,5 +1,5 @@
 """
-Expanded test suite for Message class covering template rendering, prompt building, 
+Expanded test suite for Message class covering template rendering, prompt building,
 aggregation methods, and error handling.
 """
 

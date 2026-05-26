@@ -7,7 +7,7 @@ The name of the file is on the format `<with/without role>_<aggregation_type>.ya
 
 - `woR` (without role) -> the agent is not aware of it's own role
 - `wR` (with role) -> the agent is aware of it's role
-  
+
 **Aggregation:**
 
 - `C` (counts) -> just provides the counts of the neighbours that agree/disagree/unsure (e.g., 4 of your friends)

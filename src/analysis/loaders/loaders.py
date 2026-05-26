@@ -236,7 +236,7 @@ def load_agents_data(run_path: Path | str) -> dict:
     file_path = run_path / "results" / "agent_manifest.json"
     with open(file_path) as f:
         raw_manifest = json.load(f)
-        
+
     manifests = {}
     for agent_id, manifest in raw_manifest.items():
         agent_id = int(agent_id)

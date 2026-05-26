@@ -70,7 +70,7 @@ def write_statement_configs(
     desc = dedent(
         """\
     Auto-generated from maximin selection pipeline.
-    
+
     Explaining fields in stats (doctor LLM is m42-health/Llama3-Med42-8B):
     - label_ground_truth: Statement label (binary, 1=True, 0=False)
     - doc_predicted_label: Predicted label by doctor LLM (binary, 1=True, 0=False)
@@ -80,14 +80,14 @@ def write_statement_configs(
     - other_accuracy: Accuracy of other LLM predictions vs ground truth
     - other_median_prob: Median probability from other LLMs that statement is true
     - consensus_score: Agreement between doctor LLM and other LLM probabilities (not accuracy!)
-    
+
     To ensure diversity, statements were selected using a maximin criterion on the following features:
     - label_ground_truth
     - doc_predicted_label
     - doc_accuracy
     - other_accuracy
     - consensus_score
-    
+
     """
     ).strip()
 

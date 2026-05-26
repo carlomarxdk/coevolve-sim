@@ -439,7 +439,6 @@ class HFBackend(GenerationBackend):
                     device_map="cpu",
                     low_cpu_mem_usage=True,
                     use_safetensors=True,  # safetensors uses mmap natively
-
                 )
             self._quantized = False
             log.info(

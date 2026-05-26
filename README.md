@@ -19,6 +19,7 @@ The codebase contains:
   - [Environment and Installation](#environment-and-installation)
   - [Run Experiments](#run-experiments)
   - [Reproducibility Notes](#reproducibility-notes)
+  - [Sanitization and Compatibility](#sanitization-and-compatibility)
   - [Data and Outputs](#data-and-outputs)
   - [Notebooks and Analysis](#notebooks-and-analysis)
   - [Surrogate Models](#surrogate-models)
@@ -79,13 +80,22 @@ uv run python src/experiment.py \
 
 Notes:
 - Some model configurations require a Hugging Face access token in `src/configs/model/*.yaml`.
-- A subset of analysis notebooks relies on R/rpy2 tooling (see notebooks/r_utils.py and notebook comments for details).
+- A subset of analysis notebooks relies on R/rpy2 tooling (see `notebooks/r_utils.py` and notebook comments for details).
 
 ## Reproducibility Notes
 
 - Prefer explicit seeds (for example, `seed=814183`) for reruns.
 - Each run writes its realized configuration and outputs to timestamped folders.
 - Completed matching runs are skipped automatically; incomplete matching runs are moved before rerun.
+
+## Sanitization and Compatibility
+
+Metadata that could identify local machines or users has been sanitized in generated artifacts (for example, absolute local paths were redacted).
+
+Because of this, not all scripts are guaranteed to run end-to-end without local adjustment. In particular:
+- some scripts assume private/local credentials, API keys,
+- some exploratory utilities may expect the original unsanitized paths (but should be able to run with minor adjustements).
+
 
 ## Data and Outputs
 
@@ -147,3 +157,6 @@ coevolve-sim/
 
 MIT License. See [LICENSE](LICENSE).
 
+> [!WARNING]
+> 1. This is research software. While we strive for correctness and reproducibility, please verify results for your specific use case.
+> 2. GitHub Copilot and Claude contributed to code annotations, docstrings, and formatting. All algorithmic logic, methodological design, and scientific claims were developed and reviewed by the authors.

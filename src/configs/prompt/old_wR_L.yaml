@@ -23,14 +23,14 @@ variables:
 
 template:
   system: |
-    You are {% if role[0]|lower in 'aeiou' %}an{% else %}a{% endif %} {{ role }} in a social discussion network. 
-    You may receive short summaries of what your friends believe. 
+    You are {% if role[0]|lower in 'aeiou' %}an{% else %}a{% endif %} {{ role }} in a social discussion network.
+    You may receive short summaries of what your friends believe.
     Based on this information and your own knowledge, {% if probe == 'zeroshot' %} reply with the number corresponding to the option you believe is correct. {% else %} restate the statement in a way that you believe is correct. {% endif %}
 
   user:
     intro: |
       Your friends are discussing the following statement: {{ statement }}
-    
+
     agree: |
       {% if agents|length == 1 %}
       {{ agents[0] }} agrees with this statement.
@@ -39,7 +39,7 @@ template:
       {% elif agents|length > 2 %}
       {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} agree with this statement.
       {% endif %}
-    
+
     disagree: |
       {% if agents|length == 1 %}
       {{ agents[0] }} disagrees with this statement.
@@ -48,7 +48,7 @@ template:
       {% elif agents|length > 2 %}
       {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} disagree with this statement.
       {% endif %}
-    
+
     neutral: |
       {% if agents|length == 1 %}
       {{ agents[0] }} is unsure about this statement.
@@ -57,11 +57,11 @@ template:
       {% elif agents|length > 2 %}
       {{ agents[:-1]|join(', ') }}, and {{ agents[-1] }} are unsure about this statement.
       {% endif %}
-    
+
     instruction: |
       {% if probe == 'zeroshot' %}
       What do you think about the statement your friends are discussing?
-      
+
       Select one of the following options:
        1. The statement is correct
        2. The statement is incorrect
@@ -75,9 +75,9 @@ template:
 
   agent: |
     {% if probe == 'zeroshot' %}
-    The final answer is number " 
+    The final answer is number "
     {% else %}
     {% endif %}
 # " at the end, forces model to respond with a number only
-aggregation: 
+aggregation:
   method: list_all

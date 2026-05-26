@@ -359,6 +359,7 @@ def move_incomplete_experiments(
 
     return moved_count
 
+
 def check_experiment_completed(
     catalog_choice: str,
     prompt_choice: str,
@@ -422,7 +423,7 @@ def check_experiment_completed(
             rounds_dir = timestamp_dir / "rounds"
             if not rounds_dir.exists():
                 continue
-            
+
             cmpltn_path = timestamp_dir / "results" / "final_metrics.json"
             if not cmpltn_path.exists():
                 continue
@@ -901,11 +902,14 @@ def move_invalid_runs(
 
     log.info(f"Successfully moved {moved_count} invalid runs to {incomplete_dir}")
 
-    return ({
-        "incomplete": incomplete_count,
-        "unvalidated": unvalidated_count,
-        "total": moved_count,
-    }, invalid_runs)
+    return (
+        {
+            "incomplete": incomplete_count,
+            "unvalidated": unvalidated_count,
+            "total": moved_count,
+        },
+        invalid_runs,
+    )
 
 
 def set_seed(seed: int) -> None:

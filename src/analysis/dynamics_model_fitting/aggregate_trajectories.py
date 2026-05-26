@@ -255,8 +255,8 @@ def parse_run_metadata(run_dir: Path, input_root: Path) -> RunMetadata:
         raise SeedMetadataError(
             f"Invalid seed value in config.json for run {run_dir}: {raw_seed}"
         ) from exc
-        
-        
+
+
     run_id = f"{experiment_group}__{graph_type}__{statement_id}__{seed}"
 
     return RunMetadata(

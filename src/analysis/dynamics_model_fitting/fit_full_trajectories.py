@@ -4,7 +4,7 @@ To fit on all transitions:
 
 To fit on all transitions except round 0 to 1:
     python fit_full_trajectories.py --model m1 --experiment_group experts --graph_type erdos-renyi --save_model --exclude_round0_to_1
-    
+
 With uv:
 uv run python src/analysis/dynamics_model_fitting/fit_full_trajectories.py  --model m1  --experiment_group random_experts  --graph_type erdos-renyi  --save_model  --exclude_round0_to_1
 """
@@ -518,7 +518,7 @@ def main() -> None:
         timestamp=timestamp,
         model_name=args.model,
     )
-    
+
     # print(train_transitions_df.head()['seed'])
     # print(train_rounds_df.head())
     # raise Exception("Debug stop - check the loaded dataframes before fitting the model.")

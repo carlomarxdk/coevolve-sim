@@ -67,7 +67,7 @@ def fit_lmer_full(
         coef_df = ro.conversion.rpy2py(
             ro.r("as.data.frame(coef(summary(df_model)))")
         )
-        
+
         logging.info("Coefficients extracted successfully.")
         # ANOVA (Type III F-tests)
         anova_df = ro.conversion.rpy2py(
@@ -78,7 +78,7 @@ def fit_lmer_full(
             """)
         )
         logging.info("ANOVA table extracted successfully.")
-        
+
         coef_df.index = [format_term(n) for n in coef_df.index]
         anova_df['Term'] = anova_df['Term'].apply(format_term)
 
@@ -185,7 +185,7 @@ def fit_lmer_with_vc(
 # lme4 = importr("lme4")
 # lmerTest = importr("lmerTest")
 
-# def fit_lmer(df, 
+# def fit_lmer(df,
 #                      specification: str ='plasticity_tv ~ setting + centrality_norm + degree_norm + (1 | statement_id) + (1 | graph_id)',
 #                      reml=False):
 #     with (ro.default_converter + pandas2ri.converter).context():
@@ -198,15 +198,15 @@ def fit_lmer_with_vc(
 #                 REML = {str(reml).upper()}
 #             )
 #         """)
-        
+
 #         coef_df = ro.conversion.rpy2py(
 #             ro.r("as.data.frame(coef(summary(df_model)))")
 #         )
-        
+
 #         aic = float(ro.r("AIC(df_model)")[0])
 #         bic = float(ro.r("BIC(df_model)")[0])
 #         loglik = float(ro.r("logLik(df_model)")[0])
-        
+
 #         return coef_df, {"AIC": aic, "BIC": bic, "logLik": loglik}
 # def format_name(x):
 #     return x.replace("setting", "setting ->").replace("graph_type", "graph_type ->").strip()

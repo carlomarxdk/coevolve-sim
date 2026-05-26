@@ -110,7 +110,7 @@ def bootstrap_metric(
         float(np.percentile(metrics, lower)),
         float(np.percentile(metrics, upper)),
     )
-    
+
 def bootstrap_all_metrics(
     y_true: pd.Series,
     y_pred: pd.Series,
@@ -377,7 +377,7 @@ def evaluate_predictions(
         "ci_lower": f1_lower,
         "ci_upper": f1_upper,
     }
-    
+
     try:
         bal_acc_point, bal_acc_lower, bal_acc_upper = bootstrap_metric(
             y_true=y_true,
@@ -392,7 +392,7 @@ def evaluate_predictions(
         }
     except Exception:
         results["balanced_accuracy"] = None # type: ignore
-        
+
     try:
         kappa_point, kappa_lower, kappa_upper = bootstrap_metric(
             y_true=y_true,
@@ -568,7 +568,7 @@ def evaluate_trajectory_fit_predictions(
     traj_ids = list(grouped.groups.keys())
     traj_stats = {tid: _traj_stats(tdf) for tid, tdf in grouped}
     per_traj_df = pd.DataFrame(traj_stats.values(), index=traj_ids)
-    
+
     rng = np.random.default_rng(random_state)
     n_traj = len(traj_ids)
     boot_idx = rng.integers(0, n_traj, size=(n_bootstrap, n_traj))
@@ -633,7 +633,7 @@ def evaluate_trajectory_fit_predictions(
             return None
         return _ci(pt, boot_means[:, i])
 
-    
+
 
     # Final-state CI via bootstrap_all_metrics (row-level bootstrap is fine
     # for a single-point-per-trajectory series)
@@ -668,7 +668,7 @@ def evaluate_trajectory_fit_predictions(
 
 def _lcs_rate(seq_true: np.ndarray, seq_pred: np.ndarray) -> float:
     """Edit Distance. Compute the longest common subsequence (LCS) rate between two sequences."""
-    
+
     n, m = len(seq_true), len(seq_pred)
     if n == 0:
         return np.nan

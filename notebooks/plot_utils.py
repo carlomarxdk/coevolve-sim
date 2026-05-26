@@ -75,7 +75,7 @@ SETTING_MAP = {
 
 SETTING_COLOR = {
         'base_llms':     OKABE_ITO["orange"],
-        'random_roles':   OKABE_ITO["vermilion"],    
+        'random_roles':   OKABE_ITO["vermilion"],
         'random_experts': OKABE_ITO["blue"],
         'experts':        OKABE_ITO["green"],
     }
@@ -129,7 +129,7 @@ GRAPH_MAP = {
 }
 
 GRAPH_COLOR ={
-    'erdos-renyi': OKABE_ITO["purple"], 
+    'erdos-renyi': OKABE_ITO["purple"],
     'watts-strogatz': OKABE_ITO["green"]
 }
 
@@ -242,8 +242,8 @@ def plot_emmeans_grouped_bar(
             error_kw={"elinewidth": 1.3, "ecolor": ci_color},
             alpha=1,
         )
-        
-  
+
+
     setting_order = [SETTING_MAP.get(s, s) for s in setting_order]
     ax.set_xticks(x)
     ax.set_xticklabels(setting_order, rotation=15, ha="center")
@@ -254,13 +254,13 @@ def plot_emmeans_grouped_bar(
     ax.legend(title="Graph type", frameon=False)
     ax.grid(axis="y", alpha=0.25, linestyle="--", linewidth=1)
     ax.set_axisbelow(True)
-    
+
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_linewidth(1.5)
     ax.spines["bottom"].set_linewidth(1.5)
     ax.tick_params(width=1.3, length=5)
-    
+
 
     plt.tight_layout()
 
