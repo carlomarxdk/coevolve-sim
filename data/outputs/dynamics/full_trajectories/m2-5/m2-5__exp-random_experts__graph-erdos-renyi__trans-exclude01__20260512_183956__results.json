@@ -1,0 +1,301 @@
+{
+  "model": "m2-5",
+  "timestamp": "20260512_183956",
+  "random_state": 42,
+  "experiment_group": "random_experts",
+  "graph_type": "erdos-renyi",
+  "exclude_round0_to_1": true,
+  "fit_objective": "full_trajectories",
+  "n_transition_rows_total": 69120,
+  "n_round_rows_total": 76800,
+  "n_train_transition_rows": 48384,
+  "n_val_transition_rows": 10368,
+  "n_test_transition_rows": 10368,
+  "n_train_round_rows": 53760,
+  "n_val_round_rows": 11520,
+  "n_test_round_rows": 11520,
+  "n_train_runs": 112,
+  "n_val_runs": 24,
+  "n_test_runs": 24,
+  "n_train_trajectories": 5376,
+  "n_val_trajectories": 1152,
+  "n_test_trajectories": 1152,
+  "metrics": {
+    "train": {
+      "transition_metrics": {
+        "accuracy": {
+          "point": 0.8816757605820106,
+          "ci_lower": 0.8787197213955027,
+          "ci_upper": 0.8845088252314814
+        },
+        "macro_f1": {
+          "point": 0.7602712647947305,
+          "ci_lower": 0.7520225784761846,
+          "ci_upper": 0.7686711947913326
+        },
+        "balanced_accuracy": {
+          "point": 0.7528374995515031,
+          "ci_lower": 0.7442474680729948,
+          "ci_upper": 0.7620836174386673
+        },
+        "cohen_kappa": {
+          "point": 0.7745022173227358,
+          "ci_lower": 0.7689648725933895,
+          "ci_upper": 0.7796877042415693
+        },
+        "mcc": {
+          "point": 0.7745761393427139,
+          "ci_lower": 0.7690536263207559,
+          "ci_upper": 0.7797734216437785
+        },
+        "log_loss": {
+          "point": 0.3476809482255838,
+          "ci_lower": 0.3407028041924124,
+          "ci_upper": 0.35436856995063026
+        }
+      },
+      "trajectory_fit_metrics": {
+        "mean_trajectory_step_accuracy": {
+          "point": 0.8816757605820106,
+          "ci_lower": 0.8758448040674506,
+          "ci_upper": 0.8876503596230068
+        },
+        "mean_trajectory_step_macro_f1": {
+          "point": 0.7991539345165757,
+          "ci_lower": 0.7908935256543267,
+          "ci_upper": 0.8075047316342308
+        },
+        "mean_trajectory_step_mcc": {
+          "point": -0.003966464362558861,
+          "ci_lower": -0.008027380198928282,
+          "ci_upper": -0.0001571913561885231
+        },
+        "mean_trajectory_step_log_loss": null,
+        "exact_trajectory_match_rate": {
+          "point": 0.6549479166666666,
+          "ci_lower": 0.6417364211309523,
+          "ci_upper": 0.6687127976190477
+        },
+        "mean_lcs_rate": {
+          "point": 0.9220610119047619,
+          "ci_lower": 0.9179889012896589,
+          "ci_upper": 0.9261574074073881
+        },
+        "flip_rate_error": {
+          "point": 0.07198660714285715,
+          "ci_lower": 0.06724272228422619,
+          "ci_upper": 0.07645147414434526
+        },
+        "final_state_kl": {
+          "point": 0.00031564131659801015,
+          "ci_lower": 8.826497514016216e-05,
+          "ci_upper": 0.001013821346136731
+        },
+        "final_state_accuracy": {
+          "point": 0.8999255952380952,
+          "ci_lower": 0.8913690476190477,
+          "ci_upper": 0.9079241071428571
+        },
+        "final_state_macro_f1": {
+          "point": 0.7634479406485478,
+          "ci_lower": 0.7382376504175808,
+          "ci_upper": 0.7869681981882434
+        },
+        "final_state_mcc": {
+          "point": 0.8095458970032233,
+          "ci_lower": 0.7936477725405598,
+          "ci_upper": 0.8248765330449543
+        },
+        "final_state_balanced_accuracy": {
+          "point": 0.8999255952380952,
+          "ci_lower": 0.8913690476190477,
+          "ci_upper": 0.9079241071428571
+        }
+      }
+    },
+    "val": {
+      "transition_metrics": {
+        "accuracy": {
+          "point": 0.8694058641975309,
+          "ci_lower": 0.862941261574074,
+          "ci_upper": 0.8756751543209876
+        },
+        "macro_f1": {
+          "point": 0.7236943756279279,
+          "ci_lower": 0.7042574687865599,
+          "ci_upper": 0.7423571217184323
+        },
+        "balanced_accuracy": {
+          "point": 0.7097097143967023,
+          "ci_lower": 0.6908213243793058,
+          "ci_upper": 0.7297581262650229
+        },
+        "cohen_kappa": {
+          "point": 0.7489224469231568,
+          "ci_lower": 0.7365973962780804,
+          "ci_upper": 0.7606256662760263
+        },
+        "mcc": {
+          "point": 0.7489623965221854,
+          "ci_lower": 0.7366708162132627,
+          "ci_upper": 0.7606611251442609
+        },
+        "log_loss": {
+          "point": 0.3692854950117829,
+          "ci_lower": 0.3547821589024887,
+          "ci_upper": 0.3833715819457956
+        }
+      },
+      "trajectory_fit_metrics": {
+        "mean_trajectory_step_accuracy": {
+          "point": 0.8694058641975309,
+          "ci_lower": 0.8572530864197562,
+          "ci_upper": 0.8817515432098788
+        },
+        "mean_trajectory_step_macro_f1": {
+          "point": 0.7785802380905527,
+          "ci_lower": 0.7611950087894747,
+          "ci_upper": 0.7958810026176569
+        },
+        "mean_trajectory_step_mcc": {
+          "point": -0.0060687707163397725,
+          "ci_lower": -0.014926428263785574,
+          "ci_upper": 0.0030890970242573685
+        },
+        "mean_trajectory_step_log_loss": null,
+        "exact_trajectory_match_rate": {
+          "point": 0.6163194444444444,
+          "ci_lower": 0.5876519097222223,
+          "ci_upper": 0.6432508680555555
+        },
+        "mean_lcs_rate": {
+          "point": 0.9176311728395063,
+          "ci_lower": 0.9089506172839558,
+          "ci_upper": 0.9263117283950676
+        },
+        "flip_rate_error": {
+          "point": 0.06640625,
+          "ci_lower": 0.056640625000000014,
+          "ci_upper": 0.07606608072916667
+        },
+        "final_state_kl": {
+          "point": 0.004751044355657647,
+          "ci_lower": 0.0010099165635008632,
+          "ci_upper": 0.014012949507960908
+        },
+        "final_state_accuracy": {
+          "point": 0.9027777777777778,
+          "ci_lower": 0.8862630208333333,
+          "ci_upper": 0.9184027777777778
+        },
+        "final_state_macro_f1": {
+          "point": 0.7581735724592867,
+          "ci_lower": 0.6958085863523333,
+          "ci_upper": 0.8118765253976139
+        },
+        "final_state_mcc": {
+          "point": 0.8135125506533941,
+          "ci_lower": 0.7825522659162373,
+          "ci_upper": 0.843184786146411
+        },
+        "final_state_balanced_accuracy": {
+          "point": 0.9027777777777778,
+          "ci_lower": 0.8862630208333333,
+          "ci_upper": 0.9184027777777778
+        }
+      }
+    },
+    "test": {
+      "transition_metrics": {
+        "accuracy": {
+          "point": 0.8860918209876543,
+          "ci_lower": 0.8803988233024691,
+          "ci_upper": 0.8917848186728395
+        },
+        "macro_f1": {
+          "point": 0.7731558640169496,
+          "ci_lower": 0.7540968676419327,
+          "ci_upper": 0.7911045546049894
+        },
+        "balanced_accuracy": {
+          "point": 0.7575675696368563,
+          "ci_lower": 0.7375386456092344,
+          "ci_upper": 0.7770009333097844
+        },
+        "cohen_kappa": {
+          "point": 0.7816444229602864,
+          "ci_lower": 0.7705413172174813,
+          "ci_upper": 0.7923378691517947
+        },
+        "mcc": {
+          "point": 0.7816855809157661,
+          "ci_lower": 0.7705959434765491,
+          "ci_upper": 0.7924015675265446
+        },
+        "log_loss": {
+          "point": 0.3415810554759891,
+          "ci_lower": 0.32792300017802556,
+          "ci_upper": 0.35563662351884845
+        }
+      },
+      "trajectory_fit_metrics": {
+        "mean_trajectory_step_accuracy": {
+          "point": 0.8860918209876543,
+          "ci_lower": 0.8743224344135825,
+          "ci_upper": 0.8971836419753111
+        },
+        "mean_trajectory_step_macro_f1": {
+          "point": 0.8022925826745271,
+          "ci_lower": 0.7853930165665358,
+          "ci_upper": 0.8179945183541394
+        },
+        "mean_trajectory_step_mcc": {
+          "point": 0.007468297212725381,
+          "ci_lower": -0.000611884174679677,
+          "ci_upper": 0.01560966522673191
+        },
+        "mean_trajectory_step_log_loss": null,
+        "exact_trajectory_match_rate": {
+          "point": 0.6519097222222222,
+          "ci_lower": 0.6241102430555555,
+          "ci_upper": 0.6779513888888888
+        },
+        "mean_lcs_rate": {
+          "point": 0.9216820987654322,
+          "ci_lower": 0.9126109182098826,
+          "ci_upper": 0.9299768518518567
+        },
+        "flip_rate_error": {
+          "point": 0.06998697916666666,
+          "ci_lower": 0.06065538194444444,
+          "ci_upper": 0.08008083767361111
+        },
+        "final_state_kl": {
+          "point": 0.002249418588495037,
+          "ci_lower": 0.0003603716851841137,
+          "ci_upper": 0.00815082638443484
+        },
+        "final_state_accuracy": {
+          "point": 0.8975694444444444,
+          "ci_lower": 0.8802083333333334,
+          "ci_upper": 0.9149305555555556
+        },
+        "final_state_macro_f1": {
+          "point": 0.7578813555656208,
+          "ci_lower": 0.7091317597916463,
+          "ci_upper": 0.8037661883426216
+        },
+        "final_state_mcc": {
+          "point": 0.8074946997055101,
+          "ci_lower": 0.7756806520767252,
+          "ci_upper": 0.8388435344314473
+        },
+        "final_state_balanced_accuracy": {
+          "point": 0.8975694444444444,
+          "ci_lower": 0.8802083333333334,
+          "ci_upper": 0.9149305555555556
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+# @package agents
+catalog:
+  mode: procedural   # procedural | explicit 
+
+  role_templates:
+    Clinical_Physician:
+      name: llama-doc
+      role: "Clinical Physician"
+      prompt: ${prompt}
+    LLM:
+      name: llama-base
+      role: "LLM"
+      prompt: ${prompt}
+    Assistant:
+      name: llama-assistant
+      role: "Assistant"
+      prompt: ${prompt}
+    Biomedical_Researcher:
+      name: llama-biomed
+      role: "Biomedical Researcher"
+      prompt: ${prompt}
+    Chemist:
+      name: llama-chemist
+      role: "Chemist"
+      prompt: ${prompt}
+    Software_Engineer:
+      name: llama-coder
+      role: "Software Engineer"
+      prompt: ${prompt}
+    Cybersecurity_Analyst:
+      name: llama-cyber
+      role: "Cybersecurity Analyst"
+      prompt: ${prompt}
+    Financial_Analyst:
+      name: llama-finance
+      role: "Financial Analyst"
+      prompt: ${prompt}
+    Strategic_Planner:
+      name: llama-hermes
+      role: "Strategic Planner"
+      prompt: ${prompt}
+    Human_Participant:
+      name: llama-base
+      role: "Human Participant"
+      prompt: ${prompt}
+    Mathematician:
+      name: llama-openmath
+      role: "Mathematician"
+      prompt: ${prompt}
+    Lexicographer:
+      name: llama-lexicographer
+      role: "Lexicographer"
+      prompt: ${prompt}
+    Language_Mediator:
+      name: llama-linguist
+      role: "Language Mediator"
+      prompt: ${prompt}
+    Storyteller:
+      name: llama-roleplay
+      role: "Storyteller"
+      prompt: ${prompt}
+    Academic_Scholar:
+      name: llama-scholar
+      role: "Academic Scholar"
+      prompt: ${prompt}
+    Online_Friend:
+      name: llama-user
+      role: "Online Friend"
+      prompt: ${prompt}
+
+  counts: # number of agents with a specific role_template to create
+    Clinical_Physician: 3
+    LLM: 3
+    Assistant: 3
+    Biomedical_Researcher: 3
+    Chemist: 3
+    Software_Engineer: 3
+    Cybersecurity_Analyst: 3
+    Financial_Analyst: 3
+    Strategic_Planner: 3
+    Human_Participant: 3
+    Mathematician: 3
+    Lexicographer: 3
+    Language_Mediator: 3
+    Storyteller: 3
+    Academic_Scholar: 3
+    Online_Friend: 3
+
+  # if mode is explicit define the agents here
+  explicit: []
+
+  random_roles: false # true | false
+  random_roles_spec: {}
+
+catalog_used: {} # to be filled during experiment run
+
+
+name: experts

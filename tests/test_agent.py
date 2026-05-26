@@ -6,9 +6,9 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.Agent import BaseAgent, ExpertAgent, LLMAgent
-from src.Message import Message
-from src.Probe import Probe
+from src.core.agent import BaseAgent, ExpertAgent, LLMAgent
+from src.core.message import Message
+from src.core.probe import Probe
 
 
 class TestBaseAgent:

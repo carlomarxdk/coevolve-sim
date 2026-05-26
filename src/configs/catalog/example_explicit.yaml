@@ -1,0 +1,27 @@
+# @package agents
+catalog:
+  mode: explicit
+  random_roles: false
+
+  role_templates: {}
+  counts: {}
+
+  explicit:
+    - id: 0
+      name: llama-doc
+      role: "Clinical Physician"
+      prompt: ${prompt}
+    - id: 1
+      name: llama-base
+      role: "Human Participant"
+      prompt: ${prompt}
+    - id: 2
+      name: llama-hermes
+      role: "Strategic Planner"
+      prompt: ${prompt}
+    
+  random_roles_spec: {}
+
+catalog_used: {} # to be filled during experiment run
+
+name: example_explicit

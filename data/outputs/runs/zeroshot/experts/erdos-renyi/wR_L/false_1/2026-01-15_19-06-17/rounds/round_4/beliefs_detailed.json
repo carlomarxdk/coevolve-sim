@@ -1,0 +1,3109 @@
+[
+  {
+    "agent_id": 0,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.0005354881286621094,
+      "curr": 0.97607421875,
+      "delta": 0.9755387306213379
+    },
+    "complete_scores": {
+      "prev": [
+        0.0005354881286621094,
+        0.9990234375,
+        0.0008039474487304688
+      ],
+      "curr": [
+        0.97607421875,
+        0.01529693603515625,
+        0.00879669189453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Strategic Planners, 2 Financial Analysts, Human Participant, Lexicographer, and Academic Scholar agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 7,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Lexicographer",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 1,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2294921875,
+      "curr": 0.384033203125,
+      "delta": 0.154541015625
+    },
+    "complete_scores": {
+      "prev": [
+        0.2294921875,
+        0.76416015625,
+        0.006511688232421875
+      ],
+      "curr": [
+        0.384033203125,
+        0.61376953125,
+        0.0021848678588867188
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Lexicographer, Strategic Planner, and Chemist disagree with this statement. Lexicographer, Human Participant, LLM, Biomedical Researcher, Financial Analyst, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 6,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Human Participant",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Strategic Planner",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 2,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.97509765625,
+      "curr": 0.95947265625,
+      "delta": -0.015625
+    },
+    "complete_scores": {
+      "prev": [
+        0.97509765625,
+        0.02056884765625,
+        0.0042324066162109375
+      ],
+      "curr": [
+        0.95947265625,
+        0.037811279296875,
+        0.0030994415283203125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Strategic Planner, 2 Academic Scholars, and Cybersecurity Analyst disagree with this statement. Software Engineer is unsure about the statement. Strategic Planner, 2 Lexicographers, Biomedical Researcher, 2 Mathematicians, 2 Language Mediators, 2 Human Participants, LLM, Software Engineer, 2 Storytellers, Assistant, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 21,
+      "n_agree": 16,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 3,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.79541015625,
+      "curr": 0.96142578125,
+      "delta": 0.166015625
+    },
+    "complete_scores": {
+      "prev": [
+        0.79541015625,
+        0.197998046875,
+        0.0070056915283203125
+      ],
+      "curr": [
+        0.96142578125,
+        0.031402587890625,
+        0.0072269439697265625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Financial Analysts, Chemist, 2 Human Participants, Language Mediator, 2 Mathematicians, 2 Assistants, Clinical Physician, and Biomedical Researcher agree with this statement. Academic Scholar, Cybersecurity Analyst, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 12,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9912109375,
+      "curr": 0.83544921875,
+      "delta": -0.15576171875
+    },
+    "complete_scores": {
+      "prev": [
+        0.9912109375,
+        0.004177093505859375,
+        0.004498958587646484
+      ],
+      "curr": [
+        0.83544921875,
+        0.1544189453125,
+        0.010248184204101562
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Chemist, Academic Scholar, Cybersecurity Analyst, Clinical Physician, and Lexicographer disagree with this statement. 2 Financial Analysts, 2 Biomedical Researchers, 3 Mathematicians, Lexicographer, Chemist, 2 Assistants, and Storyteller agree with this statement. Software Engineer is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 12,
+      "n_disagree": 5,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 5,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.251708984375,
+      "curr": 0.96533203125,
+      "delta": 0.713623046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.251708984375,
+        0.7392578125,
+        0.008586883544921875
+      ],
+      "curr": [
+        0.96533203125,
+        0.02960205078125,
+        0.0049381256103515625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Cybersecurity Analyst disagrees with this statement. Assistant, Financial Analyst, Mathematician, Storyteller, Academic Scholar, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 6,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Financial Analyst",
+        "Mathematician",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.998046875,
+      "curr": 1.0,
+      "delta": 0.001953125
+    },
+    "complete_scores": {
+      "prev": [
+        0.998046875,
+        0.0018968582153320312,
+        2.104043960571289e-05
+      ],
+      "curr": [
+        1.0,
+        0.0003407001495361328,
+        1.341104507446289e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Strategic Planner, Online Friend, and Cybersecurity Analyst disagree with this statement. 2 Strategic Planners, Financial Analyst, Mathematician, Language Mediator, Software Engineer, 2 Biomedical Researchers, Lexicographer, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 10,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9931640625,
+      "curr": 0.9404296875,
+      "delta": -0.052734375
+    },
+    "complete_scores": {
+      "prev": [
+        0.9931640625,
+        0.00679779052734375,
+        2.300739288330078e-05
+      ],
+      "curr": [
+        0.9404296875,
+        0.059173583984375,
+        0.0006796121597290039
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Cybersecurity Analyst and Academic Scholar disagree with this statement. Chemist, 2 Financial Analysts, 2 Human Participants, Online Friend, 2 LLMs, Strategic Planner, and Biomedical Researcher agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9892578125,
+      "curr": 0.9990234375,
+      "delta": 0.009765625
+    },
+    "complete_scores": {
+      "prev": [
+        0.9892578125,
+        0.01032257080078125,
+        0.0005134344100952148
+      ],
+      "curr": [
+        0.9990234375,
+        0.00051116943359375,
+        0.0005125999450683594
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. LLM, 2 Cybersecurity Analysts, Strategic Planner, Chemist, and Clinical Physician disagree with this statement. 2 Software Engineers, 2 Mathematicians, 2 LLMs, 2 Lexicographers, Chemist, Clinical Physician, Academic Scholar, Language Mediator, Biomedical Researcher, Strategic Planner, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 21,
+      "n_agree": 15,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Strategic Planner",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9873046875,
+      "curr": 0.966796875,
+      "delta": -0.0205078125
+    },
+    "complete_scores": {
+      "prev": [
+        0.9873046875,
+        0.0021266937255859375,
+        0.01070404052734375
+      ],
+      "curr": [
+        0.966796875,
+        0.0034885406494140625,
+        0.029876708984375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Strategic Planners, 2 Financial Analysts, Human Participant, LLM, Software Engineer, 2 Assistants, Storyteller, Lexicographer, 2 Online Friends, and Mathematician agree with this statement. Online Friend, Strategic Planner, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 14,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer",
+        "Storyteller",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.8759765625,
+      "curr": 0.798828125,
+      "delta": -0.0771484375
+    },
+    "complete_scores": {
+      "prev": [
+        0.8759765625,
+        0.03240966796875,
+        0.0919189453125
+      ],
+      "curr": [
+        0.798828125,
+        0.096923828125,
+        0.10443115234375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Chemist, 2 Academic Scholars, Strategic Planner, Clinical Physician, and Lexicographer disagree with this statement. Lexicographer, Assistant, Online Friend, LLM, Clinical Physician, 2 Financial Analysts, Mathematician, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 9,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Chemist",
+        "Strategic Planner",
+        "Lexicographer",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.96142578125,
+      "curr": 0.94921875,
+      "delta": -0.01220703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.96142578125,
+        0.008453369140625,
+        0.0305023193359375
+      ],
+      "curr": [
+        0.94921875,
+        0.01312255859375,
+        0.037689208984375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Assistant, 2 Human Participants, 2 Language Mediators, Lexicographer, Online Friend, Academic Scholar, Software Engineer, LLM, Storyteller, and Financial Analyst agree with this statement. 2 Academic Scholars, Strategic Planner, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 12,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Software Engineer",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.36865234375,
+      "curr": 0.395263671875,
+      "delta": 0.026611328125
+    },
+    "complete_scores": {
+      "prev": [
+        0.36865234375,
+        0.430908203125,
+        0.2000732421875
+      ],
+      "curr": [
+        0.395263671875,
+        0.377197265625,
+        0.2276611328125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Clinical Physician, Cybersecurity Analyst, and Academic Scholar disagree with this statement. Biomedical Researcher, Software Engineer, Academic Scholar, Assistant, Financial Analyst, 2 LLMs, Strategic Planner, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Cybersecurity Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.62744140625,
+      "curr": 0.423583984375,
+      "delta": -0.203857421875
+    },
+    "complete_scores": {
+      "prev": [
+        0.62744140625,
+        0.1741943359375,
+        0.1983642578125
+      ],
+      "curr": [
+        0.423583984375,
+        0.345703125,
+        0.2303466796875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Cybersecurity Analyst and LLM disagree with this statement. Storyteller, Online Friend, Language Mediator, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 6,
+      "n_agree": 4,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Language Mediator",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.625,
+      "curr": 0.54541015625,
+      "delta": -0.07958984375
+    },
+    "complete_scores": {
+      "prev": [
+        0.625,
+        0.184814453125,
+        0.1903076171875
+      ],
+      "curr": [
+        0.54541015625,
+        0.2421875,
+        0.2125244140625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Financial Analyst, Mathematician, 2 LLMs, 2 Assistants, and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 7,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Financial Analyst",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.83935546875,
+      "curr": 0.8037109375,
+      "delta": -0.03564453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.83935546875,
+        0.12481689453125,
+        0.035675048828125
+      ],
+      "curr": [
+        0.8037109375,
+        0.15576171875,
+        0.040374755859375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Assistants, 2 Mathematicians, Financial Analyst, Storyteller, Lexicographer, Biomedical Researcher, and Clinical Physician agree with this statement. Online Friend, Cybersecurity Analyst, and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4453125,
+      "curr": 0.51171875,
+      "delta": 0.06640625
+    },
+    "complete_scores": {
+      "prev": [
+        0.4453125,
+        0.310791015625,
+        0.243896484375
+      ],
+      "curr": [
+        0.51171875,
+        0.34619140625,
+        0.141845703125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Online Friend, Chemist, Academic Scholar, and Lexicographer disagree with this statement. Lexicographer, Academic Scholar, Online Friend, Financial Analyst, Biomedical Researcher, 2 Human Participants, Storyteller, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 9,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Lexicographer",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.255615234375,
+      "curr": 0.70068359375,
+      "delta": 0.445068359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.255615234375,
+        0.30810546875,
+        0.4365234375
+      ],
+      "curr": [
+        0.70068359375,
+        0.21044921875,
+        0.08868408203125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Cybersecurity Analysts and Strategic Planner disagree with this statement. 2 Mathematicians, Lexicographer, 2 Online Friends, Language Mediator, Clinical Physician, 2 Storytellers, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 10,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00191497802734375,
+      "curr": 0.0474853515625,
+      "delta": 0.04557037353515625
+    },
+    "complete_scores": {
+      "prev": [
+        0.00191497802734375,
+        0.9921875,
+        0.00577545166015625
+      ],
+      "curr": [
+        0.0474853515625,
+        0.89599609375,
+        0.056488037109375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Storyteller, Assistant, Mathematician, Clinical Physician, and Language Mediator agree with this statement. Online Friend, Chemist, and Academic Scholar disagree with this statement. Software Engineer is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 5,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Mathematician",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 19,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.001110076904296875,
+      "curr": 0.9677734375,
+      "delta": 0.9666633605957031
+    },
+    "complete_scores": {
+      "prev": [
+        0.001110076904296875,
+        0.9931640625,
+        0.005950927734375
+      ],
+      "curr": [
+        0.9677734375,
+        0.0278778076171875,
+        0.0045948028564453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. LLM disagrees with this statement. Academic Scholar, 2 Storytellers, Software Engineer, Online Friend, Strategic Planner, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 7,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 20,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.407470703125,
+      "curr": 0.205078125,
+      "delta": -0.202392578125
+    },
+    "complete_scores": {
+      "prev": [
+        0.407470703125,
+        0.5234375,
+        0.06915283203125
+      ],
+      "curr": [
+        0.205078125,
+        0.75,
+        0.045135498046875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Language Mediators, 2 Biomedical Researchers, 2 Human Participants, Online Friend, 3 Assistants, 2 Strategic Planners, Storyteller, Chemist, 2 LLMs, 2 Financial Analysts, and Academic Scholar agree with this statement. Storyteller, Academic Scholar, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 22,
+      "n_agree": 19,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.802734375,
+      "curr": 0.810546875,
+      "delta": 0.0078125
+    },
+    "complete_scores": {
+      "prev": [
+        0.802734375,
+        0.155517578125,
+        0.041900634765625
+      ],
+      "curr": [
+        0.810546875,
+        0.14306640625,
+        0.04656982421875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Clinical Physicians, Storyteller, 2 Academic Scholars, and Lexicographer disagree with this statement. 2 Lexicographers, Assistant, 2 Human Participants, Language Mediator, 2 LLMs, Financial Analyst, 2 Storytellers, Software Engineer, Mathematician, and Biomedical Researcher agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 20,
+      "n_agree": 14,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Lexicographer",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7802734375,
+      "curr": 0.77001953125,
+      "delta": -0.01025390625
+    },
+    "complete_scores": {
+      "prev": [
+        0.7802734375,
+        0.1661376953125,
+        0.053497314453125
+      ],
+      "curr": [
+        0.77001953125,
+        0.191650390625,
+        0.03814697265625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Academic Scholars, Cybersecurity Analyst, Lexicographer, Chemist, and Online Friend disagree with this statement. 2 Storytellers, Financial Analyst, 2 Lexicographers, 3 Biomedical Researchers, 2 Language Mediators, Online Friend, and 2 Assistants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 13,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.82568359375,
+      "curr": 0.55908203125,
+      "delta": -0.2666015625
+    },
+    "complete_scores": {
+      "prev": [
+        0.82568359375,
+        0.10333251953125,
+        0.0706787109375
+      ],
+      "curr": [
+        0.55908203125,
+        0.349853515625,
+        0.0906982421875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 LLMs, Software Engineer, Human Participant, Strategic Planner, Chemist, 2 Online Friends, Storyteller, Mathematician, Clinical Physician, Language Mediator, and Biomedical Researcher agree with this statement. Lexicographer, LLM, Cybersecurity Analyst, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 13,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Language Mediator",
+        "Storyteller",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Cybersecurity Analyst",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6474609375,
+      "curr": 0.77734375,
+      "delta": 0.1298828125
+    },
+    "complete_scores": {
+      "prev": [
+        0.6474609375,
+        0.2919921875,
+        0.060546875
+      ],
+      "curr": [
+        0.77734375,
+        0.1708984375,
+        0.051788330078125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Lexicographer, Clinical Physician, Online Friend, Cybersecurity Analyst, and Chemist disagree with this statement. Biomedical Researcher, 3 Language Mediators, Academic Scholar, Human Participant, Financial Analyst, Strategic Planner, 2 Mathematicians, and 2 Assistants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 12,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5693359375,
+      "curr": 0.84814453125,
+      "delta": 0.27880859375
+    },
+    "complete_scores": {
+      "prev": [
+        0.5693359375,
+        0.362060546875,
+        0.068267822265625
+      ],
+      "curr": [
+        0.84814453125,
+        0.10955810546875,
+        0.042694091796875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Online Friend, 2 Cybersecurity Analysts, Storyteller, and Clinical Physician disagree with this statement. Mathematician, Strategic Planner, Lexicographer, Storyteller, 2 Language Mediators, 2 Assistants, Clinical Physician, Biomedical Researcher, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 11,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.237548828125,
+      "curr": 0.5859375,
+      "delta": 0.348388671875
+    },
+    "complete_scores": {
+      "prev": [
+        0.237548828125,
+        0.7314453125,
+        0.031036376953125
+      ],
+      "curr": [
+        0.5859375,
+        0.294677734375,
+        0.1192626953125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Online Friend, Clinical Physician, Academic Scholar, and Cybersecurity Analyst disagree with this statement. 3 Biomedical Researchers, Storyteller, Language Mediator, 2 Assistants, and Clinical Physician agree with this statement. Software Engineer is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 8,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 27,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.740234375,
+      "curr": 0.6171875,
+      "delta": -0.123046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.740234375,
+        0.2442626953125,
+        0.015689849853515625
+      ],
+      "curr": [
+        0.6171875,
+        0.374267578125,
+        0.008718490600585938
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Biomedical Researchers, Language Mediator, Mathematician, Financial Analyst, 2 Online Friends, Software Engineer, and Assistant agree with this statement. Online Friend, Cybersecurity Analyst, and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.74072265625,
+      "curr": 0.970703125,
+      "delta": 0.22998046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.74072265625,
+        0.2481689453125,
+        0.011281967163085938
+      ],
+      "curr": [
+        0.970703125,
+        0.02178955078125,
+        0.0074748992919921875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Clinical Physicians and Academic Scholar disagree with this statement. Language Mediator, Assistant, 2 Online Friends, Software Engineer, Storyteller, LLM, Clinical Physician, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Software Engineer",
+        "Financial Analyst",
+        "Language Mediator",
+        "Storyteller",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.84814453125,
+      "curr": 0.288330078125,
+      "delta": -0.559814453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.84814453125,
+        0.1429443359375,
+        0.008768081665039062
+      ],
+      "curr": [
+        0.288330078125,
+        0.70263671875,
+        0.008625030517578125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Financial Analyst, 2 Biomedical Researchers, 2 Strategic Planners, Language Mediator, Online Friend, Chemist, 2 Lexicographers, LLM, Clinical Physician, and Storyteller agree with this statement. Online Friend, 2 Academic Scholars, Lexicographer, Cybersecurity Analyst, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 13,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.650390625,
+      "curr": 0.7822265625,
+      "delta": 0.1318359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.650390625,
+        0.254638671875,
+        0.09478759765625
+      ],
+      "curr": [
+        0.7822265625,
+        0.1446533203125,
+        0.072998046875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. 2 LLMs, Human Participant, Strategic Planner, Software Engineer, Assistant, Biomedical Researcher, Lexicographer, Academic Scholar, 2 Mathematicians, Clinical Physician, and Financial Analyst agree with this statement. LLM, Online Friend, Storyteller, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 13,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Lexicographer",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 31,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.86279296875,
+      "curr": 0.90869140625,
+      "delta": 0.0458984375
+    },
+    "complete_scores": {
+      "prev": [
+        0.86279296875,
+        0.082763671875,
+        0.05487060546875
+      ],
+      "curr": [
+        0.90869140625,
+        0.04815673828125,
+        0.0428466796875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. Cybersecurity Analyst disagrees with this statement. Online Friend, Biomedical Researcher, 2 Storytellers, Strategic Planner, Assistant, LLM, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 8,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Mathematician",
+        "Storyteller",
+        "Storyteller",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 32,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.89599609375,
+      "curr": 0.93359375,
+      "delta": 0.03759765625
+    },
+    "complete_scores": {
+      "prev": [
+        0.89599609375,
+        0.06195068359375,
+        0.041900634765625
+      ],
+      "curr": [
+        0.93359375,
+        0.035064697265625,
+        0.031402587890625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Lexicographer, Chemist, 2 LLMs, Mathematician, Software Engineer, Financial Analyst, Language Mediator, Strategic Planner, Assistant, and Clinical Physician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 11,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.48388671875,
+      "curr": 0.69921875,
+      "delta": 0.21533203125
+    },
+    "complete_scores": {
+      "prev": [
+        0.48388671875,
+        0.39501953125,
+        0.12091064453125
+      ],
+      "curr": [
+        0.69921875,
+        0.2342529296875,
+        0.0665283203125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. Chemist, 2 Biomedical Researchers, Software Engineer, 2 Mathematicians, Human Participant, 2 Financial Analysts, Online Friend, 2 Assistants, Clinical Physician, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 14,
+      "n_disagree": 0,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 34,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.400634765625,
+      "curr": 0.50732421875,
+      "delta": 0.106689453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.400634765625,
+        0.50634765625,
+        0.09271240234375
+      ],
+      "curr": [
+        0.50732421875,
+        0.37109375,
+        0.12152099609375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Clinical Physician and Academic Scholar disagree with this statement. Human Participant, Biomedical Researcher, 3 Financial Analysts, Language Mediator, Mathematician, Strategic Planner, Software Engineer, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.8173828125,
+      "curr": 0.81640625,
+      "delta": -0.0009765625
+    },
+    "complete_scores": {
+      "prev": [
+        0.8173828125,
+        0.1397705078125,
+        0.043121337890625
+      ],
+      "curr": [
+        0.81640625,
+        0.129150390625,
+        0.05450439453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Academic Scholar, 2 Clinical Physicians, and Storyteller disagree with this statement. Software Engineer, 2 Financial Analysts, Assistant, Biomedical Researcher, Strategic Planner, Clinical Physician, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5322265625,
+      "curr": 0.7197265625,
+      "delta": 0.1875
+    },
+    "complete_scores": {
+      "prev": [
+        0.5322265625,
+        0.32275390625,
+        0.14501953125
+      ],
+      "curr": [
+        0.7197265625,
+        0.19677734375,
+        0.08355712890625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Cybersecurity Analyst disagrees with this statement. 2 Human Participants, 2 Strategic Planners, Online Friend, Academic Scholar, Financial Analyst, Language Mediator, Clinical Physician, LLM, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Language Mediator",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.49755859375,
+      "curr": 0.73046875,
+      "delta": 0.23291015625
+    },
+    "complete_scores": {
+      "prev": [
+        0.49755859375,
+        0.347412109375,
+        0.1553955078125
+      ],
+      "curr": [
+        0.73046875,
+        0.155517578125,
+        0.1143798828125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. Biomedical Researcher, 2 Financial Analysts, 2 Strategic Planners, Clinical Physician, Storyteller, Chemist, and Language Mediator agree with this statement. Storyteller, Lexicographer, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 9,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Chemist",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Storyteller"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 38,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6015625,
+      "curr": 0.470703125,
+      "delta": -0.130859375
+    },
+    "complete_scores": {
+      "prev": [
+        0.6015625,
+        0.26708984375,
+        0.13128662109375
+      ],
+      "curr": [
+        0.470703125,
+        0.396484375,
+        0.133056640625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Storyteller, Cybersecurity Analyst, Academic Scholar, and Strategic Planner disagree with this statement. Human Participant, Strategic Planner, 2 Assistants, Biomedical Researcher, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 6,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.37744140625,
+      "curr": 0.85205078125,
+      "delta": 0.474609375
+    },
+    "complete_scores": {
+      "prev": [
+        0.37744140625,
+        0.62255859375,
+        0.00022232532501220703
+      ],
+      "curr": [
+        0.85205078125,
+        0.1480712890625,
+        0.00017881393432617188
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Cybersecurity Analyst disagrees with this statement. Financial Analyst, Mathematician, Lexicographer, 2 Language Mediators, and Strategic Planner agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 6,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.95068359375,
+      "curr": 1.0,
+      "delta": 0.04931640625
+    },
+    "complete_scores": {
+      "prev": [
+        0.95068359375,
+        0.048828125,
+        0.0005728006362915039
+      ],
+      "curr": [
+        1.0,
+        1.621246337890625e-05,
+        8.940696716308594e-07
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. Online Friend, Mathematician, Language Mediator, 3 Financial Analysts, Software Engineer, Strategic Planner, Human Participant, Clinical Physician, and 2 Biomedical Researchers agree with this statement. LLM, Academic Scholar, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 12,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 41,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        1.0,
+        6.502866744995117e-05,
+        1.3113021850585938e-06
+      ],
+      "curr": [
+        1.0,
+        1.722574234008789e-05,
+        1.2516975402832031e-06
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. LLM, Software Engineer, 2 Financial Analysts, Human Participant, Clinical Physician, Online Friend, Chemist, and Mathematician agree with this statement. Online Friend, Strategic Planner, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 9,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Online Friend"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 42,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.32861328125,
+      "curr": 0.5283203125,
+      "delta": 0.19970703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.32861328125,
+        0.52490234375,
+        0.146240234375
+      ],
+      "curr": [
+        0.5283203125,
+        0.3408203125,
+        0.1309814453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Biomedical Researchers, 3 Human Participants, Clinical Physician, Storyteller, 2 Financial Analysts, LLM, and Assistant agree with this statement. Cybersecurity Analyst, Lexicographer, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 11,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6591796875,
+      "curr": 0.44091796875,
+      "delta": -0.21826171875
+    },
+    "complete_scores": {
+      "prev": [
+        0.6591796875,
+        0.2464599609375,
+        0.094329833984375
+      ],
+      "curr": [
+        0.44091796875,
+        0.46923828125,
+        0.0899658203125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Cybersecurity Analysts, LLM, Online Friend, Chemist, and Clinical Physician disagree with this statement. Mathematician, Software Engineer, Assistant, Strategic Planner, Language Mediator, and Biomedical Researcher agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 6,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Strategic Planner",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 44,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.37109375,
+      "curr": 0.595703125,
+      "delta": 0.224609375
+    },
+    "complete_scores": {
+      "prev": [
+        0.37109375,
+        0.50732421875,
+        0.1217041015625
+      ],
+      "curr": [
+        0.595703125,
+        0.281494140625,
+        0.123199462890625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Strategic Planner and Cybersecurity Analyst disagree with this statement. 2 Software Engineers, Language Mediator, 2 Financial Analysts, Lexicographer, 2 Biomedical Researchers, Human Participant, Clinical Physician, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 11,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 45,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.245849609375,
+      "curr": 0.46923828125,
+      "delta": 0.223388671875
+    },
+    "complete_scores": {
+      "prev": [
+        0.245849609375,
+        0.4248046875,
+        0.329345703125
+      ],
+      "curr": [
+        0.46923828125,
+        0.29833984375,
+        0.2325439453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. 2 Strategic Planners, Financial Analyst, 2 Human Participants, Academic Scholar, Storyteller, Biomedical Researcher, 2 Software Engineers, Assistant, Mathematician, and Online Friend agree with this statement. Strategic Planner and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 13,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 46,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.8251953125,
+      "curr": 0.312255859375,
+      "delta": -0.512939453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.8251953125,
+        0.0816650390625,
+        0.09332275390625
+      ],
+      "curr": [
+        0.312255859375,
+        0.317138671875,
+        0.370849609375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Language Mediator, 2 Financial Analysts, Lexicographer, 2 Human Participants, and 2 Biomedical Researchers agree with this statement. Software Engineer is unsure about the statement. Online Friend and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 8,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Online Friend"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.53662109375,
+      "curr": 0.7578125,
+      "delta": 0.22119140625
+    },
+    "complete_scores": {
+      "prev": [
+        0.53662109375,
+        0.200439453125,
+        0.2626953125
+      ],
+      "curr": [
+        0.7578125,
+        0.1126708984375,
+        0.1295166015625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Terbutaline is indicated for the treatment of cramps. Software Engineer is unsure about the statement. Chemist, 2 Storytellers, 3 Human Participants, Assistant, Software Engineer, Mathematician, 2 Biomedical Researchers, and Financial Analyst agree with this statement. Cybersecurity Analyst disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 12,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  }
+]

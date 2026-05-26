@@ -4,7 +4,7 @@ Test suite for Message class, specifically for handling duplicate roles.
 
 import pytest
 
-from src.Message import Message
+from src.core.message import Message
 
 
 class TestMessageDuplicateRoles:
@@ -54,7 +54,7 @@ class TestMessageDuplicateRoles:
                 "aggregation": {"method": "list_all"},
             },
             "agents": {
-                "catalog": [
+                "catalog_used": [
                     {"id": 1, "role": "LLM"},
                     {"id": 2, "role": "LLM"},
                     {"id": 3, "role": "LLM"},

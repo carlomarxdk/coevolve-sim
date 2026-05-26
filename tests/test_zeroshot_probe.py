@@ -7,7 +7,7 @@ from unittest.mock import Mock
 import numpy as np
 import pytest
 
-from src.Probe import ZeroShotProbe
+from src.core.probe import ZeroShotProbe
 
 
 class TestZeroShotProbe:
@@ -74,10 +74,10 @@ class TestZeroShotProbe:
         probe.set_tokenizer(mock_tokenizer)
 
         assert probe.tokenizer == mock_tokenizer
-        assert len(probe.token_ids) == 6  # Should have token IDs for 1-6
+        assert len(probe.token_ids) == 3  # Should have token IDs for 1-3
 
         # Check that each option has token IDs
-        for option in ["1", "2", "3", "4", "5", "6"]:
+        for option in ["1", "2", "3"]:
             assert option in probe.token_ids
             assert len(probe.token_ids[option]) > 0
 
@@ -94,10 +94,13 @@ class TestZeroShotProbe:
         logits[0, 16] = 10.0  # High logit for token '1'
         logits[0, 352] = 9.0  # High logit for ' 1'
 
-        predicted_class, confidence = probe.score(logits)
+        predicted_class, p_true, final_scores = probe.score(logits)
 
         assert predicted_class == 1.0  # Should predict True
-        assert confidence > 0.5  # Should have high confidence
+        assert p_true > 0.5  # P(true) should be high
+        assert final_scores is not None  # Should have complete scores
+        assert len(final_scores) == 3  # [P(true), P(false), P(uncertain)]
+        assert final_scores[0] > 0.5  # P(true) should be high
 
     def test_score_with_false_prediction(
         self, basic_config, model_config, mock_io, mock_tokenizer
@@ -112,28 +115,32 @@ class TestZeroShotProbe:
         logits[0, 17] = 10.0  # High logit for token '2'
         logits[0, 353] = 9.0  # High logit for ' 2'
 
-        predicted_class, confidence = probe.score(logits)
+        predicted_class, p_true, scores = probe.score(logits)
 
         assert predicted_class == 0.0  # Should predict False
-        assert confidence > 0.5  # Should have high confidence
+        assert p_true < 0.5  # P(true) should be low when predicting False
+        assert scores[1] > 0.5  # P(false) should be high
 
     def test_score_with_uncertain_prediction(
         self, basic_config, model_config, mock_io, mock_tokenizer
     ):
-        """Test scoring when model predicts Uncertain (options 3-6)"""
+        """Test scoring when model predicts Uncertain (option 3)"""
         probe = ZeroShotProbe(cfg=basic_config, model_cfg=model_config, io=mock_io)
         probe.set_tokenizer(mock_tokenizer)
 
-        # Create logits favoring tokens 18-21 (options '3'-'6')
+        # Create logits favoring token 18 (option '3')
         vocab_size = 500
         logits = np.zeros((1, vocab_size), dtype=np.float32)
-        for i in [18, 19, 20, 21]:  # Tokens for '3', '4', '5', '6'
-            logits[0, i] = 8.0
+        logits[0, 18] = 10.0  # High logit for token '3'
+        logits[0, 354] = 9.0  # High logit for ' 3'
 
-        predicted_class, confidence = probe.score(logits)
+        predicted_class, p_true, final_scores = probe.score(logits)
 
         assert predicted_class == -1.0  # Should predict Uncertain
-        assert confidence > 0.5  # Should have high confidence
+        assert p_true < 0.5  # P(true) should be low when predicting Uncertain
+        assert final_scores is not None  # Should have complete scores
+        assert len(final_scores) == 3  # [P(true), P(false), P(uncertain)]
+        assert final_scores[2] > 0.5  # P(uncertain) should be high
 
     def test_score_without_tokenizer_raises_error(
         self, basic_config, model_config, mock_io
@@ -158,7 +165,7 @@ class TestZeroShotProbe:
         logits = np.zeros(vocab_size, dtype=np.float32)
         logits[16] = 10.0  # Favor option '1'
 
-        predicted_class, confidence = probe.score(logits)
+        predicted_class, confidence, scores = probe.score(logits)
 
         assert predicted_class == 1.0
         assert confidence > 0.0
@@ -271,7 +278,7 @@ class TestZeroShotProbeIntegration:
         logits = np.random.randn(1, vocab_size).astype(np.float32)
 
         # Should not raise any errors
-        predicted_class, confidence = probe.score(logits)
+        predicted_class, confidence, scores = probe.score(logits)
 
         # Check output types and ranges
         assert isinstance(predicted_class, (int, float))
@@ -332,16 +339,112 @@ class TestZeroShotProbeIntegration:
 
         # Test case 2: Low probability on answer tokens (most in "else")
         logits2 = np.ones((1, vocab_size), dtype=np.float32) * 5.0
-        for tid in [16, 17, 18, 19, 20, 21, 352, 353, 354, 355, 356, 357]:
+        for tid in [16, 17, 18, 352, 353, 354]:
             logits2[0, tid] = 0.0  # Low logits for answer tokens
 
         probs2 = probe._collect_probabilities(logits2)
-        total_prob2 = sum(probs2.values())
+        # Exclude "else" from the sum to check only answer token probabilities
+        answer_tokens_prob_sum = sum(v for k, v in probs2.items() if k != "else")
 
         # When "else" dominates, answer probabilities should be very low
         assert (
-            total_prob2 < 0.1
-        ), f"Expected very low total probability when else dominates, got {total_prob2}"
+            answer_tokens_prob_sum < 0.1
+        ), f"Expected very low answer probability when else dominates, got {answer_tokens_prob_sum}"
+
+    def test_complete_scores_structure(self):
+        """Test that complete_scores returns the correct structure."""
+        cfg = {"name": "zeroshot"}
+        model_cfg = {"model": {"name": "llama-base"}}
+        io = Mock()
+
+        probe = ZeroShotProbe(cfg=cfg, model_cfg=model_cfg, io=io)
+
+        # Mock tokenizer
+        def encode_fn(text, add_special_tokens=False):
+            encoding_map = {
+                "1": [16],
+                " 1": [352],
+                "2": [17],
+                " 2": [353],
+                "3": [18],
+                " 3": [354],
+            }
+            return encoding_map.get(text, [0])
+
+        tokenizer = Mock()
+        tokenizer.encode = Mock(side_effect=encode_fn)
+        probe.set_tokenizer(tokenizer)
+
+        # Test with various predictions
+        vocab_size = 500
+
+        # Case 1: Favor True
+        logits1 = np.zeros((1, vocab_size), dtype=np.float32)
+        logits1[0, 16] = 10.0
+        _, _, scores1 = probe.score(logits1)
+
+        assert isinstance(scores1, list)
+        assert len(scores1) == 3  # [P(true), P(false), P(uncertain)]
+        assert scores1[0] > scores1[1]  # P(true) > P(false)
+        assert scores1[0] > scores1[2]  # P(true) > P(uncertain)
+        assert np.isclose(sum(scores1), 1.0, atol=1e-5)  # Should sum to ~1.0
+
+        # Case 2: Favor False
+        logits2 = np.zeros((1, vocab_size), dtype=np.float32)
+        logits2[0, 17] = 10.0
+        _, _, scores2 = probe.score(logits2)
+
+        assert scores2[1] > scores2[0]  # P(false) > P(true)
+        assert scores2[1] > scores2[2]  # P(false) > P(uncertain)
+
+        # Case 3: Favor Uncertain
+        logits3 = np.zeros((1, vocab_size), dtype=np.float32)
+        logits3[0, 18] = 10.0
+        _, _, scores3 = probe.score(logits3)
+
+        assert scores3[2] > scores3[0]  # P(uncertain) > P(true)
+        assert scores3[2] > scores3[1]  # P(uncertain) > P(false)
+
+    def test_complete_scores_consistency_with_prediction(self):
+        """Test that complete_scores is consistent with predicted class."""
+        cfg = {"name": "zeroshot"}
+        model_cfg = {"model": {"name": "llama-base"}}
+        io = Mock()
+
+        probe = ZeroShotProbe(cfg=cfg, model_cfg=model_cfg, io=io)
+
+        # Mock tokenizer
+        def encode_fn(text, add_special_tokens=False):
+            encoding_map = {
+                "1": [16],
+                " 1": [352],
+                "2": [17],
+                " 2": [353],
+                "3": [18],
+                " 3": [354],
+            }
+            return encoding_map.get(text, [0])
+
+        tokenizer = Mock()
+        tokenizer.encode = Mock(side_effect=encode_fn)
+        probe.set_tokenizer(tokenizer)
+
+        vocab_size = 500
+
+        # Test that predicted class matches the highest probability in complete_scores
+        for token_id, expected_class, expected_max_idx in [
+            (16, 1.0, 0),   # Token '1' -> True
+            (17, 0.0, 1),   # Token '2' -> False
+            (18, -1.0, 2),  # Token '3' -> Uncertain
+        ]:
+            logits = np.zeros((1, vocab_size), dtype=np.float32)
+            logits[0, token_id] = 10.0
+
+            predicted_class, p_true, complete_scores = probe.score(logits)
+
+            assert predicted_class == expected_class
+            assert np.argmax(complete_scores) == expected_max_idx
+            assert complete_scores[0] == p_true  # First element should match p_true
 
 
 if __name__ == "__main__":

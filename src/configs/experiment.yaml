@@ -1,0 +1,35 @@
+# @package _global_
+hydra:
+  run:
+    dir: outputs/hydra_logs/experiment/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+defaults:
+  - _self_
+  - callbacks # load all the callback modules
+  - network: erdos-renyi
+  - prompt: wR_L # with roles, list format
+  - probe: zeroshot
+  - catalog: base_llms
+  - statement: true_1
+
+seed: 814183 #RADLAB
+backend: hf
+quantization: 4bit # none
+
+model_pool:
+  capacity: 16
+
+device_pool: [cuda] # mps for Mac
+
+prompt_cache: # params for the prompt cache (in InferenceScheduler and only for zeroshot probe)
+  capacity: 512
+  unbounded: True
+
+experiment: # params for the experiment and runs
+  max_rounds: 10
+  ordering: by_model #random , by_model
+
+
+
+# agents section  will be populated by catalog config
+agents: {}

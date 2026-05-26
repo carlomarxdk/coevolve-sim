@@ -1,0 +1,3100 @@
+[
+  {
+    "agent_id": 0,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.267578125,
+      "curr": 0.377197265625,
+      "delta": 0.109619140625
+    },
+    "complete_scores": {
+      "prev": [
+        0.267578125,
+        0.70458984375,
+        0.0278167724609375
+      ],
+      "curr": [
+        0.377197265625,
+        0.6220703125,
+        0.0009584426879882812
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Lexicographer agrees with this statement. 2 Strategic Planners, 2 Financial Analysts, Academic Scholar, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 1,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 1,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.267578125,
+      "curr": 0.68505859375,
+      "delta": 0.41748046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.267578125,
+        0.70458984375,
+        0.0278167724609375
+      ],
+      "curr": [
+        0.68505859375,
+        0.3134765625,
+        0.0012617111206054688
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Financial Analyst, Strategic Planner, Assistant, Biomedical Researcher, LLM, and Human Participant disagree with this statement. 2 Lexicographers and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 3,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 2,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.267578125,
+      "curr": 0.986328125,
+      "delta": 0.71875
+    },
+    "complete_scores": {
+      "prev": [
+        0.267578125,
+        0.70458984375,
+        0.0278167724609375
+      ],
+      "curr": [
+        0.986328125,
+        0.0122222900390625,
+        0.0014600753784179688
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Human Participants, 2 Academic Scholars, Assistant, 2 Storytellers, 2 Strategic Planners, Biomedical Researcher, LLM, and Financial Analyst disagree with this statement. 2 Software Engineers, 2 Mathematicians, 2 Lexicographers, 2 Language Mediators, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 21,
+      "n_agree": 9,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2437744140625,
+      "curr": 0.469482421875,
+      "delta": 0.2257080078125
+    },
+    "complete_scores": {
+      "prev": [
+        0.2437744140625,
+        0.7509765625,
+        0.0054607391357421875
+      ],
+      "curr": [
+        0.469482421875,
+        0.52392578125,
+        0.006603240966796875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Financial Analysts, Biomedical Researcher, Academic Scholar, 2 Human Participants, 2 Assistants, and Clinical Physician disagree with this statement. 2 Mathematicians, 2 Chemists, Cybersecurity Analyst, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 6,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2437744140625,
+      "curr": 0.407470703125,
+      "delta": 0.1636962890625
+    },
+    "complete_scores": {
+      "prev": [
+        0.2437744140625,
+        0.7509765625,
+        0.0054607391357421875
+      ],
+      "curr": [
+        0.407470703125,
+        0.58349609375,
+        0.00873565673828125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Chemists, 3 Mathematicians, 2 Lexicographers, Software Engineer, and Cybersecurity Analyst agree with this statement. 2 Assistants, Academic Scholar, 2 Financial Analysts, Storyteller, Clinical Physician, and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 9,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 5,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.2437744140625,
+      "curr": 0.77734375,
+      "delta": 0.5335693359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.2437744140625,
+        0.7509765625,
+        0.0054607391357421875
+      ],
+      "curr": [
+        0.77734375,
+        0.2158203125,
+        0.0068302154541015625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Academic Scholar, Storyteller, Financial Analyst, and Assistant disagree with this statement. Cybersecurity Analyst, Mathematician, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 3,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Financial Analyst",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.36572265625,
+      "curr": 0.88037109375,
+      "delta": 0.5146484375
+    },
+    "complete_scores": {
+      "prev": [
+        0.36572265625,
+        0.63232421875,
+        0.0019197463989257812
+      ],
+      "curr": [
+        0.88037109375,
+        0.11920166015625,
+        0.0005715489387512207
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 3 Strategic Planners, Assistant, 2 Biomedical Researchers, and Financial Analyst disagree with this statement. Lexicographer, Software Engineer, Mathematician, Online Friend, Language Mediator, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 6,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.36572265625,
+      "curr": 0.857421875,
+      "delta": 0.49169921875
+    },
+    "complete_scores": {
+      "prev": [
+        0.36572265625,
+        0.63232421875,
+        0.0019197463989257812
+      ],
+      "curr": [
+        0.857421875,
+        0.1422119140625,
+        0.0005440711975097656
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Human Participants, 2 Financial Analysts, Biomedical Researcher, Academic Scholar, 2 LLMs, and Strategic Planner disagree with this statement. Cybersecurity Analyst, Online Friend, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.36572265625,
+      "curr": 0.08880615234375,
+      "delta": -0.27691650390625
+    },
+    "complete_scores": {
+      "prev": [
+        0.36572265625,
+        0.63232421875,
+        0.0019197463989257812
+      ],
+      "curr": [
+        0.08880615234375,
+        0.9111328125,
+        7.724761962890625e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Biomedical Researcher, 3 LLMs, 2 Clinical Physicians, 2 Strategic Planners, Assistant, and Academic Scholar disagree with this statement. 2 Mathematicians, 2 Cybersecurity Analysts, 2 Chemists, 2 Lexicographers, 2 Software Engineers, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 21,
+      "n_agree": 11,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07373046875,
+      "curr": 0.178466796875,
+      "delta": 0.104736328125
+    },
+    "complete_scores": {
+      "prev": [
+        0.07373046875,
+        0.8056640625,
+        0.12078857421875
+      ],
+      "curr": [
+        0.178466796875,
+        0.70556640625,
+        0.11639404296875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Lexicographer, Software Engineer, Mathematician, 3 Online Friends, and Cybersecurity Analyst agree with this statement. Storyteller, Human Participant, 2 Financial Analysts, 3 Strategic Planners, 2 Assistants, and LLM disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 7,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07373046875,
+      "curr": 0.125244140625,
+      "delta": 0.051513671875
+    },
+    "complete_scores": {
+      "prev": [
+        0.07373046875,
+        0.8056640625,
+        0.12078857421875
+      ],
+      "curr": [
+        0.125244140625,
+        0.79150390625,
+        0.08306884765625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Lexicographers, Chemist, Online Friend, and Mathematician agree with this statement. 2 Academic Scholars, 2 Financial Analysts, Strategic Planner, 2 Clinical Physicians, LLM, Assistant, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 5,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07373046875,
+      "curr": 0.030548095703125,
+      "delta": -0.043182373046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.07373046875,
+        0.8056640625,
+        0.12078857421875
+      ],
+      "curr": [
+        0.030548095703125,
+        0.87890625,
+        0.09027099609375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Language Mediators, Software Engineer, Lexicographer, Online Friend, and Cybersecurity Analyst agree with this statement. 3 Academic Scholars, 2 Human Participants, Storyteller, Assistant, Financial Analyst, LLM, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 6,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.615234375,
+      "curr": 0.40087890625,
+      "delta": -0.21435546875
+    },
+    "complete_scores": {
+      "prev": [
+        0.615234375,
+        0.2861328125,
+        0.098876953125
+      ],
+      "curr": [
+        0.40087890625,
+        0.475830078125,
+        0.123046875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Strategic Planner, Financial Analyst, Biomedical Researcher, Human Participant, 2 LLMs, 2 Academic Scholars, Clinical Physician, and Assistant disagree with this statement. Cybersecurity Analyst and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.615234375,
+      "curr": 0.494140625,
+      "delta": -0.12109375
+    },
+    "complete_scores": {
+      "prev": [
+        0.615234375,
+        0.2861328125,
+        0.098876953125
+      ],
+      "curr": [
+        0.494140625,
+        0.3291015625,
+        0.1766357421875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Language Mediator, Online Friend, and Cybersecurity Analyst agree with this statement. Human Participant, LLM, and Storyteller disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 6,
+      "n_agree": 3,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.615234375,
+      "curr": 0.60302734375,
+      "delta": -0.01220703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.615234375,
+        0.2861328125,
+        0.098876953125
+      ],
+      "curr": [
+        0.60302734375,
+        0.211669921875,
+        0.1856689453125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Lexicographer and Mathematician agree with this statement. 2 Assistants, 2 LLMs, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 2,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.896484375,
+      "curr": 0.25927734375,
+      "delta": -0.63720703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.896484375,
+        0.0887451171875,
+        0.0147552490234375
+      ],
+      "curr": [
+        0.25927734375,
+        0.6220703125,
+        0.11883544921875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Academic Scholar, Storyteller, Financial Analyst, Clinical Physician, 2 Assistants, and Biomedical Researcher disagree with this statement. Lexicographer, Cybersecurity Analyst, 2 Mathematicians, and Online Friend agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 5,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.896484375,
+      "curr": 0.2734375,
+      "delta": -0.623046875
+    },
+    "complete_scores": {
+      "prev": [
+        0.896484375,
+        0.0887451171875,
+        0.0147552490234375
+      ],
+      "curr": [
+        0.2734375,
+        0.5791015625,
+        0.1473388671875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Academic Scholars, 2 Human Participants, Financial Analyst, Assistant, Biomedical Researcher, and Storyteller disagree with this statement. 2 Online Friends, Chemist, and 2 Lexicographers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 5,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Lexicographer",
+        "Lexicographer",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.896484375,
+      "curr": 0.8193359375,
+      "delta": -0.0771484375
+    },
+    "complete_scores": {
+      "prev": [
+        0.896484375,
+        0.0887451171875,
+        0.0147552490234375
+      ],
+      "curr": [
+        0.8193359375,
+        0.1424560546875,
+        0.038116455078125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Online Friends, 2 Cybersecurity Analysts, 2 Mathematicians, Lexicographer, and Language Mediator agree with this statement. LLM, 2 Storytellers, Clinical Physician, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 8,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Strategic Planner",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.68603515625,
+      "curr": 0.88427734375,
+      "delta": 0.1982421875
+    },
+    "complete_scores": {
+      "prev": [
+        0.68603515625,
+        0.30908203125,
+        0.00476837158203125
+      ],
+      "curr": [
+        0.88427734375,
+        0.10894775390625,
+        0.00664520263671875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Academic Scholar, Clinical Physician, Assistant, and Storyteller disagree with this statement. Language Mediator, Chemist, Mathematician, Online Friend, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 5,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Assistant",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.68603515625,
+      "curr": 0.77880859375,
+      "delta": 0.0927734375
+    },
+    "complete_scores": {
+      "prev": [
+        0.68603515625,
+        0.30908203125,
+        0.00476837158203125
+      ],
+      "curr": [
+        0.77880859375,
+        0.206298828125,
+        0.01470947265625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Storytellers, Academic Scholar, Strategic Planner, and LLM disagree with this statement. Online Friend, 2 Software Engineers, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 4,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Strategic Planner",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.68603515625,
+      "curr": 0.75439453125,
+      "delta": 0.068359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.68603515625,
+        0.30908203125,
+        0.00476837158203125
+      ],
+      "curr": [
+        0.75439453125,
+        0.2265625,
+        0.019012451171875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Biomedical Researchers, 2 Academic Scholars, 2 Human Participants, 2 Financial Analysts, 3 Strategic Planners, 3 Assistants, 2 LLMs, and 2 Storytellers disagree with this statement. Online Friend, Chemist, and 2 Language Mediators agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 22,
+      "n_agree": 4,
+      "n_disagree": 18,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.33740234375,
+      "curr": 0.2841796875,
+      "delta": -0.05322265625
+    },
+    "complete_scores": {
+      "prev": [
+        0.33740234375,
+        0.59228515625,
+        0.07025146484375
+      ],
+      "curr": [
+        0.2841796875,
+        0.6015625,
+        0.11431884765625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 3 Storytellers, Financial Analyst, 2 Academic Scholars, 2 LLMs, 2 Human Participants, 2 Clinical Physicians, Assistant, and Biomedical Researcher disagree with this statement. 3 Lexicographers, Software Engineer, Language Mediator, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 20,
+      "n_agree": 6,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.33740234375,
+      "curr": 0.5712890625,
+      "delta": 0.23388671875
+    },
+    "complete_scores": {
+      "prev": [
+        0.33740234375,
+        0.59228515625,
+        0.07025146484375
+      ],
+      "curr": [
+        0.5712890625,
+        0.34130859375,
+        0.08758544921875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Academic Scholars, 2 Storytellers, 2 Assistants, Financial Analyst, and 3 Biomedical Researchers disagree with this statement. Cybersecurity Analyst, 3 Lexicographers, 2 Language Mediators, 2 Online Friends, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 9,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.33740234375,
+      "curr": 0.34423828125,
+      "delta": 0.0068359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.33740234375,
+        0.59228515625,
+        0.07025146484375
+      ],
+      "curr": [
+        0.34423828125,
+        0.57666015625,
+        0.0792236328125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 3 LLMs, Storyteller, Strategic Planner, 2 Clinical Physicians, Human Participant, and Biomedical Researcher disagree with this statement. 2 Online Friends, Chemist, Cybersecurity Analyst, Software Engineer, Lexicographer, Language Mediator, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 8,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38232421875,
+      "curr": 0.0297393798828125,
+      "delta": -0.3525848388671875
+    },
+    "complete_scores": {
+      "prev": [
+        0.38232421875,
+        0.59228515625,
+        0.02520751953125
+      ],
+      "curr": [
+        0.0297393798828125,
+        0.9541015625,
+        0.01607513427734375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Cybersecurity Analyst, Lexicographer, 3 Language Mediators, 2 Mathematicians, Chemist, and Online Friend agree with this statement. 2 Assistants, Biomedical Researcher, Academic Scholar, Clinical Physician, Strategic Planner, Human Participant, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 9,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38232421875,
+      "curr": 0.01091766357421875,
+      "delta": -0.37140655517578125
+    },
+    "complete_scores": {
+      "prev": [
+        0.38232421875,
+        0.59228515625,
+        0.02520751953125
+      ],
+      "curr": [
+        0.01091766357421875,
+        0.98291015625,
+        0.0064296722412109375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Biomedical Researcher, 2 Assistants, 2 Storytellers, Human Participant, 2 Clinical Physicians, and Strategic Planner disagree with this statement. Lexicographer, 2 Cybersecurity Analysts, Mathematician, Online Friend, and 2 Language Mediators agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 7,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38232421875,
+      "curr": 0.01219940185546875,
+      "delta": -0.37012481689453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.38232421875,
+        0.59228515625,
+        0.02520751953125
+      ],
+      "curr": [
+        0.01219940185546875,
+        0.984375,
+        0.0032339096069335938
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Storyteller, 3 Biomedical Researchers, 2 Assistants, Academic Scholar, and 2 Clinical Physicians disagree with this statement. Online Friend, Software Engineer, Language Mediator, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 4,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 27,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.273681640625,
+      "curr": 0.2159423828125,
+      "delta": -0.0577392578125
+    },
+    "complete_scores": {
+      "prev": [
+        0.273681640625,
+        0.720703125,
+        0.005995750427246094
+      ],
+      "curr": [
+        0.2159423828125,
+        0.7783203125,
+        0.0060710906982421875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Language Mediator, Software Engineer, Mathematician, 3 Online Friends, and Cybersecurity Analyst agree with this statement. 2 Biomedical Researchers, Academic Scholar, Assistant, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.273681640625,
+      "curr": 0.1904296875,
+      "delta": -0.083251953125
+    },
+    "complete_scores": {
+      "prev": [
+        0.273681640625,
+        0.720703125,
+        0.005995750427246094
+      ],
+      "curr": [
+        0.1904296875,
+        0.8017578125,
+        0.007671356201171875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Storyteller, Financial Analyst, Assistant, Academic Scholar, 3 Clinical Physicians, and LLM disagree with this statement. 2 Online Friends, Software Engineer, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.273681640625,
+      "curr": 0.69140625,
+      "delta": 0.417724609375
+    },
+    "complete_scores": {
+      "prev": [
+        0.273681640625,
+        0.720703125,
+        0.005995750427246094
+      ],
+      "curr": [
+        0.69140625,
+        0.29736328125,
+        0.011064529418945312
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Academic Scholars, 2 Strategic Planners, LLM, 2 Biomedical Researchers, Storyteller, Clinical Physician, and Financial Analyst disagree with this statement. 2 Chemists, 3 Lexicographers, Language Mediator, 2 Online Friends, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 9,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.79248046875,
+      "curr": 0.69775390625,
+      "delta": -0.0947265625
+    },
+    "complete_scores": {
+      "prev": [
+        0.79248046875,
+        0.1796875,
+        0.0276947021484375
+      ],
+      "curr": [
+        0.69775390625,
+        0.2467041015625,
+        0.055572509765625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Mathematicians, 2 Software Engineers, Online Friend, and 2 Lexicographers agree with this statement. Academic Scholar, Human Participant, Assistant, Clinical Physician, Storyteller, 3 LLMs, Financial Analyst, Strategic Planner, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 7,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.79248046875,
+      "curr": 0.72021484375,
+      "delta": -0.072265625
+    },
+    "complete_scores": {
+      "prev": [
+        0.79248046875,
+        0.1796875,
+        0.0276947021484375
+      ],
+      "curr": [
+        0.72021484375,
+        0.1710205078125,
+        0.10870361328125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Strategic Planner, 2 Storytellers, Assistant, Biomedical Researcher, and LLM disagree with this statement. Online Friend, Software Engineer, Mathematician, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 4,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.79248046875,
+      "curr": 0.67041015625,
+      "delta": -0.1220703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.79248046875,
+        0.1796875,
+        0.0276947021484375
+      ],
+      "curr": [
+        0.67041015625,
+        0.1473388671875,
+        0.1820068359375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Strategic Planner, Financial Analyst, Clinical Physician, 2 LLMs, and Assistant disagree with this statement. Lexicographer, Chemist, Mathematician, Language Mediator, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 5,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.462158203125,
+      "curr": 0.63623046875,
+      "delta": 0.174072265625
+    },
+    "complete_scores": {
+      "prev": [
+        0.462158203125,
+        0.462158203125,
+        0.075439453125
+      ],
+      "curr": [
+        0.63623046875,
+        0.273681640625,
+        0.08984375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Biomedical Researchers, 2 Assistants, Human Participant, 2 Financial Analysts, Clinical Physician, and LLM disagree with this statement. 2 Mathematicians, Chemist, 2 Software Engineers, and Online Friend agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 6,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Mathematician",
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.462158203125,
+      "curr": 0.5302734375,
+      "delta": 0.068115234375
+    },
+    "complete_scores": {
+      "prev": [
+        0.462158203125,
+        0.462158203125,
+        0.075439453125
+      ],
+      "curr": [
+        0.5302734375,
+        0.406494140625,
+        0.063323974609375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Human Participant, 3 Financial Analysts, Strategic Planner, Biomedical Researcher, Academic Scholar, LLM, and Clinical Physician disagree with this statement. Mathematician, Language Mediator, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.462158203125,
+      "curr": 0.306884765625,
+      "delta": -0.1552734375
+    },
+    "complete_scores": {
+      "prev": [
+        0.462158203125,
+        0.462158203125,
+        0.075439453125
+      ],
+      "curr": [
+        0.306884765625,
+        0.5556640625,
+        0.1376953125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Financial Analysts, Biomedical Researcher, Strategic Planner, 3 Clinical Physicians, Storyteller, Academic Scholar, Human Participant, and Assistant disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.55810546875,
+      "curr": 0.70263671875,
+      "delta": 0.14453125
+    },
+    "complete_scores": {
+      "prev": [
+        0.55810546875,
+        0.33349609375,
+        0.10821533203125
+      ],
+      "curr": [
+        0.70263671875,
+        0.207763671875,
+        0.08990478515625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Human Participants, 2 Strategic Planners, Academic Scholar, LLM, Financial Analyst, and Clinical Physician disagree with this statement. Online Friend, Cybersecurity Analyst, Language Mediator, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.55810546875,
+      "curr": 0.61083984375,
+      "delta": 0.052734375
+    },
+    "complete_scores": {
+      "prev": [
+        0.55810546875,
+        0.33349609375,
+        0.10821533203125
+      ],
+      "curr": [
+        0.61083984375,
+        0.2978515625,
+        0.091552734375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Storytellers, 2 Strategic Planners, 2 Financial Analysts, Clinical Physician, and Biomedical Researcher disagree with this statement. 2 Cybersecurity Analysts, Chemist, Language Mediator, Lexicographer, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 6,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.55810546875,
+      "curr": 0.323486328125,
+      "delta": -0.234619140625
+    },
+    "complete_scores": {
+      "prev": [
+        0.55810546875,
+        0.33349609375,
+        0.10821533203125
+      ],
+      "curr": [
+        0.323486328125,
+        0.59521484375,
+        0.08111572265625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Cybersecurity Analyst agrees with this statement. 2 Assistants, 2 Strategic Planners, Human Participant, Storyteller, Biomedical Researcher, Academic Scholar, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.1207275390625,
+      "curr": 0.998046875,
+      "delta": 0.8773193359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.1207275390625,
+        0.87841796875,
+        0.0010929107666015625
+      ],
+      "curr": [
+        0.998046875,
+        0.001926422119140625,
+        3.88026237487793e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Language Mediators, Cybersecurity Analyst, Lexicographer, and Mathematician agree with this statement. Financial Analyst and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 7,
+      "n_agree": 5,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.1207275390625,
+      "curr": 0.80078125,
+      "delta": 0.6800537109375
+    },
+    "complete_scores": {
+      "prev": [
+        0.1207275390625,
+        0.87841796875,
+        0.0010929107666015625
+      ],
+      "curr": [
+        0.80078125,
+        0.19921875,
+        7.11679458618164e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Cybersecurity Analysts, 2 Software Engineers, Online Friend, Mathematician, and Language Mediator agree with this statement. Academic Scholar, Human Participant, 3 Financial Analysts, LLM, 2 Biomedical Researchers, Clinical Physician, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 7,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 41,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.1207275390625,
+      "curr": 0.94287109375,
+      "delta": 0.8221435546875
+    },
+    "complete_scores": {
+      "prev": [
+        0.1207275390625,
+        0.87841796875,
+        0.0010929107666015625
+      ],
+      "curr": [
+        0.94287109375,
+        0.056640625,
+        0.0006287097930908203
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Human Participant, Strategic Planner, Clinical Physician, LLM, and 2 Financial Analysts disagree with this statement. 2 Online Friends, Chemist, 2 Software Engineers, 2 Cybersecurity Analysts, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 8,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Online Friend",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 42,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.367919921875,
+      "curr": 0.328369140625,
+      "delta": -0.03955078125
+    },
+    "complete_scores": {
+      "prev": [
+        0.367919921875,
+        0.52685546875,
+        0.10546875
+      ],
+      "curr": [
+        0.328369140625,
+        0.5673828125,
+        0.104339599609375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Cybersecurity Analyst, Lexicographer, and Chemist agree with this statement. 3 Human Participants, 2 Biomedical Researchers, 2 Financial Analysts, LLM, Assistant, Storyteller, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 3,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.367919921875,
+      "curr": 0.43115234375,
+      "delta": 0.063232421875
+    },
+    "complete_scores": {
+      "prev": [
+        0.367919921875,
+        0.52685546875,
+        0.10546875
+      ],
+      "curr": [
+        0.43115234375,
+        0.43798828125,
+        0.130645751953125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Cybersecurity Analysts, Chemist, Online Friend, Mathematician, Language Mediator, and Software Engineer agree with this statement. LLM, Strategic Planner, Clinical Physician, Biomedical Researcher, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 44,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.367919921875,
+      "curr": 0.298828125,
+      "delta": -0.069091796875
+    },
+    "complete_scores": {
+      "prev": [
+        0.367919921875,
+        0.52685546875,
+        0.10546875
+      ],
+      "curr": [
+        0.298828125,
+        0.55810546875,
+        0.1431884765625
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Human Participant, 2 Financial Analysts, Strategic Planner, 2 Biomedical Researchers, Clinical Physician, and LLM disagree with this statement. Lexicographer, 2 Software Engineers, Cybersecurity Analyst, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 5,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 45,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.69091796875,
+      "curr": 0.208984375,
+      "delta": -0.48193359375
+    },
+    "complete_scores": {
+      "prev": [
+        0.69091796875,
+        0.0892333984375,
+        0.2196044921875
+      ],
+      "curr": [
+        0.208984375,
+        0.422119140625,
+        0.368896484375
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. Mathematician, 2 Software Engineers, Cybersecurity Analyst, and Online Friend agree with this statement. Academic Scholar, Storyteller, 3 Strategic Planners, 2 Human Participants, Biomedical Researcher, Financial Analyst, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 5,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 46,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.69091796875,
+      "curr": 0.85205078125,
+      "delta": 0.1611328125
+    },
+    "complete_scores": {
+      "prev": [
+        0.69091796875,
+        0.0892333984375,
+        0.2196044921875
+      ],
+      "curr": [
+        0.85205078125,
+        0.04046630859375,
+        0.1072998046875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 2 Human Participants, 2 Biomedical Researchers, and 2 Financial Analysts disagree with this statement. Language Mediator, Software Engineer, Lexicographer, Online Friend, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 5,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 47,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.69091796875,
+      "curr": 0.38134765625,
+      "delta": -0.3095703125
+    },
+    "complete_scores": {
+      "prev": [
+        0.69091796875,
+        0.0892333984375,
+        0.2196044921875
+      ],
+      "curr": [
+        0.38134765625,
+        0.1917724609375,
+        0.427001953125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Sildenafil is indicated for the treatment of pulmonary hypertension. 3 Human Participants, Financial Analyst, 2 Storytellers, 2 Biomedical Researchers, and Assistant disagree with this statement. Cybersecurity Analyst, Chemist, 2 Software Engineers, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 5,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  }
+]

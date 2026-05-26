@@ -5,7 +5,7 @@ Tests for network metrics functions in metrics modules
 import numpy as np
 import pytest
 
-from src.metrics.network import (
+from src.core.metrics.network import (
     betweenness_centrality,
     eigenvector_centrality,
     graph_radius_diameter,

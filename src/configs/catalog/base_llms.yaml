@@ -1,0 +1,22 @@
+# @package agents
+catalog:
+  mode: procedural   # procedural | explicit 
+
+  role_templates:
+    LLM:
+      name: llama-base
+      role: "LLM"
+      prompt: ${prompt}
+
+  counts:
+    LLM: 48
+
+  # if mode is explicit define the agents here
+  explicit: []
+
+  random_roles: false # true | false
+  random_roles_spec: {} 
+
+catalog_used: {} # to be filled during experiment run
+
+name: base_llms

@@ -6,9 +6,9 @@ from unittest.mock import Mock
 
 import pytest
 
-from src.Agent import BaseAgent
-from src.MetricsTracker import MetricsTracker
-from src.Network import Network
+from src.core.agent import BaseAgent
+from src.core.metric_tracker import MetricsTracker
+from src.core.network import Network
 
 
 class TestMetricsTracker:

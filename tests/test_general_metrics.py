@@ -5,7 +5,7 @@ Comprehensive tests for general metrics functions
 import numpy as np
 import pytest
 
-from src.metrics.general import (
+from src.core.metrics.general import (
     belief_change_metrics,
     binary_entropy,
     binary_entropy_normalized,

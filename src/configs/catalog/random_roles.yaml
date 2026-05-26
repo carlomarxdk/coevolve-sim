@@ -1,0 +1,39 @@
+# @package agents
+catalog:
+  mode: procedural   # procedural | explicit 
+
+  role_templates:
+    LLM:
+      name: llama-base
+      role: ""
+      prompt: ${prompt}
+
+  counts: # number of agents with a specific role_template to create
+    LLM: 48
+
+  # if mode is explicit define the agents here
+  explicit: []
+
+  random_roles: true # true | false
+  # Used by utils_hydra.build_catalog when random_roles is true
+  random_roles_spec: 
+    "LLM": 3
+    "Assistant": 3
+    "Biomedical Researcher": 3
+    "Chemist": 3
+    "Software Engineer": 3
+    "Cybersecurity Analyst": 3
+    "Clinical Physician": 3
+    "Financial Analyst": 3
+    "Strategic Planner": 3
+    "Human Participant": 3
+    "Mathematician": 3
+    "Lexicographer": 3
+    "Language Mediator": 3
+    "Storyteller": 3
+    "Academic Scholar": 3
+    "Online Friend": 3
+
+catalog_used: {} # to be filled during experiment run
+
+name: random_roles

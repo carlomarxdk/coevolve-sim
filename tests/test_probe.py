@@ -7,7 +7,7 @@ from unittest.mock import Mock, patch
 import numpy as np
 import pytest
 
-from src.Probe import BinaryLinearProbe, Probe
+from src.core.probe import BinaryLinearProbe, Probe
 
 
 class TestBinaryLinearProbe:
@@ -118,9 +118,9 @@ class TestProbe:
         assert probe._basemodel == "llama-base"
         assert probe._layer == 16
 
-    @patch("src.Probe.Path")
-    @patch("src.Probe.np.load")
-    @patch("src.Probe.joblib.load")
+    @patch("src.core.probe.Path")
+    @patch("src.core.probe.np.load")
+    @patch("src.core.probe.joblib.load")
     def test_load_probe(
         self,
         mock_joblib_load,
@@ -172,7 +172,7 @@ class TestProbe:
             16: np.random.randn(1, 20, 4096)  # batch=1, seq_len=20, hidden_dim=4096
         }
 
-        calibrated_score, raw_score = probe.score(activation)
+        calibrated_score, raw_confidence, raw_scores = probe.score(activation)
 
         # Verify the pipeline was called correctly
         mock_scaler.transform.assert_called_once()
@@ -180,7 +180,7 @@ class TestProbe:
         mock_calibrator.predict.assert_called_once()
 
         assert calibrated_score == 0.75
-        assert raw_score == 0.8
+        assert raw_confidence == 0.8
 
 
 class TestProbeIntegration:
