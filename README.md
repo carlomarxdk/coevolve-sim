@@ -36,6 +36,10 @@ Example run with Hydra overrides:
       seed=814183 \
       experiment.max_rounds=10
 
+Notes:
+- Some model configurations require a Hugging Face access token in src/configs/model/*.yaml.
+- A subset of analysis notebooks relies on R/rpy2 tooling (see notebooks/r_utils.py and notebook comments for details).
+
 ## Data Locations
 
 - Simulation outputs: data/outputs/runs/zeroshot
@@ -50,6 +54,9 @@ Example run with Hydra overrides:
 - notebooks/X4_manuscript_plots.ipynb: manuscript plot replication.
 - notebooks/X5_surrogates.ipynb: surrogate result analysis.
 - notebooks/20260101_maximin_selection.ipynb: maximin selection of graphs/statements.
+
+Paper replication path (brief):
+- Run experiments -> aggregate/clean with notebooks/X1_data.ipynb -> run statistical analyses in notebooks/X2_agent_analysis.ipynb and notebooks/X3_run_analysis.ipynb -> regenerate manuscript figures in notebooks/X4_manuscript_plots.ipynb.
 
 ## Surrogate Models
 
