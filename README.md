@@ -1,6 +1,4 @@
-[![DOI](https://zenodo.org/badge/1113345522.svg)](https://doi.org/10.5281/zenodo.17875304)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Email](https://img.shields.io/badge/Email-g.savcisens@northeastern.edu-orange)](mailto:g.savcisens@northeastern.edu)
 
 # CoevolveSim
 
@@ -25,10 +23,7 @@ The codebase contains:
   - [Notebooks and Analysis](#notebooks-and-analysis)
   - [Surrogate Models](#surrogate-models)
   - [Project Structure](#project-structure)
-  - [Testing](#testing)
-  - [Citation](#citation)
   - [License](#license)
-  - [Authors](#authors)
 
 ## Overview
 
@@ -148,25 +143,7 @@ coevolve-sim/
 └── tests/
 ```
 
-## Testing
-
-```bash
-uv run pytest
-```
-
-## Citation
-
-```bibtex
-TO BE ANNOUNCED
-```
-
 ## License
 
 MIT License. See [LICENSE](LICENSE).
-
-## Authors
-
-Germans Savcisens, Samantha Dies, Courtney Maynard, and Tina Eliassi-Rad.
-
-Correspondence: [g.savcisens@northeastern.edu](mailto:g.savcisens@northeastern.edu)
 
