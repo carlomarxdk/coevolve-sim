@@ -189,9 +189,6 @@ def main(cfg: DictConfig):
     scheduler = InferenceScheduler(cfg)
     network = Network(cfg)
 
-    # Update config with remapped network seed
-    # cfg["seed"] = network.seed # experiment config should use the original seed (not the remapped one)
-
     metrics = MetricsTracker(cfg.get("callbacks", {}).get("metrics", {}), io)
     stopper = instantiate(cfg.get("callbacks").get("stopping"), _convert_="all")
 

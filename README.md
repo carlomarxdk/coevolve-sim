@@ -4,60 +4,45 @@
 
 # CoevolveSim
 
-Belief coevolution in social networks of generalist and specialist large language models.
+Code and simulation data for **"Belief Coevolution in a Social Network of Generalist and Specialist Large Language Models"** TBA.
 
-CoevolveSim is an agent-based simulation framework for studying how beliefs coevolve in interacting LLM populations with different role and expertise assignments.
+`CoevolveSim` is a framework for studying belief diffusion within networked LLM populations. Generalist and specialist LLM agents are placed on a social network (Erdős–Rényi or Watts–Strogatz) and exchange beliefs about medical-indication statements over several rounds, each agent revising its belief after observing a summary of its neighbors' beliefs. Across four scenarios:
+-  **I.** baseline generalists, 
+-  **II.** generalists with random social roles, 
+-  **III.** specialists with random roles, 
+-  **IV.** specialists with roles matched to their domain.
 
-The codebase contains:
-- simulation runs for belief-updating dynamics,
-- notebook workflows for exploratory analysis and manuscript figure/result replication,
-- surrogate-model fitting and evaluation pipelines.
+These simulations isolate the effects of persona-style role assignment, domain specialization (model heterogeneity), and role–specialization alignment on individual belief revision and population-level consensus. A hierarchy of classical opinion-dynamics surrogate models (M1–M4) is then fit to test which mechanisms (persistence, social belief composition, agent identity) are needed to reproduce the observed dynamics.
 
-## Table of Contents
+## Project structure
 
-- [CoevolveSim](#coevolvesim)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Environment and Installation](#environment-and-installation)
-  - [Run Experiments](#run-experiments)
-  - [Reproducibility Notes](#reproducibility-notes)
-  - [Data and Outputs](#data-and-outputs)
-  - [Notebooks and Analysis](#notebooks-and-analysis)
-  - [Surrogate Models](#surrogate-models)
-  - [Project Structure](#project-structure)
-  - [Testing](#testing)
-  - [Citation](#citation)
-  - [License](#license)
-  - [Authors](#authors)
+1. `src`:  simulation framework, agent/network configs, and analysis code (installed as an editable package).
+2. `tests`: unit tests.
+3. `data`: raw simulation output (`data/outputs/`) and derived analysis tables/figures (`data/analysis/`).
+4. `notebooks`: cleaned, documented notebooks that reproduce every table and figure in the paper; see [Notebooks](#notebooks) below.
 
-## Overview
+## Notebooks
 
-Each simulation run follows a simple loop:
-1. agents form initial beliefs about a statement,
-2. agents receive neighbor-belief summaries from the network,
-3. agents update beliefs over rounds,
-4. metrics and artifacts are saved for downstream analysis.
+`notebooks` contains the documented, reproducible pipeline behind the paper's results. Each notebook's own intro cell states exactly which figures/tables/sections it produces:
 
-The framework is intended to support questions such as:
-- how social interaction changes LLM belief dynamics compared with isolated inference,
-- when specialist/expert agents stabilize or shift collective outcomes,
-- how role identity and network structure affect influence and convergence.
+1. **`maximin_selection.ipynb`**: reproduces the maximin selection of the 16 network realizations and 20 discussion statements used across all runs.
+2. **`sanity_check.ipynb`**: check that all data is in place
+3. **`X1_data.ipynb`**: turns raw per-run simulation output (`data/outputs/runs/`) into the two aggregated tables every later notebook builds on (`agent_level_data.parquet`, `run_level_data.parquet`).
+4. **`X2_agent_analysis.ipynb`**: agent-level analysis (`§What drives belief revisions?`): estimated marginal means and planned contrasts for *plasticity*, *directedness*, and *outgoing influence* across the four scenarios and two network types, plus the variance-decomposition/ICC analysis behind opinion leaders and followers.
+5. **`X3_run_analysis.ipynb`**: population-level analysis: estimated marginal means and planned contrasts for *consensus change* across the four scenarios and two network types (Fig. 2C), plus per-scenario convergence rates.
+6. **`X4_manuscript_plots.ipynb`**: combines the `X2`/`X3` outputs into the manuscript-ready tables and the combined contrast-forest figure.
+7. **`X5_surrogates.ipynb`**: fits/pools the M1–M4 surrogate opinion-dynamics models (persistence; +global belief composition; +local neighborhood composition; +agent identity) and produces the final-state MCC and consensus-fidelity figures/tables (`§Can classical opinion-dynamics models explain these dynamics?`).
 
-## Environment and Installation
 
-This project uses uv.
+## Python environment
 
-Install and sync dependencies:
+This project uses [uv](https://docs.astral.sh/uv/) for Python environment management. Run the setup script for initial configuration:
 
-```bash
-uv sync
+```sh
+./setup.sh          # Install dependencies and configure environment
 ```
 
-Optional development dependencies:
-
-```bash
-uv sync --group dev
-```
+If you have `uv` installed, just run `uv sync` from this directory.
 
 ## Run Experiments
 
@@ -86,86 +71,14 @@ Notes:
 - Some model configurations require a Hugging Face access token in `src/configs/model/*.yaml`.
 - A subset of analysis notebooks relies on R/rpy2 tooling (see notebooks/r_utils.py and notebook comments for details).
 
-## Reproducibility Notes
 
-- Prefer explicit seeds (for example, `seed=814183`) for reruns.
-- Each run writes its realized configuration and outputs to timestamped folders.
-- Completed matching runs are skipped automatically; incomplete matching runs are moved before rerun.
+## 📃 Licenses
 
-## Data and Outputs
+> [!IMPORTANT]
+> This **code** is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-Primary artifacts are under `data/outputs`.
+> [!WARNING]
+> 1. This is research software. While we strive for correctness and reproducibility, please verify results for your specific use case.
+> 2. GitHub Copilot and Claude Code contributed to code annotations, docstrings, and formatting. All algorithmic logic, methodological design, and scientific claims were developed and reviewed by the authors.
 
-Simulation outputs:
-- data/outputs/runs/zeroshot
-
-Dynamics/surrogate outputs:
-- data/outputs/dynamics
-
-Derived analysis summaries:
-- data/analysis
-
-## Notebooks and Analysis
-
-- `notebooks/X1_data.ipynb`: run/agent data loading, validation, aggregation.
-- `notebooks/X2_agent_analysis.ipynb`: agent-level analysis.
-- `notebooks/X3_run_analysis.ipynb`: run-level analysis and aggregates.
-- `notebooks/X4_manuscript_plots.ipynb`: manuscript plot replication.
-- `notebooks/X5_surrogates.ipynb`: surrogate result analysis.
-- `notebooks/20260101_maximin_selection.ipynb`: maximin selection of graphs/statements.
-
-Paper replication path (brief):
-1. Run experiments.
-2. Aggregate and clean in `notebooks/X1_data.ipynb`.
-3. Run statistical analysis in `notebooks/X2_agent_analysis.ipynb` and `notebooks/X3_run_analysis.ipynb`.
-4. Regenerate figures in `notebooks/X4_manuscript_plots.ipynb`.
-
-
-## Surrogate Models
-
-Surrogate-model code is in:
-
-- `src/analysis/dynamics_model_fitting`
-
-Key scripts include transition fitting, full-trajectory fitting, and trajectory behavior evaluation.
-
-## Project Structure
-
-```text
-coevolve-sim/
-├── pyproject.toml
-├── src/
-│   ├── experiment.py
-│   ├── core/
-│   └── analysis/
-│       └── dynamics_model_fitting/
-├── notebooks/
-├── data/
-│   ├── outputs/
-│   │   ├── runs/
-│   │   └── dynamics/
-│   └── analysis/
-└── tests/
-```
-
-## Testing
-
-```bash
-uv run pytest
-```
-
-## Citation
-
-```bibtex
-TO BE ANNOUNCED
-```
-
-## License
-
-MIT License. See [LICENSE](LICENSE).
-
-## Authors
-
-Germans Savcisens, Samantha Dies, Courtney Maynard, and Tina Eliassi-Rad.
-
-Correspondence: [g.savcisens@northeastern.edu](mailto:g.savcisens@northeastern.edu)
+**Correspondence**: [g.savcisens@northeastern.edu](mailto:g.savcisens@northeastern.edu)

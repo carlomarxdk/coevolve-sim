@@ -649,7 +649,7 @@ class MetricsTracker:
                     "neighbor_mean": neighbor_mean_beliefs.tolist(),
                 },
             }
-        )
+        )  # type: ignore
 
         # Store the entry
         self.per_round.append(entry)
