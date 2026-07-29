@@ -67,10 +67,9 @@ uv run python src/experiment.py \
     experiment.max_rounds=10
 ```
 
-Notes:
-- Some model configurations require a Hugging Face access token in `src/configs/model/*.yaml`.
-- A subset of analysis notebooks relies on R/rpy2 tooling (see notebooks/r_utils.py and notebook comments for details).
-
+> [!NOTE]
+> - Some model configurations require a Hugging Face access token in `src/configs/model/*.yaml`.
+> - A subset of analysis notebooks relies on `R/rpy2` tooling (see notebooks/r_utils.py and notebook comments for details).
 
 ## 📃 Licenses
 
