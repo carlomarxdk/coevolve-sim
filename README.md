@@ -1,22 +1,8 @@
-[![DOI](https://zenodo.org/badge/1113345522.svg)](https://doi.org/10.5281/zenodo.17875304)
-[![License: MIT](https://img.shields.io/badge/License-MIT-FF7873.svg)](LICENSE)
-[![Email](https://img.shields.io/badge/Email-g.savcisens@northeastern.edu-E22F80)](mailto:g.savcisens@northeastern.edu)
-[![arXiv](https://img.shields.io/badge/arXiv-2607.27512-8140DC.svg)](https://arxiv.org/abs/2607.27512)
 
 # CoevolveSim
 
-Code and simulation data for **[Belief Coevolution in a Social Network of Generalist and Specialist Large Language Models](https://arxiv.org/abs/2607.27512)**:
+Code and simulation data.
 
-```bibtex
-@misc{savcisens2026coevolvesim,
-      title={Belief Coevolution in a Social Network of Generalist and Specialist Large Language Models}, 
-      author={Germans Savcisens and Samantha Dies and Courtney Maynard and Tina Eliassi-Rad},
-      year={2026},
-      doi={10.48550/arXiv.2607.27512},
-      publisher={arXiv},
-      url={https://arxiv.org/abs/2607.27512}, 
-}
-```
 
 `CoevolveSim` is a framework for studying belief diffusion within networked LLM populations. Generalist and specialist LLM agents are placed on a social network (Erdős–Rényi or Watts–Strogatz) and exchange beliefs about medical-indication statements over several rounds, each agent revising its belief after observing a summary of its neighbors' beliefs. Across four scenarios:
 
@@ -100,4 +86,3 @@ uv run python -m src.experiment \
 > 1. This is research software. While we strive for correctness and reproducibility, please verify results for your specific use case.
 > 2. GitHub Copilot and Claude Code contributed to code annotations, docstrings, and formatting. All algorithmic logic, methodological design, and scientific claims were developed and reviewed by the authors.
 
-**Correspondence**: [g.savcisens@northeastern.edu](mailto:g.savcisens@northeastern.edu)
