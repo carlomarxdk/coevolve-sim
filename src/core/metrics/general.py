@@ -520,15 +520,8 @@ def graph_transfer_entropy(
             y_tm1 = beliefs_discrete[:-1, j]
             y_t = beliefs_discrete[1:, j]
 
-            # FIX: Create combined state for (Y_{t-1}, X_{t-1})
-            # Method 1: Create unique integer for each combination
-            y_x_combined = y_tm1 * bins + x_tm1  # This creates unique ID for each pair
-
-            # Alternative Method 2: Use string concatenation (slower but clearer)
-            # le = LabelEncoder()
-            # y_x_combined = le.fit_transform(
-            #     [f"{y}_{x}" for y, x in zip(y_tm1, x_tm1)]
-            # )
+            # Combined state for (Y_{t-1}, X_{t-1}): a unique integer per pair
+            y_x_combined = y_tm1 * bins + x_tm1
 
             # TE = I(Y_t; X_{t-1} | Y_{t-1})
             # Using chain rule: I(Y_t; Y_{t-1}, X_{t-1}) - I(Y_t; Y_{t-1})

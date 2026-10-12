@@ -1,0 +1,3218 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3797977566719055,
+      "curr": 0.056703463196754456,
+      "delta": -0.32309429347515106
+    },
+    "complete_scores": {
+      "prev": [
+        0.3797977566719055,
+        0.48767000436782837,
+        0.13253222405910492
+      ],
+      "curr": [
+        0.056703463196754456,
+        0.9295589923858643,
+        0.013737553730607033
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant, Academic Scholar, and LLM agree with this statement. Biomedical Researcher, Software Engineer, Cybersecurity Analyst, Lexicographer, Online Friend, Assistant, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 3,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "Biomedical Researcher",
+        "Assistant",
+        "Lexicographer",
+        "Mathematician",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.12753146886825562,
+      "curr": 0.0024614613503217697,
+      "delta": -0.12507000751793385
+    },
+    "complete_scores": {
+      "prev": [
+        0.12753146886825562,
+        0.7002855539321899,
+        0.17218296974897385
+      ],
+      "curr": [
+        0.0024614613503217697,
+        0.993024468421936,
+        0.004514076572377235
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and 2 LLMs agree with this statement. 2 Assistants, 2 Software Engineers, Strategic Planner, 2 Clinical Physicians, Biomedical Researcher, Mathematician, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Biomedical Researcher",
+        "Assistant",
+        "Assistant",
+        "Mathematician",
+        "Software Engineer",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.21958737075328827,
+      "curr": 0.14810188114643097,
+      "delta": -0.0714854896068573
+    },
+    "complete_scores": {
+      "prev": [
+        0.21958737075328827,
+        0.6658905148506165,
+        0.11452211439609528
+      ],
+      "curr": [
+        0.14810188114643097,
+        0.8006312251091003,
+        0.05126690864562988
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 3 Mathematicians, 3 Clinical Physicians, Lexicographer, Language Mediator, Cybersecurity Analyst, Software Engineer, Assistant, Financial Analyst, and Biomedical Researcher disagree with this statement. 2 LLMs, Human Participant, and Academic Scholar agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 4,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Academic Scholar",
+        "LLM",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Clinical Physician",
+        "Mathematician",
+        "Software Engineer",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Financial Analyst",
+        "Language Mediator",
+        "Assistant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3551715314388275,
+      "curr": 0.027008604258298874,
+      "delta": -0.32816292718052864
+    },
+    "complete_scores": {
+      "prev": [
+        0.3551715314388275,
+        0.5087597370147705,
+        0.1360686793923378
+      ],
+      "curr": [
+        0.027008604258298874,
+        0.9670792818069458,
+        0.005912133492529392
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Human Participants, Academic Scholar, and LLM agree with this statement. Financial Analyst, 2 Storytellers, Lexicographer, 2 Chemists, Language Mediator, Clinical Physician, Assistant, Mathematician, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 4,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Assistant",
+        "Chemist",
+        "Clinical Physician",
+        "Storyteller",
+        "Lexicographer",
+        "Mathematician",
+        "Storyteller",
+        "Chemist",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4184667468070984,
+      "curr": 0.014217423275113106,
+      "delta": -0.4042493235319853
+    },
+    "complete_scores": {
+      "prev": [
+        0.4184667468070984,
+        0.3993037939071655,
+        0.18222948163747787
+      ],
+      "curr": [
+        0.014217423275113106,
+        0.9812657237052917,
+        0.004516829620115459
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and Human Participant agree with this statement. Chemist, 2 Cybersecurity Analysts, Online Friend, Software Engineer, 2 Mathematicians, Clinical Physician, Assistant, Biomedical Researcher, Strategic Planner, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 2,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Online Friend",
+        "Biomedical Researcher",
+        "Chemist",
+        "Mathematician",
+        "Assistant",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Mathematician",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4600706100463867,
+      "curr": 0.005528861191123724,
+      "delta": -0.454541748855263
+    },
+    "complete_scores": {
+      "prev": [
+        0.4600706100463867,
+        0.38741829991340637,
+        0.1525111421942711
+      ],
+      "curr": [
+        0.005528861191123724,
+        0.9897791743278503,
+        0.00469195400364697
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 3 LLMs agree with this statement. Chemist, 2 Financial Analysts, Lexicographer, Mathematician, Language Mediator, 2 Biomedical Researchers, Storyteller, 2 Assistants, Online Friend, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 3,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Online Friend",
+        "Biomedical Researcher",
+        "Assistant",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Lexicographer",
+        "Financial Analyst",
+        "Storyteller",
+        "Assistant",
+        "Chemist",
+        "Biomedical Researcher",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15781863033771515,
+      "curr": 0.1491761952638626,
+      "delta": -0.008642435073852539
+    },
+    "complete_scores": {
+      "prev": [
+        0.15781863033771515,
+        0.6749047040939331,
+        0.16727666556835175
+      ],
+      "curr": [
+        0.1491761952638626,
+        0.8064388632774353,
+        0.04438495263457298
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Mathematician, Software Engineer, Assistant, 2 Lexicographers, Language Mediator, 3 Cybersecurity Analysts, 2 Chemists, Financial Analyst, 2 Online Friends, and Biomedical Researcher disagree with this statement. Human Participant and 2 LLMs agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 3,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Chemist",
+        "Lexicographer",
+        "Online Friend",
+        "Mathematician",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3879005014896393,
+      "curr": 0.31713223457336426,
+      "delta": -0.07076826691627502
+    },
+    "complete_scores": {
+      "prev": [
+        0.3879005014896393,
+        0.4606432318687439,
+        0.15145622938871384
+      ],
+      "curr": [
+        0.31713223457336426,
+        0.6713689565658569,
+        0.011498816311359406
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM, Academic Scholar, and Human Participant agree with this statement. Financial Analyst, 2 Language Mediators, 3 Clinical Physicians, Online Friend, Mathematician, 2 Software Engineers, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 3,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "LLM",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Financial Analyst",
+        "Language Mediator",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Software Engineer",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.12753146886825562,
+      "curr": 0.0017741405172273517,
+      "delta": -0.12575732835102826
+    },
+    "complete_scores": {
+      "prev": [
+        0.12753146886825562,
+        0.7002855539321899,
+        0.17218296974897385
+      ],
+      "curr": [
+        0.0017741405172273517,
+        0.993705689907074,
+        0.004520206653978676
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 LLMs and Human Participant agree with this statement. 2 Financial Analysts, 2 Biomedical Researchers, Clinical Physician, 2 Strategic Planners, Mathematician, Software Engineer, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Assistant",
+        "Financial Analyst",
+        "Software Engineer",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Mathematician",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19186031818389893,
+      "curr": 0.22983579337596893,
+      "delta": 0.03797547519207001
+    },
+    "complete_scores": {
+      "prev": [
+        0.19186031818389893,
+        0.669658362865448,
+        0.13848129659891129
+      ],
+      "curr": [
+        0.22983579337596893,
+        0.7419190406799316,
+        0.028245149180293083
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and LLM agree with this statement. Biomedical Researcher, Cybersecurity Analyst, 2 Online Friends, Financial Analyst, Lexicographer, Language Mediator, and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Financial Analyst",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Online Friend",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3797977566719055,
+      "curr": 0.04072507843375206,
+      "delta": -0.33907267823815346
+    },
+    "complete_scores": {
+      "prev": [
+        0.3797977566719055,
+        0.48767000436782837,
+        0.13253222405910492
+      ],
+      "curr": [
+        0.04072507843375206,
+        0.9414950609207153,
+        0.01777991373091936
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant and Academic Scholar agree with this statement. Software Engineer, Online Friend, Financial Analyst, Storyteller, Lexicographer, Mathematician, Clinical Physician, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Software Engineer",
+        "Mathematician",
+        "Storyteller",
+        "Clinical Physician",
+        "Online Friend",
+        "Financial Analyst",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3879005014896393,
+      "curr": 0.003625755663961172,
+      "delta": -0.3842747458256781
+    },
+    "complete_scores": {
+      "prev": [
+        0.3879005014896393,
+        0.4606432318687439,
+        0.15145622938871384
+      ],
+      "curr": [
+        0.003625755663961172,
+        0.98973548412323,
+        0.006638747174292803
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 LLMs agree with this statement. 2 Financial Analysts, 2 Lexicographers, 2 Biomedical Researchers, Cybersecurity Analyst, Online Friend, Language Mediator, Mathematician, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 2,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Online Friend",
+        "Chemist",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38693204522132874,
+      "curr": 0.005443805828690529,
+      "delta": -0.3814882393926382
+    },
+    "complete_scores": {
+      "prev": [
+        0.38693204522132874,
+        0.45236936211586,
+        0.16069862246513367
+      ],
+      "curr": [
+        0.005443805828690529,
+        0.9898995757102966,
+        0.004656599601730704
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Human Participants and Academic Scholar agree with this statement. Assistant, Cybersecurity Analyst, 2 Biomedical Researchers, Mathematician, Strategic Planner, 2 Chemists, Software Engineer, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Chemist",
+        "Software Engineer",
+        "Mathematician",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19186031818389893,
+      "curr": 0.06705600023269653,
+      "delta": -0.12480431795120239
+    },
+    "complete_scores": {
+      "prev": [
+        0.19186031818389893,
+        0.669658362865448,
+        0.13848129659891129
+      ],
+      "curr": [
+        0.06705600023269653,
+        0.911328136920929,
+        0.021615835838019848
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant, Academic Scholar, and LLM agree with this statement. Language Mediator, Biomedical Researcher, Clinical Physician, 2 Financial Analysts, 2 Lexicographers, Strategic Planner, Mathematician, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Language Mediator",
+        "Strategic Planner",
+        "Mathematician",
+        "Financial Analyst",
+        "Clinical Physician",
+        "Lexicographer",
+        "Lexicographer",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.21958737075328827,
+      "curr": 0.006643236614763737,
+      "delta": -0.21294413413852453
+    },
+    "complete_scores": {
+      "prev": [
+        0.21958737075328827,
+        0.6658905148506165,
+        0.11452211439609528
+      ],
+      "curr": [
+        0.006643236614763737,
+        0.9859437942504883,
+        0.007412952836602926
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 LLMs and Human Participant agree with this statement. 2 Financial Analysts, Assistant, 2 Cybersecurity Analysts, Chemist, Online Friend, Strategic Planner, Software Engineer, Language Mediator, Storyteller, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 3,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Language Mediator",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Software Engineer",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Strategic Planner",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5170457363128662,
+      "curr": 0.975366473197937,
+      "delta": 0.4583207368850708
+    },
+    "complete_scores": {
+      "prev": [
+        0.5170457363128662,
+        0.3782787024974823,
+        0.10467555746436119
+      ],
+      "curr": [
+        0.975366473197937,
+        0.013697156682610512,
+        0.010936398291960359
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM and Academic Scholar agree with this statement. Mathematician, Financial Analyst, Lexicographer, 3 Strategic Planners, Software Engineer, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Mathematician",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Software Engineer",
+        "Financial Analyst",
+        "Lexicographer",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38693204522132874,
+      "curr": 0.029435651376843452,
+      "delta": -0.3574963938444853
+    },
+    "complete_scores": {
+      "prev": [
+        0.38693204522132874,
+        0.45236936211586,
+        0.16069862246513367
+      ],
+      "curr": [
+        0.029435651376843452,
+        0.9596624374389648,
+        0.010901913046836853
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar, Human Participant, and LLM agree with this statement. Language Mediator, Chemist, 2 Software Engineers, Mathematician, Online Friend, Assistant, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 3,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Academic Scholar",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Software Engineer",
+        "Language Mediator",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Chemist",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3258500397205353,
+      "curr": 0.21350549161434174,
+      "delta": -0.11234454810619354
+    },
+    "complete_scores": {
+      "prev": [
+        0.3258500397205353,
+        0.466758668422699,
+        0.20739126205444336
+      ],
+      "curr": [
+        0.21350549161434174,
+        0.7452074289321899,
+        0.04128704033792019
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Storyteller, 2 Financial Analysts, Online Friend, Software Engineer, Biomedical Researcher, Language Mediator, 2 Strategic Planners, 2 Assistants, and Cybersecurity Analyst disagree with this statement. 3 LLMs and 2 Academic Scholars agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 5,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM",
+        "Academic Scholar",
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Assistant",
+        "Financial Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Online Friend",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Assistant",
+        "Storyteller",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4184667468070984,
+      "curr": 0.004518353845924139,
+      "delta": -0.41394839296117425
+    },
+    "complete_scores": {
+      "prev": [
+        0.4184667468070984,
+        0.3993037939071655,
+        0.18222948163747787
+      ],
+      "curr": [
+        0.004518353845924139,
+        0.9910577535629272,
+        0.00442391901742667
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Human Participants agree with this statement. 2 Lexicographers, 2 Biomedical Researchers, Strategic Planner, 2 Storytellers, Financial Analyst, 2 Cybersecurity Analysts, Mathematician, 2 Software Engineers, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Mathematician",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Storyteller",
+        "Lexicographer",
+        "Storyteller",
+        "Strategic Planner",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3797977566719055,
+      "curr": 0.005278242286294699,
+      "delta": -0.3745195143856108
+    },
+    "complete_scores": {
+      "prev": [
+        0.3797977566719055,
+        0.48767000436782837,
+        0.13253222405910492
+      ],
+      "curr": [
+        0.005278242286294699,
+        0.9902605414390564,
+        0.004461210803128779
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar agrees with this statement. 3 Strategic Planners, Lexicographer, 2 Assistants, Clinical Physician, 2 Chemists, Storyteller, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Assistant",
+        "Strategic Planner",
+        "Assistant",
+        "Chemist",
+        "Clinical Physician",
+        "Lexicographer",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5170457363128662,
+      "curr": 0.9081902503967285,
+      "delta": 0.3911445140838623
+    },
+    "complete_scores": {
+      "prev": [
+        0.5170457363128662,
+        0.3782787024974823,
+        0.10467555746436119
+      ],
+      "curr": [
+        0.9081902503967285,
+        0.061803121119737625,
+        0.03000667132437229
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Chemist, 2 Language Mediators, Software Engineer, Assistant, 2 Online Friends, Financial Analyst, Biomedical Researcher, Lexicographer, Strategic Planner, and Mathematician disagree with this statement. Human Participant, LLM, and 2 Academic Scholars agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 4,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "Academic Scholar",
+        "Human Participant",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Software Engineer",
+        "Online Friend",
+        "Online Friend",
+        "Lexicographer",
+        "Chemist",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15781863033771515,
+      "curr": 0.24569933116436005,
+      "delta": 0.0878807008266449
+    },
+    "complete_scores": {
+      "prev": [
+        0.15781863033771515,
+        0.6749047040939331,
+        0.16727666556835175
+      ],
+      "curr": [
+        0.24569933116436005,
+        0.7109546065330505,
+        0.04334602691233158
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant and LLM agree with this statement. Financial Analyst, 3 Lexicographers, Online Friend, Software Engineer, Storyteller, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Financial Analyst",
+        "Lexicographer",
+        "Online Friend",
+        "Storyteller",
+        "Lexicographer",
+        "Lexicographer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.12753146886825562,
+      "curr": 0.005198940634727478,
+      "delta": -0.12233252823352814
+    },
+    "complete_scores": {
+      "prev": [
+        0.12753146886825562,
+        0.7002855539321899,
+        0.17218296974897385
+      ],
+      "curr": [
+        0.005198940634727478,
+        0.9907427430152893,
+        0.004058279097080231
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and 2 LLMs agree with this statement. Storyteller, Mathematician, Online Friend, Financial Analyst, 2 Clinical Physicians, Biomedical Researcher, Chemist, 2 Strategic Planners, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 3,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Strategic Planner",
+        "Financial Analyst",
+        "Online Friend",
+        "Clinical Physician",
+        "Storyteller",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Chemist",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.34370526671409607,
+      "curr": 0.3338375985622406,
+      "delta": -0.009867668151855469
+    },
+    "complete_scores": {
+      "prev": [
+        0.34370526671409607,
+        0.5323411226272583,
+        0.12395355850458145
+      ],
+      "curr": [
+        0.3338375985622406,
+        0.6335123777389526,
+        0.03264996875077486
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Assistant, Financial Analyst, Lexicographer, Language Mediator, Software Engineer, Mathematician, 2 Cybersecurity Analysts, Chemist, and Online Friend disagree with this statement. 2 Human Participants, 2 Academic Scholars, and 2 LLMs agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 6,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM",
+        "LLM",
+        "Human Participant",
+        "Academic Scholar",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Language Mediator",
+        "Financial Analyst",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Lexicographer",
+        "Assistant",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.34370526671409607,
+      "curr": 0.011075098998844624,
+      "delta": -0.33263016771525145
+    },
+    "complete_scores": {
+      "prev": [
+        0.34370526671409607,
+        0.5323411226272583,
+        0.12395355850458145
+      ],
+      "curr": [
+        0.011075098998844624,
+        0.9814923405647278,
+        0.007432603510096669
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM and Academic Scholar agree with this statement. Lexicographer, 2 Cybersecurity Analysts, 2 Mathematicians, 2 Biomedical Researchers, Strategic Planner, Chemist, 2 Online Friends, Clinical Physician, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 2,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Lexicographer",
+        "Online Friend",
+        "Clinical Physician",
+        "Mathematician",
+        "Online Friend",
+        "Chemist",
+        "Strategic Planner",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.38693204522132874,
+      "curr": 0.0487033873796463,
+      "delta": -0.33822865784168243
+    },
+    "complete_scores": {
+      "prev": [
+        0.38693204522132874,
+        0.45236936211586,
+        0.16069862246513367
+      ],
+      "curr": [
+        0.0487033873796463,
+        0.9334371089935303,
+        0.017859521321952343
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 3 Human Participants agree with this statement. Online Friend, Chemist, Storyteller, Software Engineer, Biomedical Researcher, 2 Lexicographers, Strategic Planner, Language Mediator, Assistant, 2 Mathematicians, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 3,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Assistant",
+        "Mathematician",
+        "Chemist",
+        "Storyteller",
+        "Mathematician",
+        "Language Mediator",
+        "Lexicographer",
+        "Online Friend",
+        "Lexicographer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15781863033771515,
+      "curr": 0.04552161693572998,
+      "delta": -0.11229701340198517
+    },
+    "complete_scores": {
+      "prev": [
+        0.15781863033771515,
+        0.6749047040939331,
+        0.16727666556835175
+      ],
+      "curr": [
+        0.04552161693572998,
+        0.9287247657775879,
+        0.025753626599907875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Human Participants, Academic Scholar, and LLM agree with this statement. Clinical Physician, Strategic Planner, Cybersecurity Analyst, Assistant, Financial Analyst, Biomedical Researcher, Mathematician, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Lexicographer",
+        "Clinical Physician",
+        "Mathematician",
+        "Financial Analyst",
+        "Assistant",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3470340967178345,
+      "curr": 0.04096883162856102,
+      "delta": -0.30606526508927345
+    },
+    "complete_scores": {
+      "prev": [
+        0.3470340967178345,
+        0.5291638374328613,
+        0.1238020658493042
+      ],
+      "curr": [
+        0.04096883162856102,
+        0.9324463605880737,
+        0.026584804989397526
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Chemist, 3 Biomedical Researchers, Assistant, Financial Analyst, Storyteller, Software Engineer, Language Mediator, Online Friend, Clinical Physician, and Strategic Planner disagree with this statement. 2 Academic Scholars and 2 LLMs agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 4,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Online Friend",
+        "Storyteller",
+        "Software Engineer",
+        "Assistant",
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Chemist",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3551715314388275,
+      "curr": 0.01158994808793068,
+      "delta": -0.34358158335089684
+    },
+    "complete_scores": {
+      "prev": [
+        0.3551715314388275,
+        0.5087597370147705,
+        0.1360686793923378
+      ],
+      "curr": [
+        0.01158994808793068,
+        0.9800839424133301,
+        0.008326131850481033
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM agrees with this statement. 3 Strategic Planners, Mathematician, 2 Software Engineers, Financial Analyst, 2 Chemists, 2 Biomedical Researchers, Cybersecurity Analyst, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 1,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Software Engineer",
+        "Strategic Planner",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Chemist",
+        "Assistant",
+        "Chemist",
+        "Mathematician",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.06120185926556587,
+      "curr": 0.06376500427722931,
+      "delta": 0.002563145011663437
+    },
+    "complete_scores": {
+      "prev": [
+        0.06120185926556587,
+        0.8317671418190002,
+        0.1070309616625309
+      ],
+      "curr": [
+        0.06376500427722931,
+        0.9081907868385315,
+        0.02804425358772278
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM agrees with this statement. 2 Storytellers, Assistant, 2 Cybersecurity Analysts, Biomedical Researcher, Lexicographer, Language Mediator, Clinical Physician, Strategic Planner, Online Friend, Software Engineer, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 1,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Mathematician",
+        "Online Friend",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Language Mediator",
+        "Assistant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3258500397205353,
+      "curr": 0.057919032871723175,
+      "delta": -0.2679310068488121
+    },
+    "complete_scores": {
+      "prev": [
+        0.3258500397205353,
+        0.466758668422699,
+        0.20739126205444336
+      ],
+      "curr": [
+        0.057919032871723175,
+        0.9202736616134644,
+        0.021807326935231686
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Cybersecurity Analyst, Clinical Physician, Language Mediator, 3 Software Engineers, 2 Storytellers, 2 Strategic Planners, Online Friend, 2 Chemists, Financial Analyst, and Biomedical Researcher disagree with this statement. 2 Human Participants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 2,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Chemist",
+        "Language Mediator",
+        "Chemist",
+        "Storyteller",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Online Friend",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3551715314388275,
+      "curr": 0.0423247292637825,
+      "delta": -0.312846802175045
+    },
+    "complete_scores": {
+      "prev": [
+        0.3551715314388275,
+        0.5087597370147705,
+        0.1360686793923378
+      ],
+      "curr": [
+        0.0423247292637825,
+        0.9483717679977417,
+        0.009303494822233915
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant, Academic Scholar, and LLM agree with this statement. 2 Clinical Physicians, Strategic Planner, Language Mediator, Chemist, 2 Storytellers, Lexicographer, and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Lexicographer",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Chemist",
+        "Language Mediator",
+        "Storyteller",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4184667468070984,
+      "curr": 0.4480728507041931,
+      "delta": 0.029606103897094727
+    },
+    "complete_scores": {
+      "prev": [
+        0.4184667468070984,
+        0.3993037939071655,
+        0.18222948163747787
+      ],
+      "curr": [
+        0.4480728507041931,
+        0.5320996642112732,
+        0.019827482290565968
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Assistants, 2 Strategic Planners, Software Engineer, 2 Online Friends, Mathematician, 2 Lexicographers, 2 Cybersecurity Analysts, Storyteller, 2 Clinical Physicians, Chemist, and Biomedical Researcher disagree with this statement. Academic Scholar and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 2,
+      "n_disagree": 17,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Lexicographer",
+        "Online Friend",
+        "Clinical Physician",
+        "Online Friend",
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Clinical Physician",
+        "Software Engineer",
+        "Assistant",
+        "Assistant",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3622294068336487,
+      "curr": 0.005784064531326294,
+      "delta": -0.3564453423023224
+    },
+    "complete_scores": {
+      "prev": [
+        0.3622294068336487,
+        0.4951089322566986,
+        0.1426616981625557
+      ],
+      "curr": [
+        0.005784064531326294,
+        0.9880483746528625,
+        0.006167560582980514
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 3 Human Participants and 2 LLMs agree with this statement. Mathematician, Chemist, Strategic Planner, Software Engineer, Clinical Physician, Online Friend, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 5,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Clinical Physician",
+        "Mathematician",
+        "Online Friend",
+        "Software Engineer",
+        "Strategic Planner",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.21958737075328827,
+      "curr": 0.009670086205005646,
+      "delta": -0.20991728454828262
+    },
+    "complete_scores": {
+      "prev": [
+        0.21958737075328827,
+        0.6658905148506165,
+        0.11452211439609528
+      ],
+      "curr": [
+        0.009670086205005646,
+        0.9863755106925964,
+        0.003954418585635722
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and Human Participant agree with this statement. Strategic Planner, Financial Analyst, 2 Online Friends, Mathematician, Chemist, Biomedical Researcher, 2 Lexicographers, 2 Storytellers, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 2,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Online Friend",
+        "Mathematician",
+        "Online Friend",
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.34370526671409607,
+      "curr": 0.156863734126091,
+      "delta": -0.18684153258800507
+    },
+    "complete_scores": {
+      "prev": [
+        0.34370526671409607,
+        0.5323411226272583,
+        0.12395355850458145
+      ],
+      "curr": [
+        0.156863734126091,
+        0.8091647624969482,
+        0.03397146612405777
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Financial Analyst, Software Engineer, Assistant, Mathematician, Strategic Planner, Online Friend, Lexicographer, 2 Clinical Physicians, Language Mediator, Cybersecurity Analyst, and 2 Storytellers disagree with this statement. 2 Human Participants, Academic Scholar, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 4,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "Storyteller",
+        "Software Engineer",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Financial Analyst",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4600706100463867,
+      "curr": 0.9501117467880249,
+      "delta": 0.4900411367416382
+    },
+    "complete_scores": {
+      "prev": [
+        0.4600706100463867,
+        0.38741829991340637,
+        0.1525111421942711
+      ],
+      "curr": [
+        0.9501117467880249,
+        0.027377037331461906,
+        0.022511241026222706
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Academic Scholar and Human Participant agree with this statement. 2 Chemists, Biomedical Researcher, Online Friend, 2 Financial Analysts, Software Engineer, 2 Storytellers, and 2 Strategic Planners disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 2,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Online Friend",
+        "Software Engineer",
+        "Chemist",
+        "Strategic Planner",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.19186031818389893,
+      "curr": 0.9050575494766235,
+      "delta": 0.7131972312927246
+    },
+    "complete_scores": {
+      "prev": [
+        0.19186031818389893,
+        0.669658362865448,
+        0.13848129659891129
+      ],
+      "curr": [
+        0.9050575494766235,
+        0.0697905421257019,
+        0.025151913985610008
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Storyteller, Software Engineer, 3 Online Friends, 2 Mathematicians, Language Mediator, Assistant, 2 Clinical Physicians, Financial Analyst, and Strategic Planner disagree with this statement. 2 Human Participants, Academic Scholar, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 4,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Human Participant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Online Friend",
+        "Software Engineer",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Online Friend",
+        "Strategic Planner",
+        "Language Mediator",
+        "Financial Analyst",
+        "Online Friend",
+        "Storyteller",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4600706100463867,
+      "curr": 0.9309774041175842,
+      "delta": 0.4709067940711975
+    },
+    "complete_scores": {
+      "prev": [
+        0.4600706100463867,
+        0.38741829991340637,
+        0.1525111421942711
+      ],
+      "curr": [
+        0.9309774041175842,
+        0.05504274368286133,
+        0.013979857321828604
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Biomedical Researcher, 2 Strategic Planners, Online Friend, 2 Financial Analysts, 2 Mathematicians, Language Mediator, 3 Storytellers, Lexicographer, and 2 Software Engineers disagree with this statement. LLM and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 2,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Software Engineer",
+        "Strategic Planner",
+        "Lexicographer",
+        "Storyteller",
+        "Language Mediator",
+        "Online Friend",
+        "Financial Analyst",
+        "Mathematician",
+        "Software Engineer",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Mathematician",
+        "Storyteller",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3622294068336487,
+      "curr": 0.0035162274725735188,
+      "delta": -0.35871317936107516
+    },
+    "complete_scores": {
+      "prev": [
+        0.3622294068336487,
+        0.4951089322566986,
+        0.1426616981625557
+      ],
+      "curr": [
+        0.0035162274725735188,
+        0.9903056621551514,
+        0.006178086390718818
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Human Participants agree with this statement. 3 Clinical Physicians, Mathematician, Storyteller, 2 Software Engineers, Online Friend, Assistant, Strategic Planner, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 2,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Clinical Physician",
+        "Online Friend",
+        "Software Engineer",
+        "Lexicographer",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3470340967178345,
+      "curr": 0.008124091662466526,
+      "delta": -0.33891000505536795
+    },
+    "complete_scores": {
+      "prev": [
+        0.3470340967178345,
+        0.5291638374328613,
+        0.1238020658493042
+      ],
+      "curr": [
+        0.008124091662466526,
+        0.9840816259384155,
+        0.007794245611876249
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 LLMs and Human Participant agree with this statement. 2 Storytellers, Mathematician, 2 Clinical Physicians, 2 Chemists, Software Engineer, Language Mediator, Assistant, Biomedical Researcher, Strategic Planner, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 3,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Mathematician",
+        "Clinical Physician",
+        "Chemist",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Storyteller",
+        "Language Mediator",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.06120185926556587,
+      "curr": 0.0272101741284132,
+      "delta": -0.03399168513715267
+    },
+    "complete_scores": {
+      "prev": [
+        0.06120185926556587,
+        0.8317671418190002,
+        0.1070309616625309
+      ],
+      "curr": [
+        0.0272101741284132,
+        0.9591916799545288,
+        0.013598117511719465
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM agrees with this statement. Chemist, Online Friend, Lexicographer, Mathematician, 2 Assistants, 2 Software Engineers, Cybersecurity Analyst, Strategic Planner, and 2 Storytellers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Storyteller",
+        "Mathematician",
+        "Lexicographer",
+        "Software Engineer",
+        "Assistant",
+        "Assistant",
+        "Online Friend",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3879005014896393,
+      "curr": 0.018119074404239655,
+      "delta": -0.3697814270853996
+    },
+    "complete_scores": {
+      "prev": [
+        0.3879005014896393,
+        0.4606432318687439,
+        0.15145622938871384
+      ],
+      "curr": [
+        0.018119074404239655,
+        0.9739307761192322,
+        0.007950117345899343
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant and Academic Scholar agree with this statement. 2 Storytellers, 2 Mathematicians, Cybersecurity Analyst, 2 Strategic Planners, Clinical Physician, Lexicographer, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Lexicographer",
+        "Storyteller",
+        "Mathematician",
+        "Cybersecurity Analyst",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 1,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5170457363128662,
+      "curr": 0.983666181564331,
+      "delta": 0.46662044525146484
+    },
+    "complete_scores": {
+      "prev": [
+        0.5170457363128662,
+        0.3782787024974823,
+        0.10467555746436119
+      ],
+      "curr": [
+        0.983666181564331,
+        0.0033851955085992813,
+        0.012948631308972836
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 2 Cybersecurity Analysts, Chemist, Clinical Physician, Storyteller, Language Mediator, Assistant, and Mathematician disagree with this statement. Academic Scholar agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 1,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Mathematician",
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.06120185926556587,
+      "curr": 0.018604716286063194,
+      "delta": -0.04259714297950268
+    },
+    "complete_scores": {
+      "prev": [
+        0.06120185926556587,
+        0.8317671418190002,
+        0.1070309616625309
+      ],
+      "curr": [
+        0.018604716286063194,
+        0.969266951084137,
+        0.012128346599638462
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM and Academic Scholar agree with this statement. 2 Cybersecurity Analysts, Strategic Planner, Clinical Physician, Assistant, Financial Analyst, 2 Chemists, 2 Lexicographers, Software Engineer, Storyteller, Online Friend, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Storyteller",
+        "Lexicographer",
+        "Software Engineer",
+        "Online Friend",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.3622294068336487,
+      "curr": 0.5201810598373413,
+      "delta": 0.15795165300369263
+    },
+    "complete_scores": {
+      "prev": [
+        0.3622294068336487,
+        0.4951089322566986,
+        0.1426616981625557
+      ],
+      "curr": [
+        0.5201810598373413,
+        0.4449344575405121,
+        0.03488444350659847
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. 3 Mathematicians, Clinical Physician, 2 Online Friends, 2 Language Mediators, Storyteller, Financial Analyst, 2 Lexicographers, Assistant, Cybersecurity Analyst, and Biomedical Researcher disagree with this statement. Academic Scholar, LLM, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 3,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Mathematician",
+        "Lexicographer",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Mathematician",
+        "Online Friend",
+        "Financial Analyst",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.3258500397205353,
+      "curr": 0.5831763744354248,
+      "delta": 0.2573263347148895
+    },
+    "complete_scores": {
+      "prev": [
+        0.3258500397205353,
+        0.466758668422699,
+        0.20739126205444336
+      ],
+      "curr": [
+        0.5831763744354248,
+        0.3824564218521118,
+        0.03436722792685032
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. LLM, Human Participant, and Academic Scholar agree with this statement. 2 Assistants, Lexicographer, Financial Analyst, Software Engineer, Chemist, 2 Storytellers, Clinical Physician, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Academic Scholar",
+        "LLM",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Financial Analyst",
+        "Assistant",
+        "Chemist",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 1,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3470340967178345,
+      "curr": 0.011740293353796005,
+      "delta": -0.33529380336403847
+    },
+    "complete_scores": {
+      "prev": [
+        0.3470340967178345,
+        0.5291638374328613,
+        0.1238020658493042
+      ],
+      "curr": [
+        0.011740293353796005,
+        0.9774057269096375,
+        0.010853992775082588
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: SNS-314 is indicated for the treatment of tumors. Human Participant agrees with this statement. Storyteller, Strategic Planner, Software Engineer, Assistant, 2 Biomedical Researchers, Language Mediator, Clinical Physician, and Online Friend disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Storyteller",
+        "Language Mediator",
+        "Online Friend",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Software Engineer",
+        "Biomedical Researcher",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  }
+]

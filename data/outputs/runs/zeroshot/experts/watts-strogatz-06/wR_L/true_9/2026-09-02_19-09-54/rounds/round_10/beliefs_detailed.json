@@ -1,0 +1,3129 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9999696016311646,
+      "curr": 0.9999383687973022,
+      "delta": -3.123283386230469e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.9999696016311646,
+        1.0615924111334607e-05,
+        1.981059131139773e-05
+      ],
+      "curr": [
+        0.9999383687973022,
+        2.5070678020711057e-05,
+        3.6550765798892826e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Online Friends are unsure about this statement. 2 LLMs disagree with this statement. 3 Academic Scholars, 2 Clinical Physicians, LLM, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 2,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9999492168426514,
+      "curr": 0.9997922778129578,
+      "delta": -0.00015693902969360352
+    },
+    "complete_scores": {
+      "prev": [
+        0.9999492168426514,
+        1.5689000065322034e-05,
+        3.511175782477949e-05
+      ],
+      "curr": [
+        0.9997922778129578,
+        0.0001376449945382774,
+        7.007432395766955e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Online Friends are unsure about this statement. 2 LLMs disagree with this statement. 2 Assistants, 2 Clinical Physicians, 2 Academic Scholars, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 2,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9977189898490906,
+      "curr": 0.9992955923080444,
+      "delta": 0.0015766024589538574
+    },
+    "complete_scores": {
+      "prev": [
+        0.9977189898490906,
+        0.0015476251719519496,
+        0.0007333487737923861
+      ],
+      "curr": [
+        0.9992955923080444,
+        0.0005032343324273825,
+        0.00020113591745030135
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Assistants, 2 Clinical Physicians, Academic Scholar, and LLM agree with this statement. 3 Online Friends are unsure about this statement. 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 2,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 10,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.14212273061275482,
+      "curr": 0.371914267539978,
+      "delta": 0.2297915369272232
+    },
+    "complete_scores": {
+      "prev": [
+        0.14212273061275482,
+        0.8438215255737305,
+        0.014055736362934113
+      ],
+      "curr": [
+        0.371914267539978,
+        0.6131829619407654,
+        0.014902742113918066
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Assistants, LLM, 3 Clinical Physicians, and Biomedical Researcher agree with this statement. 3 Online Friends are unsure about this statement. LLM disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 1,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 10,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.04481913521885872,
+      "curr": 0.5081397294998169,
+      "delta": 0.4633205942809582
+    },
+    "complete_scores": {
+      "prev": [
+        0.04481913521885872,
+        0.9434186816215515,
+        0.011762207839637995
+      ],
+      "curr": [
+        0.5081397294998169,
+        0.4773530960083008,
+        0.014507177285850048
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Biomedical Researchers, LLM, 3 Assistants, and 3 Clinical Physicians agree with this statement. 2 Online Friends are unsure about this statement. LLM disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 1,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9960953593254089,
+      "curr": 0.9943214654922485,
+      "delta": -0.0017738938331604004
+    },
+    "complete_scores": {
+      "prev": [
+        0.9960953593254089,
+        0.0002770223654806614,
+        0.003627572295954451
+      ],
+      "curr": [
+        0.9943214654922485,
+        0.000781627488322556,
+        0.004896865488262847
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Online Friend is unsure about the statement. 2 LLMs disagree with this statement. 3 Assistants, 3 Clinical Physicians, and 3 Biomedical Researchers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9760372638702393,
+      "curr": 0.9308322668075562,
+      "delta": -0.045204997062683105
+    },
+    "complete_scores": {
+      "prev": [
+        0.9760372638702393,
+        0.015290791168808937,
+        0.008671950781717896
+      ],
+      "curr": [
+        0.9308322668075562,
+        0.047073207795619965,
+        0.022094538435339928
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst, 2 Human Participants, 3 Mathematicians, 3 Strategic Planners, and Lexicographer agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.962130606174469,
+      "curr": 0.7825658917427063,
+      "delta": -0.1795647144317627
+    },
+    "complete_scores": {
+      "prev": [
+        0.962130606174469,
+        0.02262714132666588,
+        0.015242260880768299
+      ],
+      "curr": [
+        0.7825658917427063,
+        0.200979545712471,
+        0.01645459933206439
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst, 2 Human Participants, 3 Mathematicians, 3 Strategic Planners, and 2 Lexicographers agree with this statement. Financial Analyst disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9724542498588562,
+      "curr": 0.8425072431564331,
+      "delta": -0.1299470067024231
+    },
+    "complete_scores": {
+      "prev": [
+        0.9724542498588562,
+        0.013656260445713997,
+        0.01388949016109109
+      ],
+      "curr": [
+        0.8425072431564331,
+        0.14190137386322021,
+        0.015591361559927464
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst, 2 Human Participants, 3 Mathematicians, 3 Strategic Planners, and 2 Lexicographers agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9998722076416016,
+      "curr": 0.9993529915809631,
+      "delta": -0.0005192160606384277
+    },
+    "complete_scores": {
+      "prev": [
+        0.9998722076416016,
+        0.00011774340964620933,
+        1.0057500503535266e-05
+      ],
+      "curr": [
+        0.9993529915809631,
+        0.0006263212417252362,
+        2.0656807464547455e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Clinical Physicians, Chemist, LLM, 3 Biomedical Researchers, and 2 Assistants agree with this statement. 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9951555728912354,
+      "curr": 0.9933750033378601,
+      "delta": -0.0017805695533752441
+    },
+    "complete_scores": {
+      "prev": [
+        0.9951555728912354,
+        0.004754773806780577,
+        8.966751192929223e-05
+      ],
+      "curr": [
+        0.9933750033378601,
+        0.0064873769879341125,
+        0.00013762486923951656
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 LLMs disagree with this statement. 2 Clinical Physicians, 2 Assistants, 2 Chemists, 3 Biomedical Researchers, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9997037053108215,
+      "curr": 0.9997164607048035,
+      "delta": 1.2755393981933594e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.9997037053108215,
+        0.00027802589465864,
+        1.823682077883859e-05
+      ],
+      "curr": [
+        0.9997164607048035,
+        0.00026529753813520074,
+        1.8221136087959167e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Biomedical Researchers, 3 Chemists, 2 Assistants, LLM, and Clinical Physician agree with this statement. 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9238682985305786,
+      "curr": 0.9628142714500427,
+      "delta": 0.03894597291946411
+    },
+    "complete_scores": {
+      "prev": [
+        0.9238682985305786,
+        0.0011336524039506912,
+        0.07499802857637405
+      ],
+      "curr": [
+        0.9628142714500427,
+        0.001075715059414506,
+        0.03610999137163162
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Chemists, 3 Assistants, 2 Biomedical Researchers, LLM, and Software Engineer agree with this statement. 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.8774438500404358,
+      "curr": 0.787277340888977,
+      "delta": -0.09016650915145874
+    },
+    "complete_scores": {
+      "prev": [
+        0.8774438500404358,
+        0.02231229655444622,
+        0.10024384409189224
+      ],
+      "curr": [
+        0.787277340888977,
+        0.0767424926161766,
+        0.13598015904426575
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. LLM, 2 Biomedical Researchers, 3 Chemists, 3 Assistants, and 2 Software Engineers agree with this statement. LLM disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9360101222991943,
+      "curr": 0.9401896595954895,
+      "delta": 0.004179537296295166
+    },
+    "complete_scores": {
+      "prev": [
+        0.9360101222991943,
+        0.004201225470751524,
+        0.05978866666555405
+      ],
+      "curr": [
+        0.9401896595954895,
+        0.007641405798494816,
+        0.05216888338327408
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. LLM, 2 Biomedical Researchers, 3 Chemists, 3 Software Engineers, and 3 Assistants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 12,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.57198166847229,
+      "curr": 0.5460041165351868,
+      "delta": -0.02597755193710327
+    },
+    "complete_scores": {
+      "prev": [
+        0.57198166847229,
+        0.25381535291671753,
+        0.17420296370983124
+      ],
+      "curr": [
+        0.5460041165351868,
+        0.25791406631469727,
+        0.19608180224895477
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Assistants, 3 Biomedical Researchers, 2 Chemists, 3 Software Engineers, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 12,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5914992094039917,
+      "curr": 0.5768747329711914,
+      "delta": -0.014624476432800293
+    },
+    "complete_scores": {
+      "prev": [
+        0.5914992094039917,
+        0.2584068775177002,
+        0.1500939279794693
+      ],
+      "curr": [
+        0.5768747329711914,
+        0.25598660111427307,
+        0.1671387106180191
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Assistants, 2 Chemists, 2 Cybersecurity Analysts, 3 Software Engineers, and 3 Biomedical Researchers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 12,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5847315192222595,
+      "curr": 0.4971048831939697,
+      "delta": -0.0876266360282898
+    },
+    "complete_scores": {
+      "prev": [
+        0.5847315192222595,
+        0.25148987770080566,
+        0.16377857327461243
+      ],
+      "curr": [
+        0.4971048831939697,
+        0.33114326000213623,
+        0.17175187170505524
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Assistant, 3 Biomedical Researchers, 3 Software Engineers, 2 Chemists, and 3 Cybersecurity Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 12,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.977205753326416,
+      "curr": 0.22976833581924438,
+      "delta": -0.7474374175071716
+    },
+    "complete_scores": {
+      "prev": [
+        0.977205753326416,
+        0.016553081572055817,
+        0.006241121329367161
+      ],
+      "curr": [
+        0.22976833581924438,
+        0.6344107985496521,
+        0.13582085072994232
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst disagrees with this statement. 3 Cybersecurity Analysts, 3 Chemists, 3 Biomedical Researchers, and 2 Software Engineers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.962502658367157,
+      "curr": 0.8966540098190308,
+      "delta": -0.06584864854812622
+    },
+    "complete_scores": {
+      "prev": [
+        0.962502658367157,
+        0.025252163410186768,
+        0.012245186604559422
+      ],
+      "curr": [
+        0.8966540098190308,
+        0.07246075570583344,
+        0.03088522143661976
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Chemists, 3 Cybersecurity Analysts, 2 Software Engineers, and 2 Biomedical Researchers agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.825530469417572,
+      "curr": 0.8907960653305054,
+      "delta": 0.06526559591293335
+    },
+    "complete_scores": {
+      "prev": [
+        0.825530469417572,
+        0.11708512157201767,
+        0.0573844388127327
+      ],
+      "curr": [
+        0.8907960653305054,
+        0.07312100380659103,
+        0.03608289733529091
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Cybersecurity Analysts, 3 Chemists, 2 Software Engineers, Biomedical Researcher, and Financial Analyst agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9975678324699402,
+      "curr": 0.9994038343429565,
+      "delta": 0.0018360018730163574
+    },
+    "complete_scores": {
+      "prev": [
+        0.9975678324699402,
+        0.0008680075989104807,
+        0.0015641703503206372
+      ],
+      "curr": [
+        0.9994038343429565,
+        0.0002912812342401594,
+        0.00030486861942335963
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst, 3 Software Engineers, 2 Cybersecurity Analysts, 3 Chemists, and Strategic Planner agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9957279562950134,
+      "curr": 0.9988139867782593,
+      "delta": 0.0030860304832458496
+    },
+    "complete_scores": {
+      "prev": [
+        0.9957279562950134,
+        0.0016441510524600744,
+        0.0026279131416231394
+      ],
+      "curr": [
+        0.9988139867782593,
+        0.0005699643515981734,
+        0.0006161029741633683
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Strategic Planners, 3 Software Engineers, Financial Analyst, 2 Chemists, and 2 Cybersecurity Analysts agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9990185499191284,
+      "curr": 0.9994646906852722,
+      "delta": 0.00044614076614379883
+    },
+    "complete_scores": {
+      "prev": [
+        0.9990185499191284,
+        0.00045097124530002475,
+        0.0005304959777276963
+      ],
+      "curr": [
+        0.9994646906852722,
+        0.0002304364461451769,
+        0.0003048723883694038
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Chemist, 2 Cybersecurity Analysts, Financial Analyst, 3 Software Engineers, and 3 Strategic Planners agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 10,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1910933554172516,
+      "curr": 0.05036330223083496,
+      "delta": -0.14073005318641663
+    },
+    "complete_scores": {
+      "prev": [
+        0.1910933554172516,
+        0.732535719871521,
+        0.07637094706296921
+      ],
+      "curr": [
+        0.05036330223083496,
+        0.9067690968513489,
+        0.042867619544267654
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst disagrees with this statement. 3 Software Engineers, 3 Cybersecurity Analysts, 3 Strategic Planners, Human Participant, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 10,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07619186490774155,
+      "curr": 0.0938015878200531,
+      "delta": 0.017609722912311554
+    },
+    "complete_scores": {
+      "prev": [
+        0.07619186490774155,
+        0.8996490240097046,
+        0.02415912039577961
+      ],
+      "curr": [
+        0.0938015878200531,
+        0.8761669993400574,
+        0.030031457543373108
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Financial Analyst disagrees with this statement. 2 Software Engineers, 3 Cybersecurity Analysts, 3 Strategic Planners, 2 Human Participants, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5961396098136902,
+      "curr": 0.1788339763879776,
+      "delta": -0.4173056334257126
+    },
+    "complete_scores": {
+      "prev": [
+        0.5961396098136902,
+        0.2604341506958008,
+        0.14342623203992844
+      ],
+      "curr": [
+        0.1788339763879776,
+        0.741246223449707,
+        0.07991980016231537
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Human Participants, 3 Cybersecurity Analysts, 3 Strategic Planners, and Software Engineer agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9535053372383118,
+      "curr": 0.9866005778312683,
+      "delta": 0.03309524059295654
+    },
+    "complete_scores": {
+      "prev": [
+        0.9535053372383118,
+        0.027474822476506233,
+        0.01901986636221409
+      ],
+      "curr": [
+        0.9866005778312683,
+        0.002996335970237851,
+        0.010403115302324295
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Human Participants, Financial Analyst, 2 Strategic Planners, 3 Cybersecurity Analysts, and Mathematician agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9862696528434753,
+      "curr": 0.9218053817749023,
+      "delta": -0.064464271068573
+    },
+    "complete_scores": {
+      "prev": [
+        0.9862696528434753,
+        0.005423843860626221,
+        0.008306476986035705
+      ],
+      "curr": [
+        0.9218053817749023,
+        0.03804745525121689,
+        0.040147190913558006
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Mathematicians, 2 Strategic Planners, 2 Cybersecurity Analysts, 3 Human Participants, and Financial Analyst agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.951572597026825,
+      "curr": 0.990227460861206,
+      "delta": 0.038654863834381104
+    },
+    "complete_scores": {
+      "prev": [
+        0.951572597026825,
+        0.02964715100824833,
+        0.018780244514346123
+      ],
+      "curr": [
+        0.990227460861206,
+        0.002695772098377347,
+        0.0070767514407634735
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Mathematicians, 2 Strategic Planners, 3 Human Participants, Financial Analyst, and Cybersecurity Analyst agree with this statement. 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.808218777179718,
+      "curr": 0.8252401351928711,
+      "delta": 0.017021358013153076
+    },
+    "complete_scores": {
+      "prev": [
+        0.808218777179718,
+        0.14834196865558624,
+        0.04343925416469574
+      ],
+      "curr": [
+        0.8252401351928711,
+        0.1041010245680809,
+        0.07065888121724129
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Strategic Planners, Language Mediator, 2 Mathematicians, 2 Lexicographers, and 3 Human Participants agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7820143699645996,
+      "curr": 0.8292375206947327,
+      "delta": 0.04722315073013306
+    },
+    "complete_scores": {
+      "prev": [
+        0.7820143699645996,
+        0.17178575694561005,
+        0.046199847012758255
+      ],
+      "curr": [
+        0.8292375206947327,
+        0.11669563502073288,
+        0.05406681448221207
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Strategic Planners, 2 Language Mediators, 2 Mathematicians, 3 Human Participants, and 2 Lexicographers agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7925662398338318,
+      "curr": 0.8911598324775696,
+      "delta": 0.09859359264373779
+    },
+    "complete_scores": {
+      "prev": [
+        0.7925662398338318,
+        0.15245027840137482,
+        0.05498349666595459
+      ],
+      "curr": [
+        0.8911598324775696,
+        0.06925784051418304,
+        0.03958228416740894
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Strategic Planner, 3 Language Mediators, 2 Lexicographers, 3 Human Participants, and 2 Mathematicians agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4480085074901581,
+      "curr": 0.3185754418373108,
+      "delta": -0.1294330656528473
+    },
+    "complete_scores": {
+      "prev": [
+        0.4480085074901581,
+        0.4208650588989258,
+        0.13112641870975494
+      ],
+      "curr": [
+        0.3185754418373108,
+        0.550449013710022,
+        0.13097555935382843
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Lexicographer disagrees with this statement. 3 Language Mediators, 3 Mathematicians, 3 Human Participants, Storyteller, and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.49720799922943115,
+      "curr": 0.2587360739707947,
+      "delta": -0.23847192525863647
+    },
+    "complete_scores": {
+      "prev": [
+        0.49720799922943115,
+        0.40580931305885315,
+        0.09698271751403809
+      ],
+      "curr": [
+        0.2587360739707947,
+        0.6206755638122559,
+        0.12058838456869125
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Lexicographer disagrees with this statement. 3 Language Mediators, 3 Mathematicians, 2 Human Participants, 2 Storytellers, and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 10,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.40990743041038513,
+      "curr": 0.6831415295600891,
+      "delta": 0.273234099149704
+    },
+    "complete_scores": {
+      "prev": [
+        0.40990743041038513,
+        0.4718005359172821,
+        0.11829206347465515
+      ],
+      "curr": [
+        0.6831415295600891,
+        0.26752206683158875,
+        0.04933641478419304
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Language Mediators, 3 Mathematicians, 2 Lexicographers, Human Participant, and 3 Storytellers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 12,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6202874779701233,
+      "curr": 0.544805109500885,
+      "delta": -0.07548236846923828
+    },
+    "complete_scores": {
+      "prev": [
+        0.6202874779701233,
+        0.2839883267879486,
+        0.0957242101430893
+      ],
+      "curr": [
+        0.544805109500885,
+        0.35729193687438965,
+        0.09790298342704773
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Mathematicians, Academic Scholar, 2 Language Mediators, 3 Storytellers, and 2 Lexicographers agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6165560483932495,
+      "curr": 0.5540430545806885,
+      "delta": -0.06251299381256104
+    },
+    "complete_scores": {
+      "prev": [
+        0.6165560483932495,
+        0.2867251932621002,
+        0.09671878814697266
+      ],
+      "curr": [
+        0.5540430545806885,
+        0.32570508122444153,
+        0.12025189399719238
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Mathematicians, 2 Academic Scholars, 3 Storytellers, 2 Lexicographers, and 2 Language Mediators agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5918786525726318,
+      "curr": 0.5012350678443909,
+      "delta": -0.09064358472824097
+    },
+    "complete_scores": {
+      "prev": [
+        0.5918786525726318,
+        0.3168098032474518,
+        0.09131160378456116
+      ],
+      "curr": [
+        0.5012350678443909,
+        0.37835201621055603,
+        0.12041296064853668
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Mathematician, 3 Academic Scholars, 3 Storytellers, 2 Lexicographers, and 2 Language Mediators agree with this statement. Lexicographer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 11,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9984161853790283,
+      "curr": 0.900436520576477,
+      "delta": -0.09797966480255127
+    },
+    "complete_scores": {
+      "prev": [
+        0.9984161853790283,
+        0.0015487066702917218,
+        3.511091381369624e-05
+      ],
+      "curr": [
+        0.900436520576477,
+        0.09945991635322571,
+        0.00010360854503232986
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Lexicographers, 3 Language Mediators, 3 Academic Scholars, and 2 Storytellers agree with this statement. Lexicographer disagrees with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 10,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9993618130683899,
+      "curr": 0.8665565252304077,
+      "delta": -0.13280528783798218
+    },
+    "complete_scores": {
+      "prev": [
+        0.9993618130683899,
+        0.0006070567178539932,
+        3.112107060587732e-05
+      ],
+      "curr": [
+        0.8665565252304077,
+        0.1328907608985901,
+        0.0005527196335606277
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Lexicographer disagrees with this statement. 2 Storytellers, 3 Academic Scholars, 3 Language Mediators, and Lexicographer agree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 1,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9992314577102661,
+      "curr": 0.9675517678260803,
+      "delta": -0.03167968988418579
+    },
+    "complete_scores": {
+      "prev": [
+        0.9992314577102661,
+        0.0007321546436287463,
+        3.636435849330155e-05
+      ],
+      "curr": [
+        0.9675517678260803,
+        0.03208917751908302,
+        0.0003590331180021167
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. Lexicographer disagrees with this statement. 3 Academic Scholars, 2 Storytellers, and 3 Language Mediators agree with this statement. 3 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 1,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7640377283096313,
+      "curr": 0.8289923667907715,
+      "delta": 0.06495463848114014
+    },
+    "complete_scores": {
+      "prev": [
+        0.7640377283096313,
+        0.11007007956504822,
+        0.12589214742183685
+      ],
+      "curr": [
+        0.8289923667907715,
+        0.06804784387350082,
+        0.10295981168746948
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Online Friends are unsure about this statement. Clinical Physician, 3 Storytellers, 3 Language Mediators, and 2 Academic Scholars agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 0,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7410168051719666,
+      "curr": 0.8327065706253052,
+      "delta": 0.09168976545333862
+    },
+    "complete_scores": {
+      "prev": [
+        0.7410168051719666,
+        0.12287262082099915,
+        0.1361105479300022
+      ],
+      "curr": [
+        0.8327065706253052,
+        0.07390690594911575,
+        0.09338651970028877
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Online Friends are unsure about this statement. 2 Clinical Physicians, 3 Storytellers, 2 Language Mediators, and 2 Academic Scholars agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 0,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 10,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7882885336875916,
+      "curr": 0.789588451385498,
+      "delta": 0.0012999176979064941
+    },
+    "complete_scores": {
+      "prev": [
+        0.7882885336875916,
+        0.09563025832176208,
+        0.11608123034238815
+      ],
+      "curr": [
+        0.789588451385498,
+        0.09729637950658798,
+        0.11311516910791397
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 3 Online Friends are unsure about this statement. 3 Clinical Physicians, 2 Academic Scholars, 3 Storytellers, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 0,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 10,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.30165016651153564,
+      "curr": 0.4661075174808502,
+      "delta": 0.16445735096931458
+    },
+    "complete_scores": {
+      "prev": [
+        0.30165016651153564,
+        0.30640047788619995,
+        0.3919493556022644
+      ],
+      "curr": [
+        0.4661075174808502,
+        0.1585850864648819,
+        0.3753074109554291
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 Online Friends are unsure about this statement. 3 Clinical Physicians, 3 Academic Scholars, and 3 Storytellers agree with this statement. LLM disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 9,
+      "n_disagree": 1,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Storyteller",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 10,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.24030062556266785,
+      "curr": 0.6433542966842651,
+      "delta": 0.4030536711215973
+    },
+    "complete_scores": {
+      "prev": [
+        0.24030062556266785,
+        0.3607339560985565,
+        0.39896541833877563
+      ],
+      "curr": [
+        0.6433542966842651,
+        0.13276365399360657,
+        0.22388210892677307
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 LLMs disagree with this statement. 3 Clinical Physicians, 3 Academic Scholars, and 2 Storytellers agree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 10,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.33010491728782654,
+      "curr": 0.6221840381622314,
+      "delta": 0.2920791208744049
+    },
+    "complete_scores": {
+      "prev": [
+        0.33010491728782654,
+        0.26942378282546997,
+        0.4004713296890259
+      ],
+      "curr": [
+        0.6221840381622314,
+        0.1244446411728859,
+        0.2533712834119797
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Linezolid is indicated for the treatment of nosocomial pneumonia. 2 LLMs disagree with this statement. 3 Clinical Physicians, 3 Academic Scholars, LLM, and Storyteller agree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  }
+]

@@ -1,0 +1,24 @@
+defaults:
+  - base
+  - _self_
+
+generator: "ER"
+params:
+  n: 48
+  p: 0.35
+  directed: False
+
+seed_map:
+  342865763: 3290684630
+
+# One extension realization of the maximin design; see
+# notebooks/maximin_selection.ipynb and
+# data/resources/seeds/graph_manifest_er.csv (selection order 5,
+# d_min=1.738). The master seed is the next unused entry of
+# src/seeds.txt, so this realization does not collide with any other config.
+#
+# Run with:
+#   python -m src.experiment ... network=erdos-renyi-05 seed=342865763
+
+# Summary stats
+#  3290684630 : p=0.3500, mean-sp=1.656, glob-clustering-coeff=0.350, mean-deg=16.167, std-deg=2.981, nod0-deg= 9.000, diameter=2

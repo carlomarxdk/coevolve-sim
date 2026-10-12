@@ -1,0 +1,62 @@
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{width=\columnwidth}
+\begin{tabular}{lllccc}
+\toprule
+ &  &  & \makecell{Consensus \\ fidelity (\%)} & \makecell{\(95\%\) CI \\ lower} & \makecell{\(95\%\) CI \\ upper} \\
+Scenario & Surrogate & Network &  &  &  \\
+\midrule
+\multirow[c]{8}{*}{I. Base LLMs} & \multirow[c]{2}{*}{M1} & ER & 91.8 & 91.3 & 92.2 \\
+ &  & WS & 92.3 & 91.9 & 92.8 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M2} & ER & 98.4 & 98.2 & 98.6 \\
+ &  & WS & 98.5 & 98.3 & 98.8 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M3} & ER & 95.9 & 95.0 & 96.5 \\
+ &  & WS & 95.2 & 94.2 & 96.0 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M4} & ER & 95.9 & 95.0 & 96.4 \\
+ &  & WS & 95.2 & 94.2 & 96.0 \\
+\cline{1-6} \cline{2-6}
+\multirow[c]{8}{*}{II. Random roles} & \multirow[c]{2}{*}{M1} & ER & 78.9 & 78.1 & 79.7 \\
+ &  & WS & 82.1 & 81.2 & 82.9 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M2} & ER & 95.1 & 94.7 & 95.5 \\
+ &  & WS & 95.6 & 95.3 & 95.9 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M3} & ER & 93.1 & 92.2 & 93.8 \\
+ &  & WS & 93.4 & 92.6 & 94.1 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M4} & ER & 92.9 & 92.0 & 93.6 \\
+ &  & WS & 93.0 & 92.3 & 93.8 \\
+\cline{1-6} \cline{2-6}
+\multirow[c]{8}{*}{III. Random specialists} & \multirow[c]{2}{*}{M1} & ER & 73.4 & 72.6 & 74.3 \\
+ &  & WS & 75.3 & 73.9 & 76.8 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M2} & ER & 92.4 & 92.0 & 92.8 \\
+ &  & WS & 92.2 & 91.5 & 92.8 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M3} & ER & 91.0 & 89.7 & 92.1 \\
+ &  & WS & 91.1 & 90.2 & 91.9 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M4} & ER & 91.0 & 89.7 & 92.0 \\
+ &  & WS & 89.8 & 88.5 & 90.9 \\
+\cline{1-6} \cline{2-6}
+\multirow[c]{8}{*}{IV. Specialists (matched)} & \multirow[c]{2}{*}{M1} & ER & 75.6 & 74.8 & 76.4 \\
+ &  & WS & 75.9 & 74.7 & 77.1 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M2} & ER & 92.9 & 92.6 & 93.3 \\
+ &  & WS & 91.5 & 90.8 & 92.3 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M3} & ER & 91.5 & 90.2 & 92.5 \\
+ &  & WS & 89.3 & 88.2 & 90.4 \\
+\cline{2-6}
+ & \multirow[c]{2}{*}{M4} & ER & 91.7 & 90.4 & 92.7 \\
+ &  & WS & 89.2 & 88.0 & 90.4 \\
+\cline{1-6} \cline{2-6}
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{\textbf{Consensus fidelity by scenario, surrogate model, and network structure}~(\Cref{app:dynamics}) with \(95\%\) confidence intervals from resampling the 16 network realizations. Consensus fidelity is the similarity between observed and surrogate final-round consensus levels across runs (out-of-sample, 5-fold cross-validation); higher values indicate that a surrogate more accurately reproduces the population-level agreement observed in \texttt{CoevolveSim}. Surrogate models are M1 (persistence), M2 (persistence + global belief composition), M3 (persistence + local neighborhood composition), and M4 (M3 + agent identity and social role); see~\Cref{tab:surrogate_models}. In the network column, ER stands for Erd\H{o}s--R\'enyi, and WS stands for Watts--Strogatz.}
+\label{tab:consensus-fidelity}
+\end{table}

@@ -1,0 +1,3135 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.9174431145074777e-06,
+      "curr": 6.74604098094278e-06,
+      "delta": 4.828597866435302e-06
+    },
+    "complete_scores": {
+      "prev": [
+        1.9174431145074777e-06,
+        0.9995446801185608,
+        0.000453396380180493
+      ],
+      "curr": [
+        6.74604098094278e-06,
+        0.9996953010559082,
+        0.00029796207672916353
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar agrees with this statement. 3 Online Friends are unsure about this statement. 3 LLMs, 2 Clinical Physicians, 2 Academic Scholars, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 8,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 5.420189154392574e-06,
+      "curr": 2.930407390522305e-05,
+      "delta": 2.3883884750830475e-05
+    },
+    "complete_scores": {
+      "prev": [
+        5.420189154392574e-06,
+        0.9996201992034912,
+        0.00037437627906911075
+      ],
+      "curr": [
+        2.930407390522305e-05,
+        0.9997159838676453,
+        0.0002546902105677873
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Clinical Physicians, 2 Academic Scholars, 2 Assistants, and 3 LLMs disagree with this statement. 3 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 0,
+      "n_disagree": 9,
+      "n_neutral": 3,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.7470084660308203e-06,
+      "curr": 1.1657651157293003e-05,
+      "delta": 8.910642691262183e-06
+    },
+    "complete_scores": {
+      "prev": [
+        2.7470084660308203e-06,
+        0.9996894598007202,
+        0.0003077938745263964
+      ],
+      "curr": [
+        1.1657651157293003e-05,
+        0.9998272061347961,
+        0.0001610862454981543
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Assistant agrees with this statement. 3 Online Friends are unsure about this statement. 3 LLMs, 2 Clinical Physicians, Academic Scholar, and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 8,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.06125934422016144,
+      "curr": 0.00903683714568615,
+      "delta": -0.05222250707447529
+    },
+    "complete_scores": {
+      "prev": [
+        0.06125934422016144,
+        0.9287749528884888,
+        0.009965724311769009
+      ],
+      "curr": [
+        0.00903683714568615,
+        0.9812322854995728,
+        0.009730889461934566
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Assistant agrees with this statement. 3 Online Friends are unsure about this statement. 2 LLMs, 3 Clinical Physicians, Biomedical Researcher, and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 8,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.28125688433647156,
+      "curr": 0.5401574969291687,
+      "delta": 0.25890061259269714
+    },
+    "complete_scores": {
+      "prev": [
+        0.28125688433647156,
+        0.6747002005577087,
+        0.04404294863343239
+      ],
+      "curr": [
+        0.5401574969291687,
+        0.4340287744998932,
+        0.025813687592744827
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Online Friends are unsure about this statement. 2 LLMs, 3 Clinical Physicians, 2 Biomedical Researchers, and 2 Assistants disagree with this statement. Assistant agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0661453902721405,
+      "curr": 0.29441961646080017,
+      "delta": 0.22827422618865967
+    },
+    "complete_scores": {
+      "prev": [
+        0.0661453902721405,
+        0.8712946772575378,
+        0.06255996599793434
+      ],
+      "curr": [
+        0.29441961646080017,
+        0.6845461130142212,
+        0.02103426679968834
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Biomedical Researchers, 2 LLMs, 2 Assistants, and 3 Clinical Physicians disagree with this statement. Online Friend is unsure about the statement. Assistant agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 10,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.23544231057167053,
+      "curr": 0.01315334066748619,
+      "delta": -0.22228896990418434
+    },
+    "complete_scores": {
+      "prev": [
+        0.23544231057167053,
+        0.7252134680747986,
+        0.03934421204030514
+      ],
+      "curr": [
+        0.01315334066748619,
+        0.981592059135437,
+        0.005254638730548322
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 3 Strategic Planners, 3 Financial Analysts, Lexicographer, and 3 Mathematicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.980676531791687,
+      "curr": 0.9858527183532715,
+      "delta": 0.005176186561584473
+    },
+    "complete_scores": {
+      "prev": [
+        0.980676531791687,
+        0.008095980621874332,
+        0.01122748083434999
+      ],
+      "curr": [
+        0.9858527183532715,
+        0.00478450208902359,
+        0.009362759068608284
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Strategic Planners, 2 Lexicographers, 3 Mathematicians, 2 Financial Analysts, and Human Participant disagree with this statement. Human Participant agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9316889643669128,
+      "curr": 0.9919203519821167,
+      "delta": 0.06023138761520386
+    },
+    "complete_scores": {
+      "prev": [
+        0.9316889643669128,
+        0.05683339387178421,
+        0.011477667954750359
+      ],
+      "curr": [
+        0.9919203519821167,
+        0.0019602663815021515,
+        0.006119363009929657
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Human Participant, 3 Lexicographers, 3 Mathematicians, Financial Analyst, and 3 Strategic Planners disagree with this statement. Human Participant agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 9.761190449353307e-05,
+      "curr": 0.8538417816162109,
+      "delta": 0.8537441697117174
+    },
+    "complete_scores": {
+      "prev": [
+        9.761190449353307e-05,
+        0.9998639822006226,
+        3.835857205558568e-05
+      ],
+      "curr": [
+        0.8538417816162109,
+        0.14607511460781097,
+        8.30683893582318e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Biomedical Researchers, 3 LLMs, Assistant, and 3 Clinical Physicians disagree with this statement. Assistant and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.021613817662000656,
+      "curr": 0.6223578453063965,
+      "delta": 0.6007440276443958
+    },
+    "complete_scores": {
+      "prev": [
+        0.021613817662000656,
+        0.9783160090446472,
+        7.013666072452907e-05
+      ],
+      "curr": [
+        0.6223578453063965,
+        0.3774791359901428,
+        0.00016300828428938985
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 LLMs, 2 Clinical Physicians, 3 Biomedical Researchers, and Assistant disagree with this statement. 2 Chemists and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5388923287391663,
+      "curr": 0.00013981558731757104,
+      "delta": -0.5387525131518487
+    },
+    "complete_scores": {
+      "prev": [
+        0.5388923287391663,
+        0.46093904972076416,
+        0.0001686215473455377
+      ],
+      "curr": [
+        0.00013981558731757104,
+        0.9998137354850769,
+        4.642923386199982e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists agree with this statement. 3 Biomedical Researchers, Clinical Physician, 3 LLMs, and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.01826547086238861,
+      "curr": 0.008089620620012283,
+      "delta": -0.010175850242376328
+    },
+    "complete_scores": {
+      "prev": [
+        0.01826547086238861,
+        0.8939388990402222,
+        0.08779563009738922
+      ],
+      "curr": [
+        0.008089620620012283,
+        0.8922147750854492,
+        0.09969563782215118
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists and Assistant agree with this statement. 2 Biomedical Researchers, 3 LLMs, Software Engineer, and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.007081886753439903,
+      "curr": 0.0511210672557354,
+      "delta": 0.044039180502295494
+    },
+    "complete_scores": {
+      "prev": [
+        0.007081886753439903,
+        0.8990066051483154,
+        0.09391152858734131
+      ],
+      "curr": [
+        0.0511210672557354,
+        0.7512186169624329,
+        0.19766031205654144
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists and Assistant agree with this statement. 2 Software Engineers, 2 Assistants, 2 LLMs, and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03303143382072449,
+      "curr": 0.040791723877191544,
+      "delta": 0.007760290056467056
+    },
+    "complete_scores": {
+      "prev": [
+        0.03303143382072449,
+        0.7878711819648743,
+        0.17909742891788483
+      ],
+      "curr": [
+        0.040791723877191544,
+        0.723050594329834,
+        0.23615765571594238
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists and Assistant agree with this statement. 3 Software Engineers, 2 Assistants, LLM, and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.43629005551338196,
+      "curr": 0.3618437647819519,
+      "delta": -0.07444629073143005
+    },
+    "complete_scores": {
+      "prev": [
+        0.43629005551338196,
+        0.2861259877681732,
+        0.27758392691612244
+      ],
+      "curr": [
+        0.3618437647819519,
+        0.39124637842178345,
+        0.24690985679626465
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Chemists and Assistant agree with this statement. 3 Software Engineers, Cybersecurity Analyst, 2 Assistants, and 3 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6304360032081604,
+      "curr": 0.3981509506702423,
+      "delta": -0.2322850525379181
+    },
+    "complete_scores": {
+      "prev": [
+        0.6304360032081604,
+        0.19529996812343597,
+        0.17426399886608124
+      ],
+      "curr": [
+        0.3981509506702423,
+        0.3405565619468689,
+        0.261292427778244
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Software Engineers, 3 Biomedical Researchers, 2 Cybersecurity Analysts, and Assistant disagree with this statement. 2 Chemists and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5608859062194824,
+      "curr": 0.4385238289833069,
+      "delta": -0.12236207723617554
+    },
+    "complete_scores": {
+      "prev": [
+        0.5608859062194824,
+        0.24503293633460999,
+        0.1940811723470688
+      ],
+      "curr": [
+        0.4385238289833069,
+        0.3208308517932892,
+        0.24064525961875916
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Software Engineers, 3 Biomedical Researchers, and 3 Cybersecurity Analysts disagree with this statement. 2 Chemists and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03493349626660347,
+      "curr": 0.3025257885456085,
+      "delta": 0.26759229227900505
+    },
+    "complete_scores": {
+      "prev": [
+        0.03493349626660347,
+        0.8732274770736694,
+        0.0918390080332756
+      ],
+      "curr": [
+        0.3025257885456085,
+        0.5651926398277283,
+        0.13228152692317963
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists agree with this statement. 3 Cybersecurity Analysts, 3 Biomedical Researchers, Financial Analyst, and 2 Software Engineers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.10252773016691208,
+      "curr": 0.24723437428474426,
+      "delta": 0.14470664411783218
+    },
+    "complete_scores": {
+      "prev": [
+        0.10252773016691208,
+        0.5629880428314209,
+        0.33448418974876404
+      ],
+      "curr": [
+        0.24723437428474426,
+        0.5748371481895447,
+        0.17792844772338867
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists agree with this statement. 3 Cybersecurity Analysts, 2 Software Engineers, 2 Biomedical Researchers, and 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.04201912134885788,
+      "curr": 0.29353001713752747,
+      "delta": 0.2515108957886696
+    },
+    "complete_scores": {
+      "prev": [
+        0.04201912134885788,
+        0.7565357685089111,
+        0.2014451026916504
+      ],
+      "curr": [
+        0.29353001713752747,
+        0.5315142273902893,
+        0.17495575547218323
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists agree with this statement. 3 Cybersecurity Analysts, 2 Software Engineers, 3 Financial Analysts, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0014128099428489804,
+      "curr": 0.00043518899474292994,
+      "delta": -0.0009776209481060505
+    },
+    "complete_scores": {
+      "prev": [
+        0.0014128099428489804,
+        0.9848167300224304,
+        0.013770459219813347
+      ],
+      "curr": [
+        0.00043518899474292994,
+        0.9792384505271912,
+        0.02032635174691677
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Chemists agree with this statement. 3 Financial Analysts, 3 Software Engineers, Strategic Planner, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0014211870729923248,
+      "curr": 0.00039133435348048806,
+      "delta": -0.0010298527195118368
+    },
+    "complete_scores": {
+      "prev": [
+        0.0014211870729923248,
+        0.9752973914146423,
+        0.023281369358301163
+      ],
+      "curr": [
+        0.00039133435348048806,
+        0.9823346138000488,
+        0.017274051904678345
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Chemists agree with this statement. 3 Financial Analysts, 3 Software Engineers, 2 Strategic Planners, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0005626853089779615,
+      "curr": 0.0037757218815386295,
+      "delta": 0.003213036572560668
+    },
+    "complete_scores": {
+      "prev": [
+        0.0005626853089779615,
+        0.9860580563545227,
+        0.013379254378378391
+      ],
+      "curr": [
+        0.0037757218815386295,
+        0.9682270884513855,
+        0.027997208759188652
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Cybersecurity Analysts, 3 Strategic Planners, 3 Financial Analysts, and 3 Software Engineers disagree with this statement. Chemist agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.052174557000398636,
+      "curr": 0.02885943464934826,
+      "delta": -0.023315122351050377
+    },
+    "complete_scores": {
+      "prev": [
+        0.052174557000398636,
+        0.855315089225769,
+        0.09251034259796143
+      ],
+      "curr": [
+        0.02885943464934826,
+        0.8566778898239136,
+        0.11446264386177063
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Financial Analysts, Human Participant, 3 Software Engineers, 3 Strategic Planners, and 3 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 0,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1869003176689148,
+      "curr": 0.10590347647666931,
+      "delta": -0.08099684119224548
+    },
+    "complete_scores": {
+      "prev": [
+        0.1869003176689148,
+        0.6944189071655273,
+        0.11868075281381607
+      ],
+      "curr": [
+        0.10590347647666931,
+        0.6905773878097534,
+        0.2035190910100937
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Human Participant agrees with this statement. 2 Financial Analysts, 3 Strategic Planners, 2 Software Engineers, 3 Cybersecurity Analysts, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.11224439740180969,
+      "curr": 0.06225694343447685,
+      "delta": -0.04998745396733284
+    },
+    "complete_scores": {
+      "prev": [
+        0.11224439740180969,
+        0.7205779552459717,
+        0.1671777069568634
+      ],
+      "curr": [
+        0.06225694343447685,
+        0.8329887390136719,
+        0.10475430637598038
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Financial Analysts, 3 Cybersecurity Analysts, 3 Strategic Planners, Software Engineer, and Human Participant disagree with this statement. 2 Human Participants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0014485056744888425,
+      "curr": 0.002041818806901574,
+      "delta": 0.0005933131324127316
+    },
+    "complete_scores": {
+      "prev": [
+        0.0014485056744888425,
+        0.9940449595451355,
+        0.004506522556766868
+      ],
+      "curr": [
+        0.002041818806901574,
+        0.9936060905456543,
+        0.004352100309915841
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Financial Analysts, 3 Cybersecurity Analysts, 2 Strategic Planners, Mathematician, and Human Participant disagree with this statement. 2 Human Participants agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0019780658185482025,
+      "curr": 0.0018022075528278947,
+      "delta": -0.00017585826572030783
+    },
+    "complete_scores": {
+      "prev": [
+        0.0019780658185482025,
+        0.993137776851654,
+        0.004884184687398374
+      ],
+      "curr": [
+        0.0018022075528278947,
+        0.9937765598297119,
+        0.004421219928190112
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 2 Strategic Planners, 3 Financial Analysts, 2 Mathematicians, Human Participant, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0012223130324855447,
+      "curr": 0.001951040467247367,
+      "delta": 0.0007287274347618222
+    },
+    "complete_scores": {
+      "prev": [
+        0.0012223130324855447,
+        0.9961221814155579,
+        0.002655510150361806
+      ],
+      "curr": [
+        0.001951040467247367,
+        0.9949951171875,
+        0.0030538272112607956
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 2 Strategic Planners, 3 Financial Analysts, 3 Mathematicians, Cybersecurity Analyst, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19065839052200317,
+      "curr": 0.32300546765327454,
+      "delta": 0.13234707713127136
+    },
+    "complete_scores": {
+      "prev": [
+        0.19065839052200317,
+        0.7308683395385742,
+        0.07847324758768082
+      ],
+      "curr": [
+        0.32300546765327454,
+        0.6129566431045532,
+        0.06403793022036552
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 2 Mathematicians, 3 Strategic Planners, Language Mediator, 3 Lexicographers, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.26216527819633484,
+      "curr": 0.10074341297149658,
+      "delta": -0.16142186522483826
+    },
+    "complete_scores": {
+      "prev": [
+        0.26216527819633484,
+        0.6539543867111206,
+        0.08388030529022217
+      ],
+      "curr": [
+        0.10074341297149658,
+        0.798623263835907,
+        0.10063333064317703
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 3 Lexicographers, Human Participant, 2 Language Mediators, 2 Strategic Planners, and 2 Mathematicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.18683288991451263,
+      "curr": 0.16911739110946655,
+      "delta": -0.01771549880504608
+    },
+    "complete_scores": {
+      "prev": [
+        0.18683288991451263,
+        0.7389384508132935,
+        0.07422861456871033
+      ],
+      "curr": [
+        0.16911739110946655,
+        0.7698672413825989,
+        0.06101537123322487
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants agree with this statement. 3 Lexicographers, 2 Mathematicians, 3 Language Mediators, Strategic Planner, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3717954754829407,
+      "curr": 0.41131237149238586,
+      "delta": 0.03951689600944519
+    },
+    "complete_scores": {
+      "prev": [
+        0.3717954754829407,
+        0.5161869525909424,
+        0.11201757937669754
+      ],
+      "curr": [
+        0.41131237149238586,
+        0.458852082490921,
+        0.12983554601669312
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants and Storyteller agree with this statement. 2 Lexicographers, 3 Language Mediators, 3 Mathematicians, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3788833022117615,
+      "curr": 0.24871857464313507,
+      "delta": -0.1301647275686264
+    },
+    "complete_scores": {
+      "prev": [
+        0.3788833022117615,
+        0.47895339131355286,
+        0.14216330647468567
+      ],
+      "curr": [
+        0.24871857464313507,
+        0.6155843734741211,
+        0.13569706678390503
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 2 Human Participants and Storyteller agree with this statement. 2 Lexicographers, Storyteller, 3 Language Mediators, and 3 Mathematicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3560592532157898,
+      "curr": 0.40074026584625244,
+      "delta": 0.044681012630462646
+    },
+    "complete_scores": {
+      "prev": [
+        0.3560592532157898,
+        0.5180631279945374,
+        0.12587761133909225
+      ],
+      "curr": [
+        0.40074026584625244,
+        0.5065831542015076,
+        0.0926765725016594
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Human Participant and Storyteller agree with this statement. 3 Mathematicians, 3 Language Mediators, 2 Storytellers, and 2 Lexicographers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.26327791810035706,
+      "curr": 0.3248254358768463,
+      "delta": 0.06154751777648926
+    },
+    "complete_scores": {
+      "prev": [
+        0.26327791810035706,
+        0.6217793226242065,
+        0.11494280397891998
+      ],
+      "curr": [
+        0.3248254358768463,
+        0.5700863599777222,
+        0.1050882339477539
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Storyteller and Academic Scholar agree with this statement. 3 Mathematicians, 2 Language Mediators, 2 Storytellers, and 3 Lexicographers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.25062623620033264,
+      "curr": 0.3026546835899353,
+      "delta": 0.05202844738960266
+    },
+    "complete_scores": {
+      "prev": [
+        0.25062623620033264,
+        0.6203059554100037,
+        0.1290678083896637
+      ],
+      "curr": [
+        0.3026546835899353,
+        0.5395402908325195,
+        0.15780502557754517
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Storyteller and Academic Scholar agree with this statement. 2 Mathematicians, 2 Storytellers, 2 Language Mediators, 3 Lexicographers, and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.26367896795272827,
+      "curr": 0.2614126205444336,
+      "delta": -0.0022663474082946777
+    },
+    "complete_scores": {
+      "prev": [
+        0.26367896795272827,
+        0.6035671234130859,
+        0.132753886282444
+      ],
+      "curr": [
+        0.2614126205444336,
+        0.657191276550293,
+        0.08139613270759583
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Storyteller and Academic Scholar agree with this statement. 2 Language Mediators, 3 Lexicographers, 2 Academic Scholars, 2 Storytellers, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.67908775806427,
+      "curr": 0.09399960190057755,
+      "delta": -0.5850881561636925
+    },
+    "complete_scores": {
+      "prev": [
+        0.67908775806427,
+        0.32077834010124207,
+        0.00013385886268224567
+      ],
+      "curr": [
+        0.09399960190057755,
+        0.9058879017829895,
+        0.00011245725909247994
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. 3 Language Mediators, 3 Lexicographers, 2 Storytellers, and 2 Academic Scholars disagree with this statement. Online Friend is unsure about the statement. Academic Scholar agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 10,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.17105190455913544,
+      "curr": 0.8242930173873901,
+      "delta": 0.6532411128282547
+    },
+    "complete_scores": {
+      "prev": [
+        0.17105190455913544,
+        0.8288938403129578,
+        5.4225753046921454e-05
+      ],
+      "curr": [
+        0.8242930173873901,
+        0.17550209164619446,
+        0.0002049497124971822
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar and Storyteller agree with this statement. 3 Language Mediators, 2 Lexicographers, 2 Academic Scholars, and Storyteller disagree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.30067509412765503,
+      "curr": 0.9954311847686768,
+      "delta": 0.6947560906410217
+    },
+    "complete_scores": {
+      "prev": [
+        0.30067509412765503,
+        0.6990906000137329,
+        0.000234281673328951
+      ],
+      "curr": [
+        0.9954311847686768,
+        0.004538292996585369,
+        3.054525313928025e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Storyteller, Lexicographer, 3 Language Mediators, and 2 Academic Scholars disagree with this statement. 3 Online Friends are unsure about this statement. Academic Scholar and Storyteller agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 7,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 9,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.4354649484157562,
+      "curr": 0.21401846408843994,
+      "delta": -0.22144648432731628
+    },
+    "complete_scores": {
+      "prev": [
+        0.4354649484157562,
+        0.3842964768409729,
+        0.18023860454559326
+      ],
+      "curr": [
+        0.21401846408843994,
+        0.5727431178092957,
+        0.2132384032011032
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Storyteller agrees with this statement. 3 Online Friends are unsure about this statement. Clinical Physician, 2 Storytellers, 2 Academic Scholars, and 3 Language Mediators disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 8,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.36298513412475586,
+      "curr": 0.44474732875823975,
+      "delta": 0.08176219463348389
+    },
+    "complete_scores": {
+      "prev": [
+        0.36298513412475586,
+        0.4517423212528229,
+        0.18527260422706604
+      ],
+      "curr": [
+        0.44474732875823975,
+        0.3253840506076813,
+        0.22986866533756256
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar, 2 Language Mediators, 2 Storytellers, and 2 Clinical Physicians disagree with this statement. 3 Online Friends are unsure about this statement. Academic Scholar and Storyteller agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 7,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 9,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4083918333053589,
+      "curr": 0.16822347044944763,
+      "delta": -0.24016836285591125
+    },
+    "complete_scores": {
+      "prev": [
+        0.4083918333053589,
+        0.42135560512542725,
+        0.17025256901979446
+      ],
+      "curr": [
+        0.16822347044944763,
+        0.7082472443580627,
+        0.12352929264307022
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar and Storyteller agree with this statement. 3 Online Friends are unsure about this statement. Academic Scholar, 3 Clinical Physicians, Language Mediator, and 2 Storytellers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 7,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 9,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.08497270196676254,
+      "curr": 0.11012879014015198,
+      "delta": 0.025156088173389435
+    },
+    "complete_scores": {
+      "prev": [
+        0.08497270196676254,
+        0.32573366165161133,
+        0.5892936587333679
+      ],
+      "curr": [
+        0.11012879014015198,
+        0.25605714321136475,
+        0.6338140964508057
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar and Storyteller agree with this statement. 3 Clinical Physicians, 2 Storytellers, 2 Academic Scholars, and LLM disagree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 9,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.20928959548473358,
+      "curr": 0.04768093302845955,
+      "delta": -0.16160866245627403
+    },
+    "complete_scores": {
+      "prev": [
+        0.20928959548473358,
+        0.2860649526119232,
+        0.5046454668045044
+      ],
+      "curr": [
+        0.04768093302845955,
+        0.3207884132862091,
+        0.6315306425094604
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar agrees with this statement. 2 Online Friends are unsure about this statement. 3 Clinical Physicians, 2 LLMs, 2 Storytellers, and 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 9,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15492787957191467,
+      "curr": 0.03964819386601448,
+      "delta": -0.11527968570590019
+    },
+    "complete_scores": {
+      "prev": [
+        0.15492787957191467,
+        0.17555628716945648,
+        0.66951584815979
+      ],
+      "curr": [
+        0.03964819386601448,
+        0.4004325568675995,
+        0.5599192380905151
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Silver is indicated for the treatment of keratosis pilaris. Academic Scholar agrees with this statement. 2 Online Friends are unsure about this statement. 3 LLMs, Storyteller, 3 Clinical Physicians, and 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  }
+]

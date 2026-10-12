@@ -607,15 +607,6 @@ class IOManager:
         if self.save_activations:
             raise NotImplementedError("Activation saving not implemented yet.")
         return None
-        # if not self.save_activations:
-        #     return self._round_path(t) / f'{agent_id}.activation.ignore'
-
-        # # TODO: decide tensor format (npy/pt) and save; placeholder json meta
-        # p = self._round_path(t) / f'{agent_id}.activation.json'
-        # with open(p, 'w') as f:
-        #     json.dump({'shape': getattr(activation, 'shape', None), 'meta': 'TODO'}, f)
-
-        # return p
 
     def checkpoint(self, t: int, agents: dict[int, Any], metrics: Any) -> None:
         """Save a checkpoint for round t, including beliefs of agents and round metrics.

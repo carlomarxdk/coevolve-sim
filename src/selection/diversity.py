@@ -110,6 +110,116 @@ def maximin_select_balanced(
     return selected
 
 
+def maximin_select_stratified(
+    X: np.ndarray,
+    n_select: int,
+    strata: np.ndarray | list[np.ndarray],
+    quotas: dict | list[dict] | None = None,
+    init_selected: list[int] | None = None,
+    allow_overflow: bool = False,
+) -> list[int]:
+    """Select points via maximin under per-stratum quotas.
+
+    Generalizes :func:`maximin_select_balanced` to an arbitrary number of strata
+    (e.g. one stratum per generator-parameter value). At each step the farthest
+    point from the already-selected set is chosen among the candidates whose
+    stratum still has quota left. Rows whose stratum is absent from ``quotas``
+    are never selected, which is how an initial set is pinned: it anchors the
+    distances without consuming quota.
+
+    Passing several ``(strata, quotas)`` pairs imposes the quotas *marginally*,
+    one per factor: a candidate is eligible only if every factor it belongs to
+    still has quota. With one pick per level of factor A and a spread over the
+    levels of factor B, this fills the design like a Latin square rather than
+    requiring a quota for every cell of the A x B grid.
+
+    Args:
+        X: Feature matrix of shape (N, D), already standardized.
+        n_select: Number of points to add on top of ``init_selected``.
+        strata: Stratum label per row, shape (N,); or a list of such arrays,
+            one per factor.
+        quotas: Map stratum label -> max number of points to draw from it, or a
+            list of such maps aligned with ``strata``. If None, no quota is
+            applied (plain maximin over all rows).
+        init_selected: Pre-selected indices; kept and used as distance anchors,
+            but excluded from ``n_select`` and from the quota accounting.
+        allow_overflow: If True, the quotas act as a per-stratum floor rather
+            than a cap: once no candidate satisfies every quota, the remaining
+            picks are made by unrestricted maximin. Use it when ``n_select`` is
+            not a multiple of the number of strata, so that each stratum is
+            covered and the leftovers land wherever they add the most diversity.
+
+    Returns:
+        Indices of the newly selected points, in selection order.
+
+    Raises:
+        ValueError: If ``strata`` and ``quotas`` disagree in length, or if the
+            quotas cannot supply ``n_select`` points.
+
+    Example:
+        >>> X = np.random.rand(100, 5)
+        >>> strata = np.repeat([0.2, 0.3], 50)
+        >>> new = maximin_select_stratified(X, 4, strata, {0.2: 2, 0.3: 2})
+        >>> len(new)
+        4
+    """
+    factors = [strata] if isinstance(strata, np.ndarray) else list(strata)
+    if quotas is None:
+        quota_list: list[dict] = [
+            dict.fromkeys(np.unique(f).tolist(), n_select) for f in factors
+        ]
+    else:
+        quota_list = [quotas] if isinstance(quotas, dict) else list(quotas)
+    if len(quota_list) != len(factors):
+        raise ValueError(
+            f"Got {len(factors)} strata arrays but {len(quota_list)} quota maps"
+        )
+
+    remaining = [dict(q) for q in quota_list]
+    for factor_quotas in remaining:
+        if sum(factor_quotas.values()) < n_select and not allow_overflow:
+            raise ValueError(
+                f"Quotas allow at most {sum(factor_quotas.values())} points, "
+                f"but {n_select} were requested"
+            )
+
+    anchors = list(init_selected or [])
+    if not anchors:
+        anchors = [int(np.argmax(np.linalg.norm(X, axis=1)))]
+
+    labels = [f.tolist() for f in factors]
+    known = [set(q) for q in remaining]
+
+    selected: list[int] = []
+    for _ in range(n_select):
+        eligible = np.ones(X.shape[0], dtype=bool)
+        for factor_labels, factor_quotas in zip(labels, remaining, strict=True):
+            eligible &= np.array(
+                [factor_quotas.get(s, 0) > 0 for s in factor_labels], dtype=bool
+            )
+        if not eligible.any():
+            if not allow_overflow:
+                raise ValueError("No eligible candidates left under the current quotas")
+            # Quotas are exhausted: fall back to unrestricted maximin, still
+            # confined to the strata the caller asked about.
+            eligible = np.ones(X.shape[0], dtype=bool)
+            for factor_labels, factor_known in zip(labels, known, strict=True):
+                eligible &= np.array(
+                    [s in factor_known for s in factor_labels], dtype=bool
+                )
+
+        dist = cdist(X, X[anchors + selected], metric="euclidean").min(axis=1)
+        dist[~eligible] = -np.inf
+        dist[anchors + selected] = -np.inf
+
+        nxt = int(np.argmax(dist))
+        selected.append(nxt)
+        for factor_labels, factor_quotas in zip(labels, remaining, strict=True):
+            factor_quotas[factor_labels[nxt]] -= 1
+
+    return selected
+
+
 def diversity_report(df: pl.DataFrame, idx: list[int], feature_cols: list[str]) -> dict:
     """Compute diversity diagnostics on selected rows.
 

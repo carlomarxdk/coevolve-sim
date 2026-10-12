@@ -1,0 +1,2730 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9999383687973022,
+      "curr": 0.9998704195022583,
+      "delta": -6.794929504394531e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.9999383687973022,
+        1.7777772882254794e-05,
+        4.384340354590677e-05
+      ],
+      "curr": [
+        0.9998704195022583,
+        6.921766180312261e-05,
+        6.035849219188094e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Strategic Planner disagrees with this statement. Clinical Physician agrees with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 1,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9996927976608276,
+      "curr": 0.9725164771080017,
+      "delta": -0.027176320552825928
+    },
+    "complete_scores": {
+      "prev": [
+        0.9996927976608276,
+        0.00024535428383387625,
+        6.184002995723858e-05
+      ],
+      "curr": [
+        0.9725164771080017,
+        0.026324814185500145,
+        0.0011587111512199044
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. LLM disagrees with this statement. 2 Clinical Physicians agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9969925880432129,
+      "curr": 0.9997411370277405,
+      "delta": 0.002748548984527588
+    },
+    "complete_scores": {
+      "prev": [
+        0.9969925880432129,
+        0.0025102149229496717,
+        0.0004972176102455705
+      ],
+      "curr": [
+        0.9997411370277405,
+        0.00012337786029092968,
+        0.00013545221008826047
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 LLMs disagree with this statement. Clinical Physician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.25944551825523376,
+      "curr": 0.25944551825523376,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.25944551825523376,
+        0.7276330590248108,
+        0.012921448331326246
+      ],
+      "curr": [
+        0.25944551825523376,
+        0.7276330590248108,
+        0.012921448331326246
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 LLMs disagree with this statement. 2 Clinical Physicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03190647438168526,
+      "curr": 0.03190647438168526,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.03190647438168526,
+        0.9620428681373596,
+        0.006050636293366551
+      ],
+      "curr": [
+        0.03190647438168526,
+        0.9620428681373596,
+        0.006050636293366551
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 LLMs and Assistant disagree with this statement. Clinical Physician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0032059838995337486,
+      "curr": 0.002497241133823991,
+      "delta": -0.0007087427657097578
+    },
+    "complete_scores": {
+      "prev": [
+        0.0032059838995337486,
+        0.9916736483573914,
+        0.005120416870340705
+      ],
+      "curr": [
+        0.002497241133823991,
+        0.9918397665023804,
+        0.005662952899001539
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Assistants and 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.007401213049888611,
+      "curr": 0.007631184067577124,
+      "delta": 0.0002299710176885128
+    },
+    "complete_scores": {
+      "prev": [
+        0.007401213049888611,
+        0.9846329689025879,
+        0.007965817581862211
+      ],
+      "curr": [
+        0.007631184067577124,
+        0.9839922785758972,
+        0.008376514306291938
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Human Participants and 2 Strategic Planners disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.019906189292669296,
+      "curr": 0.0269833542406559,
+      "delta": 0.007077164947986603
+    },
+    "complete_scores": {
+      "prev": [
+        0.019906189292669296,
+        0.9742379784584045,
+        0.005855882307514548
+      ],
+      "curr": [
+        0.0269833542406559,
+        0.9661751389503479,
+        0.006841459311544895
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Human Participants and Strategic Planner disagree with this statement. Mathematician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03806917741894722,
+      "curr": 0.03806917741894722,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.03806917741894722,
+        0.9516096115112305,
+        0.010321224341169
+      ],
+      "curr": [
+        0.03806917741894722,
+        0.9516096115112305,
+        0.010321224341169
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Human Participants disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00045828474685549736,
+      "curr": 0.0012254690518602729,
+      "delta": 0.0007671843050047755
+    },
+    "complete_scores": {
+      "prev": [
+        0.00045828474685549736,
+        0.9994803071022034,
+        6.137738091638312e-05
+      ],
+      "curr": [
+        0.0012254690518602729,
+        0.9986942410469055,
+        8.028175579966046e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Assistants and 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 3.822824146482162e-05,
+      "curr": 1.0289301826560404e-05,
+      "delta": -2.7938939638261218e-05
+    },
+    "complete_scores": {
+      "prev": [
+        3.822824146482162e-05,
+        0.99993896484375,
+        2.285447453687084e-05
+      ],
+      "curr": [
+        1.0289301826560404e-05,
+        0.9999691247940063,
+        2.0592281430253934e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Biomedical Researcher, LLM, and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0001123487891163677,
+      "curr": 9.761306137079373e-05,
+      "delta": -1.4735727745573968e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.0001123487891163677,
+        0.9998477697372437,
+        3.987391937698703e-05
+      ],
+      "curr": [
+        9.761306137079373e-05,
+        0.9998757839202881,
+        2.658265066202148e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Biomedical Researchers and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.002002440160140395,
+      "curr": 0.004447810351848602,
+      "delta": 0.002445370191708207
+    },
+    "complete_scores": {
+      "prev": [
+        0.002002440160140395,
+        0.9444630146026611,
+        0.05353458970785141
+      ],
+      "curr": [
+        0.004447810351848602,
+        0.9022682309150696,
+        0.09328394383192062
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Biomedical Researchers and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.001824709353968501,
+      "curr": 0.0010527506237849593,
+      "delta": -0.0007719587301835418
+    },
+    "complete_scores": {
+      "prev": [
+        0.001824709353968501,
+        0.9601079225540161,
+        0.03806731477379799
+      ],
+      "curr": [
+        0.0010527506237849593,
+        0.9422600865364075,
+        0.05668715387582779
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Chemist, Assistant, and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0024782915133982897,
+      "curr": 0.0018652043072506785,
+      "delta": -0.0006130872061476111
+    },
+    "complete_scores": {
+      "prev": [
+        0.0024782915133982897,
+        0.939238429069519,
+        0.05828329175710678
+      ],
+      "curr": [
+        0.0018652043072506785,
+        0.8797348737716675,
+        0.11839992552995682
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Chemists and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.27774882316589355,
+      "curr": 0.27303168177604675,
+      "delta": -0.004717141389846802
+    },
+    "complete_scores": {
+      "prev": [
+        0.27774882316589355,
+        0.561068058013916,
+        0.16118313372135162
+      ],
+      "curr": [
+        0.27303168177604675,
+        0.5780081152915955,
+        0.14896021038293839
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Chemists and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.26035571098327637,
+      "curr": 0.25761571526527405,
+      "delta": -0.0027399957180023193
+    },
+    "complete_scores": {
+      "prev": [
+        0.26035571098327637,
+        0.6148779988288879,
+        0.12476629763841629
+      ],
+      "curr": [
+        0.25761571526527405,
+        0.6084069609642029,
+        0.1339772790670395
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Software Engineer is unsure about the statement. 2 Chemists and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.28495851159095764,
+      "curr": 0.20960675179958344,
+      "delta": -0.0753517597913742
+    },
+    "complete_scores": {
+      "prev": [
+        0.28495851159095764,
+        0.5079934597015381,
+        0.20704802870750427
+      ],
+      "curr": [
+        0.20960675179958344,
+        0.6558014750480652,
+        0.1345917358994484
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Software Engineer is unsure about the statement. 2 Chemists and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 5,
+    "belief": {
+      "prev": -1.0,
+      "curr": 0.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.21525681018829346,
+      "curr": 0.1350397765636444,
+      "delta": -0.08021703362464905
+    },
+    "complete_scores": {
+      "prev": [
+        0.21525681018829346,
+        0.1784541755914688,
+        0.6062890291213989
+      ],
+      "curr": [
+        0.1350397765636444,
+        0.6442387104034424,
+        0.22072146832942963
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Chemists and Software Engineer disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": -1.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.27625614404678345,
+      "curr": 0.10864724218845367,
+      "delta": -0.16760890185832977
+    },
+    "complete_scores": {
+      "prev": [
+        0.27625614404678345,
+        0.5494009256362915,
+        0.17434296011924744
+      ],
+      "curr": [
+        0.10864724218845367,
+        0.12311345338821411,
+        0.7682393193244934
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Chemist disagrees with this statement. Software Engineer is unsure about the statement. Software Engineer, Language Mediator, and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.9238635301589966,
+      "curr": 0.05450417473912239,
+      "delta": -0.8693593554198742
+    },
+    "complete_scores": {
+      "prev": [
+        0.9238635301589966,
+        0.043890126049518585,
+        0.03224635124206543
+      ],
+      "curr": [
+        0.05450417473912239,
+        0.11720240861177444,
+        0.8282933831214905
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Software Engineer disagrees with this statement. Software Engineer is unsure about the statement. Language Mediator and Cybersecurity Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 1,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Software Engineer"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9924958944320679,
+      "curr": 0.8656654357910156,
+      "delta": -0.12683045864105225
+    },
+    "complete_scores": {
+      "prev": [
+        0.9924958944320679,
+        0.00520814023911953,
+        0.002295964863151312
+      ],
+      "curr": [
+        0.8656654357910156,
+        0.10178609192371368,
+        0.032548461109399796
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Cybersecurity Analysts agree with this statement. Software Engineer disagrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 2,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9975122213363647,
+      "curr": 0.9917765855789185,
+      "delta": -0.005735635757446289
+    },
+    "complete_scores": {
+      "prev": [
+        0.9975122213363647,
+        0.000983526580967009,
+        0.00150423648301512
+      ],
+      "curr": [
+        0.9917765855789185,
+        0.005123679526150227,
+        0.0030997481662780046
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Financial Analyst disagrees with this statement. 2 Cybersecurity Analysts and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9982473850250244,
+      "curr": 0.9982473850250244,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.9982473850250244,
+        0.0009246185654774308,
+        0.0008279780740849674
+      ],
+      "curr": [
+        0.9982473850250244,
+        0.0009246185654774308,
+        0.0008279780740849674
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Financial Analysts disagree with this statement. 2 Cybersecurity Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3174624443054199,
+      "curr": 0.3174624443054199,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.3174624443054199,
+        0.6119248867034912,
+        0.07061267644166946
+      ],
+      "curr": [
+        0.3174624443054199,
+        0.6119248867034912,
+        0.07061267644166946
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Financial Analysts disagree with this statement. 2 Cybersecurity Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.28227367997169495,
+      "curr": 0.28227367997169495,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.28227367997169495,
+        0.6563059687614441,
+        0.06142032518982887
+      ],
+      "curr": [
+        0.28227367997169495,
+        0.6563059687614441,
+        0.06142032518982887
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Financial Analysts and Strategic Planner disagree with this statement. Cybersecurity Analyst agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Cybersecurity Analyst"
+      ],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07914073765277863,
+      "curr": 0.07217665761709213,
+      "delta": -0.006964080035686493
+    },
+    "complete_scores": {
+      "prev": [
+        0.07914073765277863,
+        0.8246654272079468,
+        0.09619386494159698
+      ],
+      "curr": [
+        0.07217665761709213,
+        0.8390259146690369,
+        0.08879745006561279
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Strategic Planners and 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.005421134177595377,
+      "curr": 0.010030499659478664,
+      "delta": 0.004609365481883287
+    },
+    "complete_scores": {
+      "prev": [
+        0.005421134177595377,
+        0.985776960849762,
+        0.008801905903965235
+      ],
+      "curr": [
+        0.010030499659478664,
+        0.9762858152389526,
+        0.013683652970939875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Strategic Planners and 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.009148827753961086,
+      "curr": 0.0010953008895739913,
+      "delta": -0.008053526864387095
+    },
+    "complete_scores": {
+      "prev": [
+        0.009148827753961086,
+        0.9779912233352661,
+        0.012859937734901905
+      ],
+      "curr": [
+        0.0010953008895739913,
+        0.9957828521728516,
+        0.0031218440271914005
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Human Participant, Financial Analyst, and 2 Strategic Planners disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.12445171922445297,
+      "curr": 0.07309221476316452,
+      "delta": -0.05135950446128845
+    },
+    "complete_scores": {
+      "prev": [
+        0.12445171922445297,
+        0.824306845664978,
+        0.05124146118760109
+      ],
+      "curr": [
+        0.07309221476316452,
+        0.890445351600647,
+        0.03646239824593067
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Human Participants and 2 Strategic Planners disagree with this statement. Clinical Physician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 1,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6947686076164246,
+      "curr": 0.34506475925445557,
+      "delta": -0.349703848361969
+    },
+    "complete_scores": {
+      "prev": [
+        0.6947686076164246,
+        0.15262041985988617,
+        0.15261094272136688
+      ],
+      "curr": [
+        0.34506475925445557,
+        0.5139724016189575,
+        0.1409628540277481
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Human Participants disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5723806619644165,
+      "curr": 0.6160160899162292,
+      "delta": 0.043635427951812744
+    },
+    "complete_scores": {
+      "prev": [
+        0.5723806619644165,
+        0.32359468936920166,
+        0.10402464121580124
+      ],
+      "curr": [
+        0.6160160899162292,
+        0.2932676374912262,
+        0.09071625024080276
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Lexicographer and Human Participant disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.9416958689689636,
+      "curr": 0.10629726201295853,
+      "delta": -0.8353986069560051
+    },
+    "complete_scores": {
+      "prev": [
+        0.9416958689689636,
+        0.03767257556319237,
+        0.020631548017263412
+      ],
+      "curr": [
+        0.10629726201295853,
+        0.7915967702865601,
+        0.1021059900522232
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Lexicographers disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2818939983844757,
+      "curr": 0.19125789403915405,
+      "delta": -0.09063610434532166
+    },
+    "complete_scores": {
+      "prev": [
+        0.2818939983844757,
+        0.5266473889350891,
+        0.1914585530757904
+      ],
+      "curr": [
+        0.19125789403915405,
+        0.6078163385391235,
+        0.2009257823228836
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Lexicographer disagrees with this statement. 2 Mathematicians and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.28418242931365967,
+      "curr": 0.3412150740623474,
+      "delta": 0.057032644748687744
+    },
+    "complete_scores": {
+      "prev": [
+        0.28418242931365967,
+        0.5831044316291809,
+        0.13271313905715942
+      ],
+      "curr": [
+        0.3412150740623474,
+        0.5202908515930176,
+        0.138494074344635
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Lexicographer disagrees with this statement. Lexicographer, Language Mediator, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6494364738464355,
+      "curr": 0.3016943037509918,
+      "delta": -0.3477421700954437
+    },
+    "complete_scores": {
+      "prev": [
+        0.6494364738464355,
+        0.2793191373348236,
+        0.07124438136816025
+      ],
+      "curr": [
+        0.3016943037509918,
+        0.5815309882164001,
+        0.11677467823028564
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Lexicographers disagree with this statement. 2 Language Mediators agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7766132950782776,
+      "curr": 0.7609807848930359,
+      "delta": -0.0156325101852417
+    },
+    "complete_scores": {
+      "prev": [
+        0.7766132950782776,
+        0.14821922779083252,
+        0.07516748458147049
+      ],
+      "curr": [
+        0.7609807848930359,
+        0.17518772184848785,
+        0.06383152678608894
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Lexicographer disagrees with this statement. Lexicographer, 2 Language Mediators, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 4,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7092230916023254,
+      "curr": 0.7281253337860107,
+      "delta": 0.018902242183685303
+    },
+    "complete_scores": {
+      "prev": [
+        0.7092230916023254,
+        0.20319581031799316,
+        0.08758112043142319
+      ],
+      "curr": [
+        0.7281253337860107,
+        0.1990583837032318,
+        0.07281622290611267
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Software Engineer disagrees with this statement. 2 Language Mediators and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.715162456035614,
+      "curr": 0.7682610750198364,
+      "delta": 0.05309861898422241
+    },
+    "complete_scores": {
+      "prev": [
+        0.715162456035614,
+        0.189499169588089,
+        0.09533833712339401
+      ],
+      "curr": [
+        0.7682610750198364,
+        0.15366189181804657,
+        0.07807701081037521
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Storytellers and 2 Language Mediators agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 4,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9998093247413635,
+      "curr": 0.9963954091072083,
+      "delta": -0.0034139156341552734
+    },
+    "complete_scores": {
+      "prev": [
+        0.9998093247413635,
+        0.00017952594498638064,
+        1.1141112963741762e-05
+      ],
+      "curr": [
+        0.9963954091072083,
+        0.0034830006770789623,
+        0.00012156961747677997
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Language Mediator and 2 Storytellers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 3,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9097844362258911,
+      "curr": 0.7766709923744202,
+      "delta": -0.13311344385147095
+    },
+    "complete_scores": {
+      "prev": [
+        0.9097844362258911,
+        0.0900808572769165,
+        0.0001346843782812357
+      ],
+      "curr": [
+        0.7766709923744202,
+        0.22251993417739868,
+        0.0008090902119874954
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Academic Scholar disagrees with this statement. 2 Storytellers and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 5,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7276082038879395,
+      "curr": 0.7276082038879395,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.7276082038879395,
+        0.27188730239868164,
+        0.000504498282680288
+      ],
+      "curr": [
+        0.7276082038879395,
+        0.27188730239868164,
+        0.000504498282680288
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Academic Scholars disagree with this statement. 2 Storytellers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.18646353483200073,
+      "curr": 0.18646353483200073,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.18646353483200073,
+        0.6820552945137024,
+        0.13148116320371628
+      ],
+      "curr": [
+        0.18646353483200073,
+        0.6820552945137024,
+        0.13148116320371628
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Academic Scholars disagree with this statement. 2 Storytellers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2679840922355652,
+      "curr": 0.2475348263978958,
+      "delta": -0.020449265837669373
+    },
+    "complete_scores": {
+      "prev": [
+        0.2679840922355652,
+        0.613421618938446,
+        0.11859428137540817
+      ],
+      "curr": [
+        0.2475348263978958,
+        0.6321023106575012,
+        0.12036285921931267
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Academic Scholars disagree with this statement. Online Friend is unsure about the statement. Storyteller agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 5,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.16891589760780334,
+      "curr": 0.16891589760780334,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.16891589760780334,
+        0.6680753827095032,
+        0.16300871223211288
+      ],
+      "curr": [
+        0.16891589760780334,
+        0.6680753827095032,
+        0.16300871223211288
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 5,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15589125454425812,
+      "curr": 0.15589125454425812,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.15589125454425812,
+        0.15109498798847198,
+        0.6930137276649475
+      ],
+      "curr": [
+        0.15589125454425812,
+        0.15109498798847198,
+        0.6930137276649475
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 5,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2662542164325714,
+      "curr": 0.25437620282173157,
+      "delta": -0.011878013610839844
+    },
+    "complete_scores": {
+      "prev": [
+        0.2662542164325714,
+        0.2073589712381363,
+        0.5263867974281311
+      ],
+      "curr": [
+        0.25437620282173157,
+        0.27937760949134827,
+        0.46624618768692017
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. Academic Scholar disagrees with this statement. Clinical Physician agrees with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 1,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 5,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2073371261358261,
+      "curr": 0.2073371261358261,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.2073371261358261,
+        0.13386692106723785,
+        0.658795952796936
+      ],
+      "curr": [
+        0.2073371261358261,
+        0.13386692106723785,
+        0.658795952796936
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Polymyxin B is indicated for the treatment of infections of the urinary tract. 2 Online Friends are unsure about this statement. 2 Clinical Physicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 0,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  }
+]

@@ -8,21 +8,6 @@ description: >
   Agent IS informed about its role.
 
 
-# Variable definitions with defaults and validation
-# variables:
-#   role:
-#     type: str
-#     required: false
-#     description: "Agent's role in the network"
-#   statement:
-#     type: str
-#     required: true
-#     description: "Statement being evaluated"
-#   neighbors:
-#     type: list
-#     required: false
-#     description: "Neighbor belief states"
-
 template:
   system: |
     You are {% if role[0]|lower in 'aeiou' %}an{% else %}a{% endif %} {{ role }} in a social discussion network. 

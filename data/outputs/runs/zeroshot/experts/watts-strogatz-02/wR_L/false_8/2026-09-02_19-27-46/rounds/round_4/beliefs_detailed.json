@@ -1,0 +1,2728 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.145408532465808e-06,
+      "curr": 3.392664893908659e-06,
+      "delta": 2.247256361442851e-06
+    },
+    "complete_scores": {
+      "prev": [
+        1.145408532465808e-06,
+        0.9999382495880127,
+        6.063170621928293e-05
+      ],
+      "curr": [
+        3.392664893908659e-06,
+        0.9998551607131958,
+        0.00014145576278679073
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Online Friends are unsure about this statement. Strategic Planner and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00023046712158247828,
+      "curr": 2.4058665530901635e-06,
+      "delta": -0.00022806125502938812
+    },
+    "complete_scores": {
+      "prev": [
+        0.00023046712158247828,
+        0.9995977282524109,
+        0.00017175912216771394
+      ],
+      "curr": [
+        2.4058665530901635e-06,
+        0.9998995065689087,
+        9.809509356273338e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Online Friend is unsure about the statement. 2 Clinical Physicians and LLM disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 6.240535640245071e-06,
+      "curr": 6.240535640245071e-06,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        6.240535640245071e-06,
+        0.9999305009841919,
+        6.326801303657703e-05
+      ],
+      "curr": [
+        6.240535640245071e-06,
+        0.9999305009841919,
+        6.326801303657703e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. LLM and Clinical Physician disagree with this statement. LLM agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.002071777591481805,
+      "curr": 0.402153879404068,
+      "delta": 0.4000821018125862
+    },
+    "complete_scores": {
+      "prev": [
+        0.002071777591481805,
+        0.9925546050071716,
+        0.005373594118282199
+      ],
+      "curr": [
+        0.402153879404068,
+        0.5851303935050964,
+        0.012715706136077642
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Clinical Physicians disagree with this statement. 2 LLMs agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6677461266517639,
+      "curr": 0.41585421562194824,
+      "delta": -0.2518919110298157
+    },
+    "complete_scores": {
+      "prev": [
+        0.6677461266517639,
+        0.315420925617218,
+        0.016832959838211536
+      ],
+      "curr": [
+        0.41585421562194824,
+        0.5684053897857666,
+        0.01574042160063982
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Clinical Physician, LLM, and Assistant disagree with this statement. LLM agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9816669225692749,
+      "curr": 0.9782520532608032,
+      "delta": -0.0034148693084716797
+    },
+    "complete_scores": {
+      "prev": [
+        0.9816669225692749,
+        0.002693427726626396,
+        0.01563964632805437
+      ],
+      "curr": [
+        0.9782520532608032,
+        0.009441759437322617,
+        0.01230621529975906
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Assistants and LLM disagree with this statement. LLM agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03565128520131111,
+      "curr": 0.026444323360919952,
+      "delta": -0.009206961840391159
+    },
+    "complete_scores": {
+      "prev": [
+        0.03565128520131111,
+        0.9486455321311951,
+        0.01570317381992936
+      ],
+      "curr": [
+        0.026444323360919952,
+        0.9617855548858643,
+        0.011770143173635006
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Strategic Planners and 2 Human Participants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.030879121273756027,
+      "curr": 0.1974426805973053,
+      "delta": 0.16656355932354927
+    },
+    "complete_scores": {
+      "prev": [
+        0.030879121273756027,
+        0.9606212973594666,
+        0.008499569958075881
+      ],
+      "curr": [
+        0.1974426805973053,
+        0.7931984066963196,
+        0.009358872892335057
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Strategic Planner and 2 Human Participants disagree with this statement. Mathematician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.015802161768078804,
+      "curr": 0.14939813315868378,
+      "delta": 0.13359597139060497
+    },
+    "complete_scores": {
+      "prev": [
+        0.015802161768078804,
+        0.9776451587677002,
+        0.006552679929882288
+      ],
+      "curr": [
+        0.14939813315868378,
+        0.8332759141921997,
+        0.01732593961060047
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Human Participants disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0003406101604923606,
+      "curr": 0.45319777727127075,
+      "delta": 0.4528571671107784
+    },
+    "complete_scores": {
+      "prev": [
+        0.0003406101604923606,
+        0.9996032118797302,
+        5.6222053899546154e-05
+      ],
+      "curr": [
+        0.45319777727127075,
+        0.5466609001159668,
+        0.00014133244258118793
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Assistants disagree with this statement. 2 LLMs agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 9.818068065214902e-06,
+      "curr": 0.002714850241318345,
+      "delta": 0.00270503217325313
+    },
+    "complete_scores": {
+      "prev": [
+        9.818068065214902e-06,
+        0.9999637603759766,
+        2.6420390895509627e-05
+      ],
+      "curr": [
+        0.002714850241318345,
+        0.9972353577613831,
+        4.9775908337323926e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Assistants and Biomedical Researcher disagree with this statement. LLM agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 7.602256664540619e-05,
+      "curr": 1.9222543414798565e-05,
+      "delta": -5.680002323060762e-05
+    },
+    "complete_scores": {
+      "prev": [
+        7.602256664540619e-05,
+        0.9998946189880371,
+        2.9406065550574567e-05
+      ],
+      "curr": [
+        1.9222543414798565e-05,
+        0.9999481439590454,
+        3.2574186889178236e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Assistants and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0039403000846505165,
+      "curr": 0.0018475947435945272,
+      "delta": -0.0020927053410559893
+    },
+    "complete_scores": {
+      "prev": [
+        0.0039403000846505165,
+        0.8917019963264465,
+        0.10435769706964493
+      ],
+      "curr": [
+        0.0018475947435945272,
+        0.9276314973831177,
+        0.07052095979452133
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Assistants and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0013920117635279894,
+      "curr": 0.0019626866560429335,
+      "delta": 0.0005706748925149441
+    },
+    "complete_scores": {
+      "prev": [
+        0.0013920117635279894,
+        0.9115305542945862,
+        0.08707744628190994
+      ],
+      "curr": [
+        0.0019626866560429335,
+        0.9550982713699341,
+        0.042939040809869766
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Biomedical Researchers, Chemist, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0015085693448781967,
+      "curr": 0.003565017133951187,
+      "delta": 0.0020564477890729904
+    },
+    "complete_scores": {
+      "prev": [
+        0.0015085693448781967,
+        0.8717796206474304,
+        0.12671180069446564
+      ],
+      "curr": [
+        0.003565017133951187,
+        0.9141950607299805,
+        0.08223995566368103
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Biomedical Researchers and 2 Chemists disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2663728594779968,
+      "curr": 0.26960521936416626,
+      "delta": 0.0032323598861694336
+    },
+    "complete_scores": {
+      "prev": [
+        0.2663728594779968,
+        0.581811785697937,
+        0.15181532502174377
+      ],
+      "curr": [
+        0.26960521936416626,
+        0.5531939268112183,
+        0.17720085382461548
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Biomedical Researchers and 2 Chemists disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.25703877210617065,
+      "curr": 0.30383914709091187,
+      "delta": 0.04680037498474121
+    },
+    "complete_scores": {
+      "prev": [
+        0.25703877210617065,
+        0.5614242553710938,
+        0.1815369427204132
+      ],
+      "curr": [
+        0.30383914709091187,
+        0.5588456988334656,
+        0.13731515407562256
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Biomedical Researcher and 2 Chemists disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.30819547176361084,
+      "curr": 0.3417952060699463,
+      "delta": 0.03359973430633545
+    },
+    "complete_scores": {
+      "prev": [
+        0.30819547176361084,
+        0.5242581963539124,
+        0.1675463318824768
+      ],
+      "curr": [
+        0.3417952060699463,
+        0.5051405429840088,
+        0.15306425094604492
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Chemists disagree with this statement. 2 Software Engineers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.6293019652366638,
+      "curr": 0.2861630618572235,
+      "delta": -0.3431389033794403
+    },
+    "complete_scores": {
+      "prev": [
+        0.6293019652366638,
+        0.17750276625156403,
+        0.19319525361061096
+      ],
+      "curr": [
+        0.2861630618572235,
+        0.20936134457588196,
+        0.5044755935668945
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Chemists disagree with this statement. Software Engineer is unsure about the statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4051364064216614,
+      "curr": 0.3747607469558716,
+      "delta": -0.030375659465789795
+    },
+    "complete_scores": {
+      "prev": [
+        0.4051364064216614,
+        0.22373758256435394,
+        0.3711259961128235
+      ],
+      "curr": [
+        0.3747607469558716,
+        0.2535758316516876,
+        0.3716634511947632
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Cybersecurity Analyst, Language Mediator, and Chemist disagree with this statement. Software Engineer is unsure about the statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": 0.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.01439064834266901,
+      "curr": 0.20506799221038818,
+      "delta": 0.19067734386771917
+    },
+    "complete_scores": {
+      "prev": [
+        0.01439064834266901,
+        0.13441789150238037,
+        0.8511914610862732
+      ],
+      "curr": [
+        0.20506799221038818,
+        0.5751274824142456,
+        0.21980451047420502
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Language Mediator and Cybersecurity Analyst disagree with this statement. 2 Software Engineers agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00019683295977301896,
+      "curr": 0.003936917055398226,
+      "delta": 0.003740084095625207
+    },
+    "complete_scores": {
+      "prev": [
+        0.00019683295977301896,
+        0.9980966448783875,
+        0.0017065387219190598
+      ],
+      "curr": [
+        0.003936917055398226,
+        0.9785020351409912,
+        0.017561037093400955
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Software Engineer agrees with this statement. 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.005698441993445158,
+      "curr": 0.026675483211874962,
+      "delta": 0.020977041218429804
+    },
+    "complete_scores": {
+      "prev": [
+        0.005698441993445158,
+        0.973422110080719,
+        0.02087942138314247
+      ],
+      "curr": [
+        0.026675483211874962,
+        0.9257645606994629,
+        0.047559961676597595
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Cybersecurity Analysts disagree with this statement. Software Engineer is unsure about the statement. Financial Analyst agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0006440762081183493,
+      "curr": 0.0010514373425394297,
+      "delta": 0.00040736113442108035
+    },
+    "complete_scores": {
+      "prev": [
+        0.0006440762081183493,
+        0.9960643649101257,
+        0.0032915743067860603
+      ],
+      "curr": [
+        0.0010514373425394297,
+        0.9862483143806458,
+        0.012700241059064865
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Cybersecurity Analysts disagree with this statement. 2 Financial Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5524113178253174,
+      "curr": 0.6477850675582886,
+      "delta": 0.09537374973297119
+    },
+    "complete_scores": {
+      "prev": [
+        0.5524113178253174,
+        0.3917182385921478,
+        0.055870410054922104
+      ],
+      "curr": [
+        0.6477850675582886,
+        0.23097485303878784,
+        0.12124009430408478
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Cybersecurity Analysts disagree with this statement. 2 Financial Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5005229711532593,
+      "curr": 0.40349051356315613,
+      "delta": -0.09703245759010315
+    },
+    "complete_scores": {
+      "prev": [
+        0.5005229711532593,
+        0.4214825928211212,
+        0.0779944658279419
+      ],
+      "curr": [
+        0.40349051356315613,
+        0.4098445773124695,
+        0.18666495382785797
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Strategic Planner and Cybersecurity Analyst disagree with this statement. 2 Financial Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7677032947540283,
+      "curr": 0.7618231773376465,
+      "delta": -0.005880117416381836
+    },
+    "complete_scores": {
+      "prev": [
+        0.7677032947540283,
+        0.20026735961437225,
+        0.03202933073043823
+      ],
+      "curr": [
+        0.7618231773376465,
+        0.15001186728477478,
+        0.08816493302583694
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Strategic Planners disagree with this statement. 2 Financial Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.02460646815598011,
+      "curr": 0.007280521560460329,
+      "delta": -0.01732594659551978
+    },
+    "complete_scores": {
+      "prev": [
+        0.02460646815598011,
+        0.9526612162590027,
+        0.02273232489824295
+      ],
+      "curr": [
+        0.007280521560460329,
+        0.9838294386863708,
+        0.008890003897249699
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Strategic Planners disagree with this statement. 2 Financial Analysts agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00931695569306612,
+      "curr": 0.0037459018640220165,
+      "delta": -0.005571053829044104
+    },
+    "complete_scores": {
+      "prev": [
+        0.00931695569306612,
+        0.9805228114128113,
+        0.010160197503864765
+      ],
+      "curr": [
+        0.0037459018640220165,
+        0.9910721182823181,
+        0.005181963788345456
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Strategic Planners and Human Participant disagree with this statement. Financial Analyst agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00036750754225067794,
+      "curr": 0.0008265987853519619,
+      "delta": 0.0004590912431012839
+    },
+    "complete_scores": {
+      "prev": [
+        0.00036750754225067794,
+        0.9974864721298218,
+        0.0021460349089466035
+      ],
+      "curr": [
+        0.0008265987853519619,
+        0.9955686926841736,
+        0.0036047230241820216
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Clinical Physician, 2 Human Participants, and 2 Strategic Planners disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 0,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6000151634216309,
+      "curr": 0.3043595850467682,
+      "delta": -0.29565557837486267
+    },
+    "complete_scores": {
+      "prev": [
+        0.6000151634216309,
+        0.36392760276794434,
+        0.03605721518397331
+      ],
+      "curr": [
+        0.3043595850467682,
+        0.5775729417800903,
+        0.11806752532720566
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Human Participants disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.680782675743103,
+      "curr": 0.6630263924598694,
+      "delta": -0.017756283283233643
+    },
+    "complete_scores": {
+      "prev": [
+        0.680782675743103,
+        0.2815839350223541,
+        0.037633439525961876
+      ],
+      "curr": [
+        0.6630263924598694,
+        0.25964486598968506,
+        0.07732877135276794
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Lexicographer and Human Participant disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.809400737285614,
+      "curr": 0.07787872105836868,
+      "delta": -0.7315220162272453
+    },
+    "complete_scores": {
+      "prev": [
+        0.809400737285614,
+        0.1750451773405075,
+        0.01555405743420124
+      ],
+      "curr": [
+        0.07787872105836868,
+        0.8438419699668884,
+        0.07827932387590408
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Lexicographers disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19057902693748474,
+      "curr": 0.2803512215614319,
+      "delta": 0.08977219462394714
+    },
+    "complete_scores": {
+      "prev": [
+        0.19057902693748474,
+        0.5601429343223572,
+        0.24927806854248047
+      ],
+      "curr": [
+        0.2803512215614319,
+        0.5489010214805603,
+        0.17074774205684662
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Lexicographers disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2676849961280823,
+      "curr": 0.3005504608154297,
+      "delta": 0.03286546468734741
+    },
+    "complete_scores": {
+      "prev": [
+        0.2676849961280823,
+        0.566689133644104,
+        0.16562588512897491
+      ],
+      "curr": [
+        0.3005504608154297,
+        0.5193046927452087,
+        0.18014483153820038
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Lexicographers and Language Mediator disagree with this statement. Mathematician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.07726769894361496,
+      "curr": 0.04784075543284416,
+      "delta": -0.029426943510770798
+    },
+    "complete_scores": {
+      "prev": [
+        0.07726769894361496,
+        0.7926653027534485,
+        0.13006699085235596
+      ],
+      "curr": [
+        0.04784075543284416,
+        0.8348506689071655,
+        0.1173085868358612
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Lexicographers and 2 Language Mediators disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3437163531780243,
+      "curr": 0.14755886793136597,
+      "delta": -0.19615748524665833
+    },
+    "complete_scores": {
+      "prev": [
+        0.3437163531780243,
+        0.5846812725067139,
+        0.07160231471061707
+      ],
+      "curr": [
+        0.14755886793136597,
+        0.7976956963539124,
+        0.05474541336297989
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Software Engineer is unsure about the statement. 2 Lexicographers and 2 Language Mediators disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Software Engineer"
+      ]
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.08348223567008972,
+      "curr": 0.2926395535469055,
+      "delta": 0.2091573178768158
+    },
+    "complete_scores": {
+      "prev": [
+        0.08348223567008972,
+        0.8836038708686829,
+        0.03291390463709831
+      ],
+      "curr": [
+        0.2926395535469055,
+        0.619517982006073,
+        0.08784247934818268
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Lexicographer and 2 Language Mediators disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.10545806586742401,
+      "curr": 0.15584570169448853,
+      "delta": 0.050387635827064514
+    },
+    "complete_scores": {
+      "prev": [
+        0.10545806586742401,
+        0.8425545692443848,
+        0.05198733136057854
+      ],
+      "curr": [
+        0.15584570169448853,
+        0.7791794538497925,
+        0.0649748221039772
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Language Mediators and 2 Storytellers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.546592804719694e-05,
+      "curr": 2.546592804719694e-05,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        2.546592804719694e-05,
+        0.9999558925628662,
+        1.866721277110628e-05
+      ],
+      "curr": [
+        2.546592804719694e-05,
+        0.9999558925628662,
+        1.866721277110628e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Storytellers and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 6.747961379005574e-06,
+      "curr": 6.438928721763659e-06,
+      "delta": -3.090326572419144e-07
+    },
+    "complete_scores": {
+      "prev": [
+        6.747961379005574e-06,
+        0.9999798536300659,
+        1.3382509052917158e-05
+      ],
+      "curr": [
+        6.438928721763659e-06,
+        0.999976634979248,
+        1.693176920980477e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Storytellers, Academic Scholar, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 6.204791134223342e-05,
+      "curr": 6.302511610556394e-05,
+      "delta": 9.772047633305192e-07
+    },
+    "complete_scores": {
+      "prev": [
+        6.204791134223342e-05,
+        0.9998962879180908,
+        4.167355018580565e-05
+      ],
+      "curr": [
+        6.302511610556394e-05,
+        0.9998977184295654,
+        3.9258086871996056e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Storytellers and 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2699688673019409,
+      "curr": 0.2226390540599823,
+      "delta": -0.04732981324195862
+    },
+    "complete_scores": {
+      "prev": [
+        0.2699688673019409,
+        0.5896661877632141,
+        0.14036494493484497
+      ],
+      "curr": [
+        0.2226390540599823,
+        0.6244067549705505,
+        0.15295422077178955
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Storytellers and 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.239529088139534,
+      "curr": 0.09265195578336716,
+      "delta": -0.14687713235616684
+    },
+    "complete_scores": {
+      "prev": [
+        0.239529088139534,
+        0.6116589903831482,
+        0.1488119587302208
+      ],
+      "curr": [
+        0.09265195578336716,
+        0.7879818081855774,
+        0.11936620622873306
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. Online Friend is unsure about the statement. Storyteller and 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.25472769141197205,
+      "curr": 0.2410622239112854,
+      "delta": -0.013665467500686646
+    },
+    "complete_scores": {
+      "prev": [
+        0.25472769141197205,
+        0.5226672887802124,
+        0.22260499000549316
+      ],
+      "curr": [
+        0.2410622239112854,
+        0.5873847603797913,
+        0.17155298590660095
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1297290027141571,
+      "curr": 0.15664121508598328,
+      "delta": 0.026912212371826172
+    },
+    "complete_scores": {
+      "prev": [
+        0.1297290027141571,
+        0.1665753573179245,
+        0.7036956548690796
+      ],
+      "curr": [
+        0.15664121508598328,
+        0.2075159102678299,
+        0.6358428597450256
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0845501646399498,
+      "curr": 0.07478370517492294,
+      "delta": -0.009766459465026855
+    },
+    "complete_scores": {
+      "prev": [
+        0.0845501646399498,
+        0.146089568734169,
+        0.7693602442741394
+      ],
+      "curr": [
+        0.07478370517492294,
+        0.1419145166873932,
+        0.7833017706871033
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Online Friends are unsure about this statement. Clinical Physician and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.08892975747585297,
+      "curr": 0.07740674167871475,
+      "delta": -0.011523015797138214
+    },
+    "complete_scores": {
+      "prev": [
+        0.08892975747585297,
+        0.16103096306324005,
+        0.750039279460907
+      ],
+      "curr": [
+        0.07740674167871475,
+        0.15155503153800964,
+        0.7710382342338562
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Tetracycline is indicated for the treatment of throat. 2 Online Friends are unsure about this statement. 2 Clinical Physicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  }
+]

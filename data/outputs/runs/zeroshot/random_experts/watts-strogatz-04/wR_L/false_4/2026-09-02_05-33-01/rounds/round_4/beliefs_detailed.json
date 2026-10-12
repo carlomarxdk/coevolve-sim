@@ -1,0 +1,3218 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.005365624558180571,
+      "curr": 0.0008951277704909444,
+      "delta": -0.004470496787689626
+    },
+    "complete_scores": {
+      "prev": [
+        0.005365624558180571,
+        0.9910477995872498,
+        0.003586589125916362
+      ],
+      "curr": [
+        0.0008951277704909444,
+        0.9970851540565491,
+        0.0020196752884658054
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician agrees with this statement. Online Friend, Assistant, Biomedical Researcher, Lexicographer, Academic Scholar, LLM, Software Engineer, Human Participant, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "LLM",
+        "Human Participant",
+        "Biomedical Researcher",
+        "Assistant",
+        "Academic Scholar",
+        "Lexicographer",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0017482053954154253,
+      "curr": 0.0021753867622464895,
+      "delta": 0.0004271813668310642
+    },
+    "complete_scores": {
+      "prev": [
+        0.0017482053954154253,
+        0.9945991039276123,
+        0.0036527140473481268
+      ],
+      "curr": [
+        0.0021753867622464895,
+        0.9944666028022766,
+        0.003357997309649363
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician is unsure about the statement. 2 LLMs, 2 Clinical Physicians, Strategic Planner, Language Mediator, Biomedical Researcher, 2 Assistants, Academic Scholar, and Software Engineer disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "LLM",
+        "Biomedical Researcher",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar",
+        "LLM",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.002881299704313278,
+      "curr": 0.005204538349062204,
+      "delta": 0.002323238644748926
+    },
+    "complete_scores": {
+      "prev": [
+        0.002881299704313278,
+        0.9942528605461121,
+        0.0028658526425715536
+      ],
+      "curr": [
+        0.005204538349062204,
+        0.9918094277381897,
+        0.0029860000940971076
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and Software Engineer agree with this statement. Mathematician is unsure about the statement. 2 LLMs, Lexicographer, Human Participant, Language Mediator, Biomedical Researcher, Assistant, 3 Clinical Physicians, Mathematician, Financial Analyst, Academic Scholar, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "LLM",
+        "Biomedical Researcher",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Academic Scholar",
+        "LLM",
+        "Financial Analyst",
+        "Language Mediator",
+        "Assistant",
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0008801464573480189,
+      "curr": 0.0008529613260179758,
+      "delta": -2.7185131330043077e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.0008801464573480189,
+        0.9958364963531494,
+        0.003283389945863746
+      ],
+      "curr": [
+        0.0008529613260179758,
+        0.9957128763198853,
+        0.003434210637351498
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM and Online Friend agree with this statement. Assistant, Software Engineer, Financial Analyst, Chemist, LLM, Storyteller, 3 Biomedical Researchers, Strategic Planner, 2 Academic Scholars, Clinical Physician, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Online Friend",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Storyteller",
+        "Software Engineer",
+        "Assistant",
+        "LLM",
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Academic Scholar",
+        "Chemist",
+        "Academic Scholar",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.006971186026930809,
+      "curr": 0.009653589688241482,
+      "delta": 0.0026824036613106728
+    },
+    "complete_scores": {
+      "prev": [
+        0.006971186026930809,
+        0.9872373342514038,
+        0.005791508476249874
+      ],
+      "curr": [
+        0.009653589688241482,
+        0.9846928119659424,
+        0.0056536386255174875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Cybersecurity Analyst, Financial Analyst, 3 Strategic Planners, 2 Chemists, 2 Biomedical Researchers, Assistant, and Software Engineer disagree with this statement. Software Engineer, LLM, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 3,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Mathematician",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Software Engineer",
+        "Strategic Planner",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Chemist",
+        "Assistant",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0006646104156970978,
+      "curr": 0.005788715556263924,
+      "delta": 0.005124105140566826
+    },
+    "complete_scores": {
+      "prev": [
+        0.0006646104156970978,
+        0.9961977601051331,
+        0.003137624473311007
+      ],
+      "curr": [
+        0.005788715556263924,
+        0.9888428449630737,
+        0.0053684128215536475
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Strategic Planner, 2 Storytellers, Language Mediator, Software Engineer, 2 Cybersecurity Analysts, Biomedical Researcher, Assistant, Clinical Physician, and Lexicographer disagree with this statement. LLM, Online Friend, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 3,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Language Mediator",
+        "Assistant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.796605258481577e-05,
+      "curr": 3.3734326279954985e-05,
+      "delta": 5.768273695139214e-06
+    },
+    "complete_scores": {
+      "prev": [
+        2.796605258481577e-05,
+        0.9998557567596436,
+        0.00011629436085058842
+      ],
+      "curr": [
+        3.3734326279954985e-05,
+        0.9998804330825806,
+        8.582716691307724e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. 2 Chemists, Clinical Physician, Financial Analyst, Biomedical Researcher, 2 Human Participants, LLM, Lexicographer, 2 Storytellers, Academic Scholar, Language Mediator, Assistant, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 0,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "LLM",
+        "Human Participant",
+        "Biomedical Researcher",
+        "Assistant",
+        "Chemist",
+        "Clinical Physician",
+        "Storyteller",
+        "Lexicographer",
+        "Mathematician",
+        "Storyteller",
+        "Chemist",
+        "Human Participant",
+        "Financial Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 8.397389137826394e-06,
+      "curr": 1.644157418922987e-05,
+      "delta": 8.044185051403474e-06
+    },
+    "complete_scores": {
+      "prev": [
+        8.397389137826394e-06,
+        0.9999102354049683,
+        8.138616158248624e-05
+      ],
+      "curr": [
+        1.644157418922987e-05,
+        0.9999275207519531,
+        5.6012305094554904e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician is unsure about the statement. 2 Cybersecurity Analysts, Chemist, Software Engineer, Clinical Physician, Academic Scholar, Strategic Planner, Mathematician, Online Friend, Biomedical Researcher, Human Participant, Language Mediator, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 0,
+      "n_disagree": 13,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Online Friend",
+        "Human Participant",
+        "Biomedical Researcher",
+        "Chemist",
+        "Assistant",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Mathematician",
+        "Cybersecurity Analyst",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.12938784062862396,
+      "curr": 1.834131035138853e-05,
+      "delta": -0.12936949931827257
+    },
+    "complete_scores": {
+      "prev": [
+        0.12938784062862396,
+        0.8704971075057983,
+        0.00011502047709655017
+      ],
+      "curr": [
+        1.834131035138853e-05,
+        0.9998953342437744,
+        8.632182880319306e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and LLM agree with this statement. Cybersecurity Analyst, 2 Assistants, 2 LLMs, Chemist, 2 Financial Analysts, 2 Biomedical Researchers, Online Friend, Lexicographer, Storyteller, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Online Friend",
+        "LLM",
+        "Biomedical Researcher",
+        "Assistant",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Lexicographer",
+        "Financial Analyst",
+        "Storyteller",
+        "Assistant",
+        "LLM",
+        "Chemist",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03350677713751793,
+      "curr": 0.0019011379918083549,
+      "delta": -0.031605639145709574
+    },
+    "complete_scores": {
+      "prev": [
+        0.03350677713751793,
+        0.877759575843811,
+        0.08873369544744492
+      ],
+      "curr": [
+        0.0019011379918083549,
+        0.9695457816123962,
+        0.028553061187267303
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. 2 Chemists, 3 Cybersecurity Analysts, Financial Analyst, 2 Lexicographers, Software Engineer, 2 Online Friends, Mathematician, Assistant, Human Participant, 2 LLMs, Language Mediator, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 0,
+      "n_disagree": 18,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Online Friend",
+        "LLM",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Chemist",
+        "Lexicographer",
+        "Online Friend",
+        "Mathematician",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "LLM",
+        "Biomedical Researcher",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.01620895229279995,
+      "curr": 0.01045202650129795,
+      "delta": -0.005756925791501999
+    },
+    "complete_scores": {
+      "prev": [
+        0.01620895229279995,
+        0.8989150524139404,
+        0.08487598598003387
+      ],
+      "curr": [
+        0.01045202650129795,
+        0.9707275629043579,
+        0.01882043108344078
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM and Software Engineer agree with this statement. Mathematician is unsure about the statement. 3 Clinical Physicians, 2 Language Mediators, Software Engineer, Financial Analyst, Human Participant, Online Friend, Academic Scholar, and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 2,
+      "n_disagree": 12,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Online Friend",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Language Mediator",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Clinical Physician",
+        "Software Engineer",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.01183276530355215,
+      "curr": 0.04531446099281311,
+      "delta": 0.03348169568926096
+    },
+    "complete_scores": {
+      "prev": [
+        0.01183276530355215,
+        0.8693513870239258,
+        0.1188158467411995
+      ],
+      "curr": [
+        0.04531446099281311,
+        0.8960545063018799,
+        0.0586310513317585
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Clinical Physician, 2 Financial Analysts, 2 Strategic Planners, Assistant, Human Participant, LLM, and 2 Biomedical Researchers disagree with this statement. Software Engineer, LLM, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 3,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "LLM",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Biomedical Researcher",
+        "Assistant",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2101447880268097,
+      "curr": 0.3300887942314148,
+      "delta": 0.1199440062046051
+    },
+    "complete_scores": {
+      "prev": [
+        0.2101447880268097,
+        0.6273764371871948,
+        0.16247878968715668
+      ],
+      "curr": [
+        0.3300887942314148,
+        0.5112515091896057,
+        0.1586596816778183
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Financial Analyst, Cybersecurity Analyst, 2 Online Friends, Lexicographer, Biomedical Researcher, LLM, Language Mediator, and Academic Scholar disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 1,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "LLM",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Financial Analyst",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Online Friend",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19370555877685547,
+      "curr": 0.2096318006515503,
+      "delta": 0.015926241874694824
+    },
+    "complete_scores": {
+      "prev": [
+        0.19370555877685547,
+        0.6060510873794556,
+        0.20024333894252777
+      ],
+      "curr": [
+        0.2096318006515503,
+        0.687356173992157,
+        0.10301201045513153
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer and Online Friend agree with this statement. Chemist, Human Participant, Academic Scholar, Financial Analyst, Clinical Physician, Mathematician, Lexicographer, and Storyteller disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 2,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Mathematician",
+        "Storyteller",
+        "Academic Scholar",
+        "Human Participant",
+        "Clinical Physician",
+        "Financial Analyst",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2693285346031189,
+      "curr": 0.34792929887771606,
+      "delta": 0.07860076427459717
+    },
+    "complete_scores": {
+      "prev": [
+        0.2693285346031189,
+        0.5613288879394531,
+        0.1693425476551056
+      ],
+      "curr": [
+        0.34792929887771606,
+        0.4755629897117615,
+        0.17650772631168365
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician, Chemist, Online Friend, 2 Financial Analysts, Cybersecurity Analyst, 2 Lexicographers, Language Mediator, LLM, and 2 Biomedical Researchers disagree with this statement. LLM agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "LLM",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Online Friend",
+        "Chemist",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.014473089016973972,
+      "curr": 0.13709241151809692,
+      "delta": 0.12261932250112295
+    },
+    "complete_scores": {
+      "prev": [
+        0.014473089016973972,
+        0.655102014541626,
+        0.3304249048233032
+      ],
+      "curr": [
+        0.13709241151809692,
+        0.46377766132354736,
+        0.3991299271583557
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer agrees with this statement. Academic Scholar, 2 Biomedical Researchers, 2 Human Participants, 2 Chemists, Assistant, Cybersecurity Analyst, Clinical Physician, Strategic Planner, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Chemist",
+        "Mathematician",
+        "Human Participant",
+        "Biomedical Researcher",
+        "Academic Scholar",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1407613754272461,
+      "curr": 0.17360606789588928,
+      "delta": 0.03284469246864319
+    },
+    "complete_scores": {
+      "prev": [
+        0.1407613754272461,
+        0.4688069224357605,
+        0.3904317021369934
+      ],
+      "curr": [
+        0.17360606789588928,
+        0.5517188906669617,
+        0.27467504143714905
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician agrees with this statement. 2 Lexicographers, Assistant, Clinical Physician, Strategic Planner, LLM, Biomedical Researcher, Language Mediator, 2 Financial Analysts, Academic Scholar, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "LLM",
+        "Language Mediator",
+        "Strategic Planner",
+        "Financial Analyst",
+        "Clinical Physician",
+        "Lexicographer",
+        "Lexicographer",
+        "Assistant",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6157797574996948,
+      "curr": 0.4335710108280182,
+      "delta": -0.18220874667167664
+    },
+    "complete_scores": {
+      "prev": [
+        0.6157797574996948,
+        0.19991439580917358,
+        0.18430586159229279
+      ],
+      "curr": [
+        0.4335710108280182,
+        0.31720730662345886,
+        0.24922166764736176
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and LLM agree with this statement. 2 Financial Analysts, Human Participant, Online Friend, LLM, Language Mediator, Chemist, Assistant, 2 Cybersecurity Analysts, Storyteller, Software Engineer, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 2,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Language Mediator",
+        "Financial Analyst",
+        "Financial Analyst",
+        "LLM",
+        "Software Engineer",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Online Friend"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 9.457566193304956e-05,
+      "curr": 0.0001419468317180872,
+      "delta": 4.737116978503764e-05
+    },
+    "complete_scores": {
+      "prev": [
+        9.457566193304956e-05,
+        0.9995146989822388,
+        0.0003907102218363434
+      ],
+      "curr": [
+        0.0001419468317180872,
+        0.9993171691894531,
+        0.0005409393343143165
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. 3 Strategic Planners, Mathematician, Chemist, Lexicographer, Financial Analyst, LLM, Academic Scholar, and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 0,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Mathematician",
+        "Academic Scholar",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Software Engineer",
+        "Financial Analyst",
+        "Lexicographer",
+        "Strategic Planner",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00024142714391928166,
+      "curr": 0.0003404181043151766,
+      "delta": 9.899096039589494e-05
+    },
+    "complete_scores": {
+      "prev": [
+        0.00024142714391928166,
+        0.999182403087616,
+        0.0005762141663581133
+      ],
+      "curr": [
+        0.0003404181043151766,
+        0.9990394711494446,
+        0.0006201476790010929
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Human Participant, LLM, Assistant, Software Engineer, Cybersecurity Analyst, Online Friend, Language Mediator, Chemist, and Academic Scholar disagree with this statement. Software Engineer and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 2,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Assistant",
+        "LLM",
+        "Language Mediator",
+        "Academic Scholar",
+        "Human Participant",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0006288837175816298,
+      "curr": 4.0048224036581814e-05,
+      "delta": -0.0005888354935450479
+    },
+    "complete_scores": {
+      "prev": [
+        0.0006288837175816298,
+        0.9878848195075989,
+        0.011486293748021126
+      ],
+      "curr": [
+        4.0048224036581814e-05,
+        0.9995738863945007,
+        0.0003860832075588405
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM agrees with this statement. Cybersecurity Analyst, 2 Academic Scholars, Software Engineer, Biomedical Researcher, 2 Assistants, 2 Financial Analysts, 2 LLMs, Storyteller, 2 Strategic Planners, Online Friend, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 1,
+      "n_disagree": 16,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Assistant",
+        "Financial Analyst",
+        "Academic Scholar",
+        "LLM",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Online Friend",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Assistant",
+        "Storyteller",
+        "Software Engineer",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 3.3925948628166225e-06,
+      "curr": 1.7878998050946393e-06,
+      "delta": -1.6046950577219832e-06
+    },
+    "complete_scores": {
+      "prev": [
+        3.3925948628166225e-06,
+        0.9998345375061035,
+        0.00016209120803978294
+      ],
+      "curr": [
+        1.7878998050946393e-06,
+        0.999906063079834,
+        9.212439908878878e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer agrees with this statement. 2 Cybersecurity Analysts, Software Engineer, 2 Lexicographers, 2 Biomedical Researchers, Strategic Planner, Mathematician, 2 Storytellers, Financial Analyst, 2 Human Participants, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 1,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Financial Analyst",
+        "Mathematician",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Human Participant",
+        "Storyteller",
+        "Lexicographer",
+        "Storyteller",
+        "Strategic Planner",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 9.222981134371366e-06,
+      "curr": 3.2886516692087753e-06,
+      "delta": -5.934329465162591e-06
+    },
+    "complete_scores": {
+      "prev": [
+        9.222981134371366e-06,
+        0.9999376535415649,
+        5.3090023357071914e-05
+      ],
+      "curr": [
+        3.2886516692087753e-06,
+        0.999967098236084,
+        2.9609135708597023e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. 2 Chemists, Clinical Physician, 3 Strategic Planners, Academic Scholar, Financial Analyst, 2 Assistants, Storyteller, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 0,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Financial Analyst",
+        "Academic Scholar",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Assistant",
+        "Strategic Planner",
+        "Assistant",
+        "Chemist",
+        "Clinical Physician",
+        "Lexicographer",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.553323158987041e-06,
+      "curr": 2.642246499817702e-06,
+      "delta": 1.0889233408306609e-06
+    },
+    "complete_scores": {
+      "prev": [
+        1.553323158987041e-06,
+        0.9998860359191895,
+        0.00011238582374062389
+      ],
+      "curr": [
+        2.642246499817702e-06,
+        0.9998688697814941,
+        0.00012851417704951018
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM and Online Friend agree with this statement. Biomedical Researcher, Strategic Planner, Assistant, Lexicographer, 2 Language Mediators, Mathematician, 2 Academic Scholars, Financial Analyst, Chemist, Software Engineer, Human Participant, and Online Friend disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Online Friend",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Financial Analyst",
+        "Mathematician",
+        "Language Mediator",
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Language Mediator",
+        "Software Engineer",
+        "Academic Scholar",
+        "Human Participant",
+        "Online Friend",
+        "Lexicographer",
+        "Chemist",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.10094106942415237,
+      "curr": 0.09765750169754028,
+      "delta": -0.003283567726612091
+    },
+    "complete_scores": {
+      "prev": [
+        0.10094106942415237,
+        0.6898069381713867,
+        0.20925197005271912
+      ],
+      "curr": [
+        0.09765750169754028,
+        0.7562268972396851,
+        0.14611562341451645
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Strategic Planner, LLM, Online Friend, Software Engineer, Human Participant, Financial Analyst, 3 Lexicographers, and Storyteller disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 0,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Financial Analyst",
+        "Lexicographer",
+        "Online Friend",
+        "LLM",
+        "Storyteller",
+        "Lexicographer",
+        "Human Participant",
+        "Lexicographer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.17227473855018616,
+      "curr": 0.07463037222623825,
+      "delta": -0.0976443663239479
+    },
+    "complete_scores": {
+      "prev": [
+        0.17227473855018616,
+        0.748327374458313,
+        0.07939791679382324
+      ],
+      "curr": [
+        0.07463037222623825,
+        0.8278215527534485,
+        0.09754804521799088
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM agrees with this statement. 2 Strategic Planners, Chemist, Storyteller, Online Friend, Mathematician, Financial Analyst, LLM, 2 Clinical Physicians, Academic Scholar, Assistant, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 1,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "LLM",
+        "Strategic Planner",
+        "Financial Analyst",
+        "Online Friend",
+        "Clinical Physician",
+        "Storyteller",
+        "Clinical Physician",
+        "Strategic Planner",
+        "Chemist",
+        "Academic Scholar",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.22039231657981873,
+      "curr": 0.07349354028701782,
+      "delta": -0.1468987762928009
+    },
+    "complete_scores": {
+      "prev": [
+        0.22039231657981873,
+        0.6278392672538757,
+        0.15176843106746674
+      ],
+      "curr": [
+        0.07349354028701782,
+        0.8410890102386475,
+        0.08541742712259293
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer and LLM agree with this statement. 2 Cybersecurity Analysts, Online Friend, 2 Human Participants, 2 Academic Scholars, Chemist, Financial Analyst, Language Mediator, Assistant, Lexicographer, LLM, and Mathematician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 2,
+      "n_disagree": 14,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Language Mediator",
+        "Academic Scholar",
+        "Financial Analyst",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Lexicographer",
+        "Assistant",
+        "LLM",
+        "Cybersecurity Analyst",
+        "Human Participant",
+        "Academic Scholar",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.006235763430595398,
+      "curr": 0.00315347732976079,
+      "delta": -0.003082286100834608
+    },
+    "complete_scores": {
+      "prev": [
+        0.006235763430595398,
+        0.9851570129394531,
+        0.008607215248048306
+      ],
+      "curr": [
+        0.00315347732976079,
+        0.9907931685447693,
+        0.0060533450450748205
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and Online Friend agree with this statement. 2 Biomedical Researchers, Language Mediator, Online Friend, Clinical Physician, Strategic Planner, Academic Scholar, 2 Cybersecurity Analysts, Mathematician, LLM, Chemist, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 2,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Lexicographer",
+        "Online Friend",
+        "Clinical Physician",
+        "Academic Scholar",
+        "Chemist",
+        "Strategic Planner",
+        "LLM",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0014964403817430139,
+      "curr": 0.003497490892186761,
+      "delta": 0.002001050510443747
+    },
+    "complete_scores": {
+      "prev": [
+        0.0014964403817430139,
+        0.9953448176383972,
+        0.003158767241984606
+      ],
+      "curr": [
+        0.003497490892186761,
+        0.9850287437438965,
+        0.011473767925053835
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician, 3 Human Participants, 2 Lexicographers, Online Friend, Assistant, Strategic Planner, Software Engineer, Cybersecurity Analyst, Storyteller, Chemist, Language Mediator, and Biomedical Researcher disagree with this statement. Mathematician is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 0,
+      "n_disagree": 15,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Assistant",
+        "Human Participant",
+        "Mathematician",
+        "Human Participant",
+        "Chemist",
+        "Storyteller",
+        "Language Mediator",
+        "Lexicographer",
+        "Online Friend",
+        "Human Participant",
+        "Lexicographer",
+        "Software Engineer"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.008882024325430393,
+      "curr": 0.006963539402931929,
+      "delta": -0.0019184849224984646
+    },
+    "complete_scores": {
+      "prev": [
+        0.008882024325430393,
+        0.9796099662780762,
+        0.011508016847074032
+      ],
+      "curr": [
+        0.006963539402931929,
+        0.9861543774604797,
+        0.006882072892040014
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and LLM agree with this statement. Biomedical Researcher, 2 Human Participants, Financial Analyst, Lexicographer, Academic Scholar, Clinical Physician, Strategic Planner, Cybersecurity Analyst, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Strategic Planner",
+        "Lexicographer",
+        "Clinical Physician",
+        "Financial Analyst",
+        "Assistant",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Biomedical Researcher",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5424259305000305,
+      "curr": 0.5187802910804749,
+      "delta": -0.023645639419555664
+    },
+    "complete_scores": {
+      "prev": [
+        0.5424259305000305,
+        0.37867429852485657,
+        0.07889971137046814
+      ],
+      "curr": [
+        0.5187802910804749,
+        0.4267370104789734,
+        0.05448268726468086
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer agrees with this statement. 2 Chemists, Financial Analyst, 2 Strategic Planners, Cybersecurity Analyst, 2 Software Engineers, Clinical Physician, 2 Human Participants, Online Friend, Biomedical Researcher, 2 Storytellers, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 1,
+      "n_disagree": 16,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Biomedical Researcher",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Chemist",
+        "Language Mediator",
+        "Chemist",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "Human Participant",
+        "Online Friend",
+        "Human Participant",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.448097288608551,
+      "curr": 0.4413872957229614,
+      "delta": -0.0067099928855896
+    },
+    "complete_scores": {
+      "prev": [
+        0.448097288608551,
+        0.3489784896373749,
+        0.20292426645755768
+      ],
+      "curr": [
+        0.4413872957229614,
+        0.4625698924064636,
+        0.09604281187057495
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM agrees with this statement. 2 Storytellers, Academic Scholar, Language Mediator, Software Engineer, 2 Clinical Physicians, Strategic Planner, Lexicographer, Human Participant, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Lexicographer",
+        "Clinical Physician",
+        "Storyteller",
+        "Software Engineer",
+        "Chemist",
+        "Language Mediator",
+        "Human Participant",
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 4,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5495052933692932,
+      "curr": 0.5851620435714722,
+      "delta": 0.035656750202178955
+    },
+    "complete_scores": {
+      "prev": [
+        0.5495052933692932,
+        0.35478729009628296,
+        0.09570740163326263
+      ],
+      "curr": [
+        0.5851620435714722,
+        0.30835872888565063,
+        0.1064792349934578
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Online Friend, 2 Cybersecurity Analysts, Biomedical Researcher, Mathematician, 2 Strategic Planners, 2 Assistants, 2 Lexicographers, Academic Scholar, 2 Clinical Physicians, Human Participant, Chemist, and Storyteller disagree with this statement. Online Friend and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 2,
+      "n_disagree": 17,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Online Friend",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Lexicographer",
+        "Online Friend",
+        "Clinical Physician",
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "Mathematician",
+        "Human Participant",
+        "Academic Scholar",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3118617832660675,
+      "curr": 0.21652817726135254,
+      "delta": -0.09533360600471497
+    },
+    "complete_scores": {
+      "prev": [
+        0.3118617832660675,
+        0.5826345682144165,
+        0.10550370067358017
+      ],
+      "curr": [
+        0.21652817726135254,
+        0.6881250739097595,
+        0.09534671902656555
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician, LLM, and Online Friend agree with this statement. Chemist, 3 Human Participants, Software Engineer, Lexicographer, Strategic Planner, Clinical Physician, and LLM disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 3,
+      "n_disagree": 9,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Clinical Physician",
+        "Software Engineer",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Human Participant",
+        "LLM",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.3341017961502075,
+      "curr": 0.5611698627471924,
+      "delta": 0.22706806659698486
+    },
+    "complete_scores": {
+      "prev": [
+        0.3341017961502075,
+        0.5338931083679199,
+        0.13200511038303375
+      ],
+      "curr": [
+        0.5611698627471924,
+        0.35670122504234314,
+        0.08212890475988388
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Online Friend, 2 Storytellers, Clinical Physician, Financial Analyst, Biomedical Researcher, Academic Scholar, Strategic Planner, Human Participant, Chemist, and 2 Lexicographers disagree with this statement. Online Friend and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 2,
+      "n_disagree": 12,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Online Friend",
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Human Participant",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Academic Scholar",
+        "Biomedical Researcher",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.35900944471359253,
+      "curr": 0.3304527997970581,
+      "delta": -0.028556644916534424
+    },
+    "complete_scores": {
+      "prev": [
+        0.35900944471359253,
+        0.5648011565208435,
+        0.07618939131498337
+      ],
+      "curr": [
+        0.3304527997970581,
+        0.5709712505340576,
+        0.09857597202062607
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician and LLM agree with this statement. Lexicographer, 2 Storytellers, Financial Analyst, Strategic Planner, Cybersecurity Analyst, Software Engineer, 2 Human Participants, Online Friend, Language Mediator, Assistant, 2 Clinical Physicians, and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 2,
+      "n_disagree": 15,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Online Friend",
+        "Storyteller",
+        "Software Engineer",
+        "Human Participant",
+        "Human Participant",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Academic Scholar",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1888776570558548,
+      "curr": 0.09031332284212112,
+      "delta": -0.09856433421373367
+    },
+    "complete_scores": {
+      "prev": [
+        0.1888776570558548,
+        0.7128168940544128,
+        0.09830544143915176
+      ],
+      "curr": [
+        0.09031332284212112,
+        0.8305058479309082,
+        0.07918082922697067
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Software Engineer, Academic Scholar, 2 Financial Analysts, 2 Storytellers, 2 Chemists, Human Participant, 2 Strategic Planners, Online Friend, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 0,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Strategic Planner",
+        "Chemist",
+        "Human Participant",
+        "Storyteller",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Online Friend",
+        "Software Engineer",
+        "Academic Scholar",
+        "Chemist",
+        "Strategic Planner",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.17199526727199554,
+      "curr": 0.14402854442596436,
+      "delta": -0.02796672284603119
+    },
+    "complete_scores": {
+      "prev": [
+        0.17199526727199554,
+        0.639039933681488,
+        0.18896476924419403
+      ],
+      "curr": [
+        0.14402854442596436,
+        0.6556561589241028,
+        0.20031531155109406
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM, Online Friend, and Mathematician agree with this statement. Assistant, 2 Human Participants, 2 Online Friends, Storyteller, Academic Scholar, 2 Clinical Physicians, Strategic Planner, Software Engineer, Financial Analyst, and Language Mediator disagree with this statement. Mathematician is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 3,
+      "n_disagree": 13,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Human Participant",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Online Friend",
+        "Strategic Planner",
+        "Human Participant",
+        "Language Mediator",
+        "Financial Analyst",
+        "Online Friend",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.11675449460744858,
+      "curr": 0.09042802453041077,
+      "delta": -0.02632647007703781
+    },
+    "complete_scores": {
+      "prev": [
+        0.11675449460744858,
+        0.7264708876609802,
+        0.1567746251821518
+      ],
+      "curr": [
+        0.09042802453041077,
+        0.7454060912132263,
+        0.16416586935520172
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician, Software Engineer, and Online Friend agree with this statement. Human Participant, 2 Financial Analysts, 3 Storytellers, 2 Strategic Planners, Language Mediator, Lexicographer, Software Engineer, Biomedical Researcher, and LLM disagree with this statement. Mathematician is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 3,
+      "n_disagree": 13,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Online Friend",
+        "Software Engineer",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Software Engineer",
+        "Strategic Planner",
+        "Human Participant",
+        "Lexicographer",
+        "Storyteller",
+        "Language Mediator",
+        "Financial Analyst",
+        "LLM",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Storyteller",
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.6684001568355598e-05,
+      "curr": 4.565895778796403e-06,
+      "delta": -2.2118105789559195e-05
+    },
+    "complete_scores": {
+      "prev": [
+        2.6684001568355598e-05,
+        0.9998037219047546,
+        0.00016958948981482536
+      ],
+      "curr": [
+        4.565895778796403e-06,
+        0.9999791383743286,
+        1.6290200164803537e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician is unsure about the statement. Strategic Planner, Storyteller, Online Friend, 3 Clinical Physicians, 2 Human Participants, Lexicographer, Assistant, and Software Engineer disagree with this statement. Software Engineer agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 1,
+      "n_disagree": 11,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Human Participant",
+        "Clinical Physician",
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Clinical Physician",
+        "Online Friend",
+        "Lexicographer",
+        "Human Participant"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.3320401396631496e-06,
+      "curr": 6.048789146007039e-06,
+      "delta": 3.716749006343889e-06
+    },
+    "complete_scores": {
+      "prev": [
+        2.3320401396631496e-06,
+        0.9999829530715942,
+        1.4707081277265388e-05
+      ],
+      "curr": [
+        6.048789146007039e-06,
+        0.9999725818634033,
+        2.138342210855626e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. LLM agrees with this statement. Mathematician is unsure about the statement. 2 Chemists, 2 Clinical Physicians, Financial Analyst, 2 Storytellers, Language Mediator, Human Participant, Strategic Planner, LLM, Software Engineer, Assistant, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 1,
+      "n_disagree": 14,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Human Participant",
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Clinical Physician",
+        "LLM",
+        "Chemist",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Storyteller",
+        "Language Mediator",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 7.141539390431717e-05,
+      "curr": 3.2190990168601274e-05,
+      "delta": -3.9224403735715896e-05
+    },
+    "complete_scores": {
+      "prev": [
+        7.141539390431717e-05,
+        0.9998778104782104,
+        5.0779588491423056e-05
+      ],
+      "curr": [
+        3.2190990168601274e-05,
+        0.9999260902404785,
+        4.170209194853669e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Mathematician is unsure about the statement. Strategic Planner, 2 Software Engineers, 2 Assistants, Chemist, Cybersecurity Analyst, 2 Storytellers, and Lexicographer disagree with this statement. Online Friend and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 2,
+      "n_disagree": 10,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Storyteller",
+        "Lexicographer",
+        "Software Engineer",
+        "Assistant",
+        "Assistant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.15343302488327026,
+      "curr": 0.16736145317554474,
+      "delta": 0.013928428292274475
+    },
+    "complete_scores": {
+      "prev": [
+        0.15343302488327026,
+        0.7435151934623718,
+        0.1030517965555191
+      ],
+      "curr": [
+        0.16736145317554474,
+        0.7384333610534668,
+        0.09420520067214966
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Human Participant, 2 Strategic Planners, Cybersecurity Analyst, Academic Scholar, 2 Storytellers, Lexicographer, Chemist, Clinical Physician, and Mathematician disagree with this statement. Mathematician is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 0,
+      "n_disagree": 11,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Chemist",
+        "Storyteller",
+        "Lexicographer",
+        "Academic Scholar",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Clinical Physician",
+        "Human Participant",
+        "Strategic Planner",
+        "Mathematician"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.1087493747472763,
+      "curr": 0.1059098169207573,
+      "delta": -0.0028395578265190125
+    },
+    "complete_scores": {
+      "prev": [
+        0.1087493747472763,
+        0.7667577266693115,
+        0.12449288740754128
+      ],
+      "curr": [
+        0.1059098169207573,
+        0.8074150681495667,
+        0.08667507953941822
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Academic Scholar, Language Mediator, Assistant, 2 Cybersecurity Analysts, Storyteller, Clinical Physician, and Chemist disagree with this statement. Mathematician is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 0,
+      "n_disagree": 8,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Clinical Physician",
+        "Storyteller",
+        "Language Mediator",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.163625568151474,
+      "curr": 0.14196401834487915,
+      "delta": -0.02166154980659485
+    },
+    "complete_scores": {
+      "prev": [
+        0.163625568151474,
+        0.7448670268058777,
+        0.0915074273943901
+      ],
+      "curr": [
+        0.14196401834487915,
+        0.7795358896255493,
+        0.07850010693073273
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Online Friend, Software Engineer, 2 Chemists, LLM, Strategic Planner, Academic Scholar, 2 Lexicographers, Assistant, Storyteller, 2 Cybersecurity Analysts, Clinical Physician, Financial Analyst, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 0,
+      "n_disagree": 16,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Storyteller",
+        "Lexicographer",
+        "Academic Scholar",
+        "Software Engineer",
+        "Online Friend",
+        "Strategic Planner",
+        "Clinical Physician",
+        "Cybersecurity Analyst",
+        "Lexicographer",
+        "Language Mediator",
+        "LLM",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Assistant",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.21983185410499573,
+      "curr": 0.1387968212366104,
+      "delta": -0.08103503286838531
+    },
+    "complete_scores": {
+      "prev": [
+        0.21983185410499573,
+        0.48771828413009644,
+        0.29244983196258545
+      ],
+      "curr": [
+        0.1387968212366104,
+        0.49982649087905884,
+        0.36137670278549194
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Online Friend and Mathematician agree with this statement. Mathematician is unsure about the statement. Online Friend, 2 Language Mediators, Clinical Physician, Biomedical Researcher, 2 Lexicographers, LLM, Financial Analyst, Mathematician, Storyteller, Cybersecurity Analyst, Academic Scholar, Assistant, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 2,
+      "n_disagree": 15,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Mathematician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Storyteller",
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Academic Scholar",
+        "Lexicographer",
+        "Online Friend",
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "LLM",
+        "Financial Analyst",
+        "Mathematician",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Mathematician"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 4,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.11081555485725403,
+      "curr": 0.11633079499006271,
+      "delta": 0.005515240132808685
+    },
+    "complete_scores": {
+      "prev": [
+        0.11081555485725403,
+        0.38678431510925293,
+        0.5024001002311707
+      ],
+      "curr": [
+        0.11633079499006271,
+        0.23499466478824615,
+        0.6486745476722717
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Human Participant, Financial Analyst, Software Engineer, 2 Storytellers, 2 Assistants, Lexicographer, Academic Scholar, Clinical Physician, LLM, Cybersecurity Analyst, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 0,
+      "n_disagree": 13,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Lexicographer",
+        "Clinical Physician",
+        "Assistant",
+        "Academic Scholar",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Software Engineer",
+        "LLM",
+        "Human Participant",
+        "Financial Analyst",
+        "Assistant",
+        "Chemist",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 4,
+    "belief": {
+      "prev": 0.0,
+      "curr": -1.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.07113929837942123,
+      "curr": 0.1147540956735611,
+      "delta": 0.04361479729413986
+    },
+    "complete_scores": {
+      "prev": [
+        0.07113929837942123,
+        0.525652289390564,
+        0.4032084345817566
+      ],
+      "curr": [
+        0.1147540956735611,
+        0.3269039988517761,
+        0.558341920375824
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Manidipine is indicated for the treatment of septic. Clinical Physician, Human Participant, Online Friend, Assistant, Software Engineer, Storyteller, Strategic Planner, 2 Biomedical Researchers, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 0,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Storyteller",
+        "Language Mediator",
+        "Online Friend",
+        "Human Participant",
+        "Biomedical Researcher",
+        "Strategic Planner",
+        "Software Engineer",
+        "Biomedical Researcher",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  }
+]

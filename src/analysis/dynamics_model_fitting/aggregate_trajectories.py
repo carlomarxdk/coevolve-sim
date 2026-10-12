@@ -13,6 +13,7 @@ class RunMetadata:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -26,6 +27,7 @@ class TrajectoryRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -46,6 +48,7 @@ class RoundRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -70,6 +73,7 @@ class TransitionRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -101,6 +105,7 @@ class RunRoundMetricsRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -139,6 +144,7 @@ class EdgeRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -154,6 +160,7 @@ class AgentNetworkRow:
 
     experiment_group: str
     graph_type: str
+    graph_family: str
     statement_id: str
     timestamp: str
     run_dir: str
@@ -223,6 +230,20 @@ def find_run_dirs(input_root: Path) -> list[Path]:
     return sorted(set(run_dirs))
 
 
+def get_graph_family(graph_type: str) -> str:
+    """Map an exact graph label to its pooled graph family.
+
+    The raw ``graph_type`` is preserved for provenance (for example,
+    ``watts-strogatz-08``), while ``graph_family`` is used for pooled
+    surrogate fitting (for example, ``watts-strogatz``).
+    """
+    if graph_type == "erdos-renyi" or graph_type.startswith("erdos-renyi-"):
+        return "erdos-renyi"
+    if graph_type == "watts-strogatz" or graph_type.startswith("watts-strogatz-"):
+        return "watts-strogatz"
+    return graph_type
+
+
 def parse_run_metadata(run_dir: Path, input_root: Path) -> RunMetadata:
     """Parse metadata encoded in the directory structure."""
     rel_parts = run_dir.relative_to(input_root).parts
@@ -231,6 +252,7 @@ def parse_run_metadata(run_dir: Path, input_root: Path) -> RunMetadata:
 
     experiment_group = rel_parts[0]
     graph_type = rel_parts[1]
+    graph_family = get_graph_family(graph_type)
     statement_id = rel_parts[3]
     timestamp = rel_parts[4]
     config_path = run_dir / "config.json"
@@ -255,13 +277,13 @@ def parse_run_metadata(run_dir: Path, input_root: Path) -> RunMetadata:
         raise SeedMetadataError(
             f"Invalid seed value in config.json for run {run_dir}: {raw_seed}"
         ) from exc
-        
-        
+
     run_id = f"{experiment_group}__{graph_type}__{statement_id}__{seed}"
 
     return RunMetadata(
         experiment_group=experiment_group,
         graph_type=graph_type,
+        graph_family=graph_family,
         statement_id=statement_id,
         timestamp=timestamp,
         run_dir=str(run_dir),
@@ -285,8 +307,8 @@ def sorted_round_keys(mapping: dict[str, Any]) -> list[str]:
 
 
 def build_edge_rows(
-    network_edges: dict[str, Any],
-    meta: RunMetadata,
+        network_edges: dict[str, Any],
+        meta: RunMetadata,
 ) -> list[EdgeRow]:
     rows: list[EdgeRow] = []
     for edge in network_edges.get("edges", []):
@@ -304,9 +326,9 @@ def build_edge_rows(
 
 
 def build_agent_network_rows(
-    network_edges: dict[str, Any],
-    meta: RunMetadata,
-    agent_ids: Iterable[str] | None = None,
+        network_edges: dict[str, Any],
+        meta: RunMetadata,
+        agent_ids: Iterable[str] | None = None,
 ) -> list[AgentNetworkRow]:
     n_agents = network_edges.get("n")
     adjacency: dict[str, set[str]] = {}
@@ -341,8 +363,8 @@ def build_agent_network_rows(
 
 
 def build_trajectory_rows(
-    agents_data: dict[str, dict[str, Any]],
-    meta: RunMetadata,
+        agents_data: dict[str, dict[str, Any]],
+        meta: RunMetadata,
 ) -> list[TrajectoryRow]:
     rows: list[TrajectoryRow] = []
 
@@ -368,9 +390,9 @@ def build_trajectory_rows(
 
 
 def build_round_rows(
-    agents_data: dict[str, dict[str, Any]],
-    meta: RunMetadata,
-    agent_network_lookup: dict[str, dict[str, Any]] | None = None,
+        agents_data: dict[str, dict[str, Any]],
+        meta: RunMetadata,
+        agent_network_lookup: dict[str, dict[str, Any]] | None = None,
 ) -> list[RoundRow]:
     rows: list[RoundRow] = []
 
@@ -410,9 +432,9 @@ def build_round_rows(
 
 
 def build_transition_rows(
-    agents_data: dict[str, dict[str, Any]],
-    meta: RunMetadata,
-    agent_network_lookup: dict[str, dict[str, Any]] | None = None,
+        agents_data: dict[str, dict[str, Any]],
+        meta: RunMetadata,
+        agent_network_lookup: dict[str, dict[str, Any]] | None = None,
 ) -> list[TransitionRow]:
     rows: list[TransitionRow] = []
 
@@ -462,8 +484,8 @@ def build_transition_rows(
 
 
 def build_run_round_metrics_rows(
-    per_round_metrics: dict[str, Any],
-    meta: RunMetadata,
+        per_round_metrics: dict[str, Any],
+        meta: RunMetadata,
 ) -> list[RunRoundMetricsRow]:
     rows: list[RunRoundMetricsRow] = []
 
@@ -509,7 +531,7 @@ def build_run_round_metrics_rows(
 
 
 def _unpack_complete_scores(
-    scores: list[float] | tuple[float, float, float] | None,
+        scores: list[float] | tuple[float, float, float] | None,
 ) -> tuple[float | None, float | None, float | None]:
     if scores is None or len(scores) != 3:
         return None, None, None
@@ -542,9 +564,17 @@ def add_global_prevalence_features(transition_df: pd.DataFrame) -> pd.DataFrame:
     }
     prevalence_df = prevalence_df.rename(columns=rename_map)
 
-    for col in ["global_frac_neg1_t", "global_frac_0_t", "global_frac_1_t"]:
+    prevalence_cols = [
+        "global_frac_neg1_t",
+        "global_frac_0_t",
+        "global_frac_1_t",
+    ]
+
+    for col in prevalence_cols:
         if col not in prevalence_df.columns:
             prevalence_df[col] = 0.0
+
+    prevalence_df[prevalence_cols] = prevalence_df[prevalence_cols].fillna(0.0)
 
     prevalence_df["n_agents_in_run"] = (
         transition_df.groupby(["run_dir", "round_t"])["agent_id"]
@@ -569,8 +599,8 @@ def add_global_prevalence_features(transition_df: pd.DataFrame) -> pd.DataFrame:
 
 
 def add_neighbor_prevalence_features(
-    transition_df: pd.DataFrame,
-    round_df: pd.DataFrame,
+        transition_df: pd.DataFrame,
+        round_df: pd.DataFrame,
 ) -> pd.DataFrame:
     """Add per-agent, per-round neighbor state fractions based on belief_label at round t.
 
@@ -835,12 +865,35 @@ def main() -> None:
         write_csv=args.write_csv,
     )
 
+    # Summarize exact graph labels and pooled graph families at the run level.
+    run_provenance_df = trajectory_df[
+        ["run_id", "graph_type", "graph_family"]
+    ].drop_duplicates()
+    graph_type_to_family = dict(
+        sorted(
+            run_provenance_df[["graph_type", "graph_family"]]
+            .drop_duplicates()
+            .itertuples(index=False, name=None)
+        )
+    )
+    runs_by_graph_type = {
+        str(k): int(v)
+        for k, v in run_provenance_df.groupby("graph_type")["run_id"].nunique().sort_index().items()
+    }
+    runs_by_graph_family = {
+        str(k): int(v)
+        for k, v in run_provenance_df.groupby("graph_family")["run_id"].nunique().sort_index().items()
+    }
+
     manifest = {
         "input_root": str(args.input_root),
         "output_dir": str(args.output_dir),
         "n_runs": len(run_dirs),
         "n_failures": len(failures),
         "failures": failures,
+        "graph_type_to_family": graph_type_to_family,
+        "runs_by_graph_type": runs_by_graph_type,
+        "runs_by_graph_family": runs_by_graph_family,
         "tables": {
             "trajectories": len(trajectory_df),
             "rounds": len(round_df),

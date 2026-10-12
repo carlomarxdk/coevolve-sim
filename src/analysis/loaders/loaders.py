@@ -9,21 +9,49 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from .utils import build_adjacency_matrix
 
-VALID_SEEDS = [
-    814183,
-    1170252924,
-    900911955,
-    473392625,
-    964669078,
-    1265438423,
-    597409993,
-    1738238662,
-    1866808230,
-    13955984,
-]
+_NETWORK_CONFIG_DIR = Path(__file__).resolve().parents[2] / "configs" / "network"
+
+
+def _scan_network_configs() -> tuple[list[str], list[int]]:
+    """Derive valid graph types and master seeds from the network config files.
+
+    Each realization lives in its own `src/configs/network/<name>.yaml` and carries
+    a `seed_map` of {master_seed: graph_seed}. Deriving from those files keeps the
+    config directory as the single source of truth, so adding a realization does not
+    require editing a hardcoded list here.
+
+    Returns:
+        (graph_types, master_seeds). Falls back to the two base families and an empty
+        seed list if the config directory is unavailable.
+    """
+    graph_types: list[str] = []
+    master_seeds: set[int] = set()
+
+    if not _NETWORK_CONFIG_DIR.is_dir():
+        return ["erdos-renyi", "watts-strogatz"], []
+
+    for cfg_path in sorted(_NETWORK_CONFIG_DIR.glob("*.yaml")):
+        if cfg_path.stem == "base":
+            continue
+        try:
+            cfg = yaml.safe_load(cfg_path.read_text()) or {}
+        except yaml.YAMLError:
+            continue
+        graph_types.append(cfg_path.stem)
+        for master in (cfg.get("seed_map") or {}):
+            try:
+                master_seeds.add(int(master))
+            except (TypeError, ValueError):
+                continue
+
+    return graph_types, sorted(master_seeds)
+
+
+VALID_GRAPH_TYPES, VALID_SEEDS = _scan_network_configs()
 
 VALID_STATEMENT_IDS = [
     "false_0",
@@ -51,8 +79,6 @@ VALID_STATEMENT_IDS = [
 VALID_PROMPTS = ["wR_L"]
 
 VALID_PROBES = ["zeroshot"]
-
-VALID_GRAPH_TYPES = ["erdos-renyi", "watts-strogatz"]
 
 VALID_SETTINGS = ["experts", "random_roles", "random_experts", "base_llms"]
 
@@ -137,7 +163,27 @@ def load_runs_metadata(
                             )
 
                             complete_run = True if cmpltn_path.exists() else False
-                            if config_path.exists():
+                            if not config_path.exists():
+                                # A run directory with no config.json cannot be
+                                # attributed to a seed, so it is unusable even when
+                                # results/final_metrics.json is present. Record it as
+                                # unvalidated rather than skipping it silently, so it
+                                # is counted and swept by move_invalid_runs().
+                                runs_data.append(
+                                    {
+                                        "probe": probe,
+                                        "setting": setting,
+                                        "graph_type": graph_type,
+                                        "prompt": prompt,
+                                        "statement_id": statement_id,
+                                        "datetime": datetime,
+                                        "seed": None,
+                                        "run_path": str(datetime_dir),
+                                        "completed": complete_run,
+                                        "validated": False,
+                                    }
+                                )
+                            else:
                                 try:
                                     with open(config_path) as f:
                                         config = json.load(f)

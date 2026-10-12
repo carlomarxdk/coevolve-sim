@@ -66,8 +66,9 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default="all",
         help=(
-            "Graph type to use: one of "
-            "{erdos-renyi, watts-strogatz, all}."
+            "Graph family to pool and fit: one of "
+            "{erdos-renyi, watts-strogatz, all}. "
+            "Exact graph labels (e.g., watts-strogatz-08) are retained in the data."
         ),
     )
     parser.add_argument(
@@ -125,8 +126,13 @@ def filter_dataset(
         ].copy()
 
     if graph_type != "all":
+        if "graph_family" not in filtered_df.columns:
+            raise KeyError(
+                "Missing 'graph_family' column. Rerun aggregate_trajectories.py "
+                "with the graph-family-aware version before fitting."
+            )
         filtered_df = filtered_df[
-            filtered_df["graph_type"] == graph_type
+            filtered_df["graph_family"] == graph_type
         ].copy()
 
     if exclude_round0_to_1:
@@ -177,7 +183,20 @@ def save_split_manifest(
     split_path = output_dir / model_name / f"{run_tag}__{timestamp}__splits.csv"
     split_path.parent.mkdir(parents=True, exist_ok=True)
 
-    split_df[["trajectory_id", "split"]].drop_duplicates().to_csv(
+    provenance_cols = [
+        col
+        for col in [
+            "trajectory_id",
+            "run_dir",
+            "run_id",
+            "graph_family",
+            "graph_type",
+            "seed",
+            "split",
+        ]
+        if col in split_df.columns
+    ]
+    split_df[provenance_cols].drop_duplicates().to_csv(
         split_path,
         index=False,
     )
@@ -239,6 +258,23 @@ def main() -> None:
     if df.empty:
         raise ValueError("Filtered dataframe is empty. Check your filter arguments.")
 
+    if "graph_family" not in df.columns:
+        raise KeyError(
+            "Missing 'graph_family' column. Rerun aggregate_trajectories.py "
+            "with the graph-family-aware version before fitting."
+        )
+
+    graph_types_in_fit = sorted(
+        df["graph_type"].dropna().astype(str).unique().tolist()
+    )
+    graph_families_in_fit = sorted(
+        df["graph_family"].dropna().astype(str).unique().tolist()
+    )
+    seeds_in_fit = sorted(
+        int(seed) for seed in df["seed"].dropna().unique().tolist()
+    )
+    n_runs_in_fit = int(df["run_dir"].nunique())
+
     train_df, val_df, test_df = train_val_test_split_by_run(
         df,
         random_state=args.random_state,
@@ -277,7 +313,14 @@ def main() -> None:
                 "config": model.get_params(),
                 "split_path": str(split_path),
                 "experiment_group": args.experiment_group,
+                # Backward-compatible selector used by existing evaluation code.
                 "graph_type": args.graph_type,
+                # Explicit pooled-family/provenance metadata.
+                "graph_family": args.graph_type,
+                "graph_families_in_fit": graph_families_in_fit,
+                "graph_types_in_fit": graph_types_in_fit,
+                "seeds_in_fit": seeds_in_fit,
+                "n_runs_in_fit": n_runs_in_fit,
                 "exclude_round0_to_1": args.exclude_round0_to_1,
             },
             model_path,
@@ -289,7 +332,13 @@ def main() -> None:
         "timestamp": timestamp,
         "random_state": args.random_state,
         "experiment_group": args.experiment_group,
+        # ``graph_type`` remains the family selector for backward compatibility.
         "graph_type": args.graph_type,
+        "graph_family": args.graph_type,
+        "graph_families_in_fit": graph_families_in_fit,
+        "graph_types_in_fit": graph_types_in_fit,
+        "seeds_in_fit": seeds_in_fit,
+        "n_runs_in_fit": n_runs_in_fit,
         "exclude_round0_to_1": args.exclude_round0_to_1,
         "n_rows_total": len(df),
         "n_train": len(train_df),

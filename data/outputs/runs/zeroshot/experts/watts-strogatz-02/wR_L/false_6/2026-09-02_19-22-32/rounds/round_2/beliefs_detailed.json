@@ -1,0 +1,2708 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.2407756912580226e-05,
+      "curr": 1.8916340195573866e-05,
+      "delta": 6.508583282993641e-06
+    },
+    "complete_scores": {
+      "prev": [
+        1.2407756912580226e-05,
+        0.9996863603591919,
+        0.0003012309316545725
+      ],
+      "curr": [
+        1.8916340195573866e-05,
+        0.9995156526565552,
+        0.00046544833458028734
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Online Friends are unsure about this statement. Strategic Planner and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 5.143604357726872e-05,
+      "curr": 1.2027424418192822e-05,
+      "delta": -3.94086191590759e-05
+    },
+    "complete_scores": {
+      "prev": [
+        5.143604357726872e-05,
+        0.999828577041626,
+        0.00011997504043392837
+      ],
+      "curr": [
+        1.2027424418192822e-05,
+        0.9998039603233337,
+        0.00018399819964542985
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Online Friend is unsure about the statement. 2 Clinical Physicians and LLM disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 8.397120836889371e-06,
+      "curr": 1.9521836293279193e-05,
+      "delta": 1.1124715456389822e-05
+    },
+    "complete_scores": {
+      "prev": [
+        8.397120836889371e-06,
+        0.9998782873153687,
+        0.00011331227142363787
+      ],
+      "curr": [
+        1.9521836293279193e-05,
+        0.9997730851173401,
+        0.00020735480939038098
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 LLMs and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.004423529375344515,
+      "curr": 0.004423529375344515,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.004423529375344515,
+        0.9855382442474365,
+        0.010038205422461033
+      ],
+      "curr": [
+        0.004423529375344515,
+        0.9855382442474365,
+        0.010038205422461033
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 LLMs and 2 Clinical Physicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0020416604820638895,
+      "curr": 0.0013625591527670622,
+      "delta": -0.0006791013292968273
+    },
+    "complete_scores": {
+      "prev": [
+        0.0020416604820638895,
+        0.9935291409492493,
+        0.004429216030985117
+      ],
+      "curr": [
+        0.0013625591527670622,
+        0.995370090007782,
+        0.0032673439709469676
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Assistant, 2 LLMs, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.004038272891193628,
+      "curr": 0.004038272891193628,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.004038272891193628,
+        0.9881327748298645,
+        0.007828931557014585
+      ],
+      "curr": [
+        0.004038272891193628,
+        0.9881327748298645,
+        0.007828931557014585
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Assistants and 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.014082462526857853,
+      "curr": 0.014082462526857853,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.014082462526857853,
+        0.971950888633728,
+        0.013966618105769157
+      ],
+      "curr": [
+        0.014082462526857853,
+        0.971950888633728,
+        0.013966618105769157
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Human Participants and 2 Strategic Planners disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.006667261943221092,
+      "curr": 0.006350173614919186,
+      "delta": -0.0003170883283019066
+    },
+    "complete_scores": {
+      "prev": [
+        0.006667261943221092,
+        0.9895094633102417,
+        0.0038232722436077893
+      ],
+      "curr": [
+        0.006350173614919186,
+        0.9876784682273865,
+        0.005971381790004671
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Mathematician, 2 Human Participants, and Strategic Planner disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.017037753015756607,
+      "curr": 0.067744679749012,
+      "delta": 0.050706926733255386
+    },
+    "complete_scores": {
+      "prev": [
+        0.017037753015756607,
+        0.9748724699020386,
+        0.0080897759180516
+      ],
+      "curr": [
+        0.067744679749012,
+        0.920687735080719,
+        0.011567573994398117
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Human Participants and Mathematician disagree with this statement. Mathematician agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0004954980686306953,
+      "curr": 0.0004954980686306953,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.0004954980686306953,
+        0.9994279742240906,
+        7.652042404515669e-05
+      ],
+      "curr": [
+        0.0004954980686306953,
+        0.9994279742240906,
+        7.652042404515669e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Assistants and 2 LLMs disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 3.21913612424396e-05,
+      "curr": 8.614357648184523e-05,
+      "delta": 5.395221523940563e-05
+    },
+    "complete_scores": {
+      "prev": [
+        3.21913612424396e-05,
+        0.9999376535415649,
+        3.01479694826412e-05
+      ],
+      "curr": [
+        8.614357648184523e-05,
+        0.9998798370361328,
+        3.4010007766482886e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Biomedical Researcher, 2 Assistants, and LLM disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00013981548545416445,
+      "curr": 0.00013981548545416445,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.00013981548545416445,
+        0.9998130202293396,
+        4.7152208935585804e-05
+      ],
+      "curr": [
+        0.00013981548545416445,
+        0.9998130202293396,
+        4.7152208935585804e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Biomedical Researchers and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0021453113295137882,
+      "curr": 0.0021453113295137882,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.0021453113295137882,
+        0.9212989807128906,
+        0.07655573636293411
+      ],
+      "curr": [
+        0.0021453113295137882,
+        0.9212989807128906,
+        0.07655573636293411
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Biomedical Researchers and 2 Assistants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0006578972097486258,
+      "curr": 0.0009488576906733215,
+      "delta": 0.00029096048092469573
+    },
+    "complete_scores": {
+      "prev": [
+        0.0006578972097486258,
+        0.9557949304580688,
+        0.043547168374061584
+      ],
+      "curr": [
+        0.0009488576906733215,
+        0.9327418208122253,
+        0.06630933284759521
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Chemist, 2 Biomedical Researchers, and Assistant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Assistant",
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0007938059279695153,
+      "curr": 0.0007938059279695153,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.0007938059279695153,
+        0.9266571998596191,
+        0.07254898548126221
+      ],
+      "curr": [
+        0.0007938059279695153,
+        0.9266571998596191,
+        0.07254898548126221
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Chemists and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2576865553855896,
+      "curr": 0.2576865553855896,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.2576865553855896,
+        0.562839150428772,
+        0.17947430908679962
+      ],
+      "curr": [
+        0.2576865553855896,
+        0.562839150428772,
+        0.17947430908679962
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Chemists and 2 Biomedical Researchers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.20494869351387024,
+      "curr": 0.17490430176258087,
+      "delta": -0.030044391751289368
+    },
+    "complete_scores": {
+      "prev": [
+        0.20494869351387024,
+        0.641227662563324,
+        0.1538236439228058
+      ],
+      "curr": [
+        0.17490430176258087,
+        0.6810351610183716,
+        0.14406052976846695
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Software Engineer, 2 Chemists, and Biomedical Researcher disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Biomedical Researcher",
+        "Chemist",
+        "Chemist",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.2569868266582489,
+      "curr": 0.2605345845222473,
+      "delta": 0.003547757863998413
+    },
+    "complete_scores": {
+      "prev": [
+        0.2569868266582489,
+        0.5882486701011658,
+        0.15476453304290771
+      ],
+      "curr": [
+        0.2605345845222473,
+        0.5262942910194397,
+        0.21317113935947418
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Software Engineers and 2 Chemists disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": -1.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.1813216358423233,
+      "curr": 0.028838329017162323,
+      "delta": -0.15248330682516098
+    },
+    "complete_scores": {
+      "prev": [
+        0.1813216358423233,
+        0.47771888971328735,
+        0.34095948934555054
+      ],
+      "curr": [
+        0.028838329017162323,
+        0.3624749481678009,
+        0.6086867451667786
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Software Engineers and 2 Chemists disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Chemist",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": -1.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.15196247398853302,
+      "curr": 0.2440820336341858,
+      "delta": 0.09211955964565277
+    },
+    "complete_scores": {
+      "prev": [
+        0.15196247398853302,
+        0.5387537479400635,
+        0.3092837631702423
+      ],
+      "curr": [
+        0.2440820336341858,
+        0.33887434005737305,
+        0.41704362630844116
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Language Mediator agrees with this statement. 2 Software Engineers, Cybersecurity Analyst, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 1,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": -1.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.11928515136241913,
+      "curr": 0.22535564005374908,
+      "delta": 0.10607048869132996
+    },
+    "complete_scores": {
+      "prev": [
+        0.11928515136241913,
+        0.5690776705741882,
+        0.31163719296455383
+      ],
+      "curr": [
+        0.22535564005374908,
+        0.3773996829986572,
+        0.3972446918487549
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Software Engineers and Cybersecurity Analyst disagree with this statement. Language Mediator agrees with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 1,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.001674371538683772,
+      "curr": 4.905679088551551e-05,
+      "delta": -0.0016253147477982566
+    },
+    "complete_scores": {
+      "prev": [
+        0.001674371538683772,
+        0.9828316569328308,
+        0.015493975952267647
+      ],
+      "curr": [
+        4.905679088551551e-05,
+        0.9993433356285095,
+        0.0006075876299291849
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Cybersecurity Analysts and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0005326844984665513,
+      "curr": 7.482166984118521e-05,
+      "delta": -0.0004578628286253661
+    },
+    "complete_scores": {
+      "prev": [
+        0.0005326844984665513,
+        0.9936887621879578,
+        0.00577852176502347
+      ],
+      "curr": [
+        7.482166984118521e-05,
+        0.9995971322059631,
+        0.00032808358082547784
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Financial Analyst, 2 Cybersecurity Analysts, and Software Engineer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Software Engineer",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00010222037963103503,
+      "curr": 0.00010222037963103503,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.00010222037963103503,
+        0.9991208910942078,
+        0.0007768823415972292
+      ],
+      "curr": [
+        0.00010222037963103503,
+        0.9991208910942078,
+        0.0007768823415972292
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Financial Analysts and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.11833032965660095,
+      "curr": 0.11833032965660095,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.11833032965660095,
+        0.7362760305404663,
+        0.14539361745119095
+      ],
+      "curr": [
+        0.11833032965660095,
+        0.7362760305404663,
+        0.14539361745119095
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Financial Analysts and 2 Cybersecurity Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.10110477358102798,
+      "curr": 0.10490548610687256,
+      "delta": 0.003800712525844574
+    },
+    "complete_scores": {
+      "prev": [
+        0.10110477358102798,
+        0.807774007320404,
+        0.09112119674682617
+      ],
+      "curr": [
+        0.10490548610687256,
+        0.7997584342956543,
+        0.09533610194921494
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Strategic Planner, 2 Financial Analysts, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.13333895802497864,
+      "curr": 0.13333895802497864,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.13333895802497864,
+        0.6878147125244141,
+        0.17884637415409088
+      ],
+      "curr": [
+        0.13333895802497864,
+        0.6878147125244141,
+        0.17884637415409088
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Strategic Planners and 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.003975255414843559,
+      "curr": 0.003975255414843559,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.003975255414843559,
+        0.9880308508872986,
+        0.007993867620825768
+      ],
+      "curr": [
+        0.003975255414843559,
+        0.9880308508872986,
+        0.007993867620825768
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Strategic Planners and 2 Financial Analysts disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0010455013252794743,
+      "curr": 0.002579100662842393,
+      "delta": 0.0015335993375629187
+    },
+    "complete_scores": {
+      "prev": [
+        0.0010455013252794743,
+        0.996123731136322,
+        0.00283074623439461
+      ],
+      "curr": [
+        0.002579100662842393,
+        0.9928362965583801,
+        0.004584630252793431
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Human Participant, 2 Strategic Planners, and Financial Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Financial Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0011131680803373456,
+      "curr": 0.0006351668853312731,
+      "delta": -0.0004780011950060725
+    },
+    "complete_scores": {
+      "prev": [
+        0.0011131680803373456,
+        0.9963364601135254,
+        0.0025503659271635115
+      ],
+      "curr": [
+        0.0006351668853312731,
+        0.9977547526359558,
+        0.001610110717592761
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Human Participants, 2 Strategic Planners, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 0,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.21411637961864471,
+      "curr": 0.21411637961864471,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.21411637961864471,
+        0.639233410358429,
+        0.14665019512176514
+      ],
+      "curr": [
+        0.21411637961864471,
+        0.639233410358429,
+        0.14665019512176514
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Human Participants disagree with this statement. 2 Mathematicians agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4897204041481018,
+      "curr": 0.6702648997306824,
+      "delta": 0.18054449558258057
+    },
+    "complete_scores": {
+      "prev": [
+        0.4897204041481018,
+        0.4529173672199249,
+        0.05736216902732849
+      ],
+      "curr": [
+        0.6702648997306824,
+        0.23528511822223663,
+        0.094449982047081
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Mathematician and Human Participant disagree with this statement. Lexicographer and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Mathematician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9391360282897949,
+      "curr": 0.7664458751678467,
+      "delta": -0.17269015312194824
+    },
+    "complete_scores": {
+      "prev": [
+        0.9391360282897949,
+        0.035570718348026276,
+        0.02529325895011425
+      ],
+      "curr": [
+        0.7664458751678467,
+        0.17235848307609558,
+        0.06119558960199356
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Lexicographer and Mathematician disagree with this statement. Lexicographer and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6259801983833313,
+      "curr": 0.22327286005020142,
+      "delta": -0.4027073383331299
+    },
+    "complete_scores": {
+      "prev": [
+        0.6259801983833313,
+        0.2911078631877899,
+        0.08291194587945938
+      ],
+      "curr": [
+        0.22327286005020142,
+        0.5882456302642822,
+        0.18848153948783875
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Lexicographer disagrees with this statement. 2 Mathematicians and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.42053139209747314,
+      "curr": 0.7006467580795288,
+      "delta": 0.28011536598205566
+    },
+    "complete_scores": {
+      "prev": [
+        0.42053139209747314,
+        0.46186336874961853,
+        0.11760519444942474
+      ],
+      "curr": [
+        0.7006467580795288,
+        0.23838303983211517,
+        0.06097016856074333
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Language Mediator, 2 Lexicographers, and Mathematician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 4,
+      "n_disagree": 0,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6740462183952332,
+      "curr": 0.19780774414539337,
+      "delta": -0.4762384742498398
+    },
+    "complete_scores": {
+      "prev": [
+        0.6740462183952332,
+        0.21883073449134827,
+        0.10712303221225739
+      ],
+      "curr": [
+        0.19780774414539337,
+        0.6188856363296509,
+        0.18330666422843933
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Lexicographer disagrees with this statement. 2 Language Mediators and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 3,
+      "n_disagree": 1,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5194920301437378,
+      "curr": 0.5637077689170837,
+      "delta": 0.04421573877334595
+    },
+    "complete_scores": {
+      "prev": [
+        0.5194920301437378,
+        0.3683750033378601,
+        0.11213298887014389
+      ],
+      "curr": [
+        0.5637077689170837,
+        0.31621140241622925,
+        0.1200808510184288
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Language Mediator, Software Engineer, and Lexicographer disagree with this statement. Language Mediator and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 5,
+      "n_agree": 2,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5576428174972534,
+      "curr": 0.3973354399204254,
+      "delta": -0.160307377576828
+    },
+    "complete_scores": {
+      "prev": [
+        0.5576428174972534,
+        0.3382274806499481,
+        0.10412966459989548
+      ],
+      "curr": [
+        0.3973354399204254,
+        0.479278028011322,
+        0.12338650226593018
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Software Engineer and Language Mediator disagree with this statement. Language Mediator and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Software Engineer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.18243926763534546,
+      "curr": 0.5766751170158386,
+      "delta": 0.39423584938049316
+    },
+    "complete_scores": {
+      "prev": [
+        0.18243926763534546,
+        0.7215612530708313,
+        0.09599947929382324
+      ],
+      "curr": [
+        0.5766751170158386,
+        0.30388644337654114,
+        0.11943839490413666
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Storytellers disagree with this statement. 2 Language Mediators agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 2,
+      "n_disagree": 2,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 2.0462413885979913e-05,
+      "curr": 8.614524995209649e-05,
+      "delta": 6.568283606611658e-05
+    },
+    "complete_scores": {
+      "prev": [
+        2.0462413885979913e-05,
+        0.999954104423523,
+        2.5449160148127703e-05
+      ],
+      "curr": [
+        8.614524995209649e-05,
+        0.9998992681503296,
+        1.4621068658016156e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Storytellers and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 3,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 1.49706938827876e-05,
+      "curr": 1.0783126526803244e-05,
+      "delta": -4.187567355984356e-06
+    },
+    "complete_scores": {
+      "prev": [
+        1.49706938827876e-05,
+        0.9999589920043945,
+        2.605191184557043e-05
+      ],
+      "curr": [
+        1.0783126526803244e-05,
+        0.9999719858169556,
+        1.7215431853401242e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Academic Scholar, 2 Storytellers, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0001159097082563676,
+      "curr": 0.0001159097082563676,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.0001159097082563676,
+        0.999800980091095,
+        8.306858580908738e-05
+      ],
+      "curr": [
+        0.0001159097082563676,
+        0.999800980091095,
+        8.306858580908738e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Academic Scholars and 2 Storytellers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.20392389595508575,
+      "curr": 0.20392389595508575,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.20392389595508575,
+        0.6281298995018005,
+        0.1679462492465973
+      ],
+      "curr": [
+        0.20392389595508575,
+        0.6281298995018005,
+        0.1679462492465973
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Academic Scholars and 2 Storytellers disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19288642704486847,
+      "curr": 0.138934925198555,
+      "delta": -0.05395150184631348
+    },
+    "complete_scores": {
+      "prev": [
+        0.19288642704486847,
+        0.6628021597862244,
+        0.14431144297122955
+      ],
+      "curr": [
+        0.138934925198555,
+        0.6946309208869934,
+        0.166434183716774
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. Online Friend is unsure about the statement. 2 Academic Scholars and Storyteller disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.19443748891353607,
+      "curr": 0.19443748891353607,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.19443748891353607,
+        0.6083410978317261,
+        0.19722142815589905
+      ],
+      "curr": [
+        0.19443748891353607,
+        0.6083410978317261,
+        0.19722142815589905
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.32048481702804565,
+      "curr": 0.32048481702804565,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.32048481702804565,
+        0.12748004496097565,
+        0.5520351529121399
+      ],
+      "curr": [
+        0.32048481702804565,
+        0.12748004496097565,
+        0.5520351529121399
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Online Friends are unsure about this statement. 2 Academic Scholars disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.03906555473804474,
+      "curr": 0.08787065744400024,
+      "delta": 0.048805102705955505
+    },
+    "complete_scores": {
+      "prev": [
+        0.03906555473804474,
+        0.19531548023223877,
+        0.7656189799308777
+      ],
+      "curr": [
+        0.08787065744400024,
+        0.21411024034023285,
+        0.6980190873146057
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Online Friends are unsure about this statement. Clinical Physician and Academic Scholar disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.10118240863084793,
+      "curr": 0.10118240863084793,
+      "delta": 0.0
+    },
+    "complete_scores": {
+      "prev": [
+        0.10118240863084793,
+        0.1542847454547882,
+        0.7445328831672668
+      ],
+      "curr": [
+        0.10118240863084793,
+        0.1542847454547882,
+        0.7445328831672668
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Nandrolone decanoate is indicated for the treatment of Duchenne muscular dystrophy. 2 Online Friends are unsure about this statement. 2 Clinical Physicians disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 4,
+      "n_agree": 0,
+      "n_disagree": 2,
+      "n_neutral": 2,
+      "roles_agree": [],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  }
+]

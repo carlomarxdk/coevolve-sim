@@ -24,8 +24,6 @@ log = logging.getLogger("Network")
 def seed_remap(seed: int | None, seed_map: dict) -> int | None:
     """Remap a random seed into the predefined set for the given generator.
 
-    See the `misc_graph_selection.ipynb` notebook for details.
-
     Args:
         seed: Original seed value.
         seed_map: Map from seeds to network seeds
@@ -87,9 +85,6 @@ class Network:
         for u, v in edge_list:
             if not (0 <= u < n and 0 <= v < n):
                 raise ValueError(f"Edge ({u}, {v}) contains invalid node ID for n={n}")
-
-        # Create minimal configuration (not currently used)
-        # cfg = {"network": {"generator": "edge_list", "params": {"n": n}}, "seed": seed}
 
         # Create instance with custom generator
         network = cls.__new__(cls)

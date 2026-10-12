@@ -1,0 +1,3247 @@
+[
+  {
+    "agent_id": 0,
+    "node_id": 0,
+    "catalog_id": 0,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.7610037922859192,
+      "curr": 4.133076799917035e-05,
+      "delta": -0.76096246151792
+    },
+    "complete_scores": {
+      "prev": [
+        0.7610037922859192,
+        0.20164592564105988,
+        0.037350282073020935
+      ],
+      "curr": [
+        4.133076799917035e-05,
+        0.9998465776443481,
+        0.00011210098091396503
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. 2 LLMs, Mathematician, Clinical Physician, 2 Assistants, and Academic Scholar agree with this statement. LLM and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 7,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar",
+        "Mathematician",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 1,
+    "node_id": 1,
+    "catalog_id": 1,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.08705610036849976,
+      "curr": 0.6889310479164124,
+      "delta": 0.6018749475479126
+    },
+    "complete_scores": {
+      "prev": [
+        0.08705610036849976,
+        0.9071454405784607,
+        0.005798442289233208
+      ],
+      "curr": [
+        0.6889310479164124,
+        0.3057112991809845,
+        0.005357604008167982
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Human Participant, Academic Scholar, Strategic Planner, Cybersecurity Analyst, and LLM disagree with this statement. Storyteller, 2 Assistants, 2 Clinical Physicians, Online Friend, Academic Scholar, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 8,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "Assistant",
+        "Assistant",
+        "Academic Scholar",
+        "Online Friend",
+        "Chemist",
+        "Storyteller",
+        "Clinical Physician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Human Participant"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 2,
+    "node_id": 2,
+    "catalog_id": 2,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5487039089202881,
+      "curr": 0.25859931111335754,
+      "delta": -0.29010459780693054
+    },
+    "complete_scores": {
+      "prev": [
+        0.5487039089202881,
+        0.44783905148506165,
+        0.003457082202658057
+      ],
+      "curr": [
+        0.25859931111335754,
+        0.736680805683136,
+        0.0047198806423693895
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Clinical Physician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. Academic Scholar, Clinical Physician, Human Participant, LLM, and Cybersecurity Analyst disagree with this statement. Clinical Physician, 3 Software Engineers, Storyteller, Language Mediator, Chemist, 2 Assistants, Mathematician, and Online Friend agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 11,
+      "n_disagree": 5,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant",
+        "Online Friend",
+        "Chemist",
+        "Storyteller",
+        "Software Engineer",
+        "Software Engineer",
+        "Clinical Physician",
+        "Assistant",
+        "Language Mediator",
+        "Mathematician",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Academic Scholar",
+        "Human Participant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 3,
+    "node_id": 3,
+    "catalog_id": 3,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.7055048942565918,
+      "curr": 0.07308445125818253,
+      "delta": -0.6324204429984093
+    },
+    "complete_scores": {
+      "prev": [
+        0.7055048942565918,
+        0.26777946949005127,
+        0.026715654879808426
+      ],
+      "curr": [
+        0.07308445125818253,
+        0.8903507590293884,
+        0.036564776673913
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Language Mediators, 2 Assistants, Clinical Physician, LLM, and Software Engineer agree with this statement. Cybersecurity Analyst, Academic Scholar, Strategic Planner, Storyteller, and LLM disagree with this statement. 2 Online Friends and Biomedical Researcher are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 3,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Software Engineer",
+        "Language Mediator",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Academic Scholar",
+        "Storyteller",
+        "Strategic Planner",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher",
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 4,
+    "node_id": 4,
+    "catalog_id": 4,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.2748573124408722,
+      "curr": 0.9615069627761841,
+      "delta": 0.6866496503353119
+    },
+    "complete_scores": {
+      "prev": [
+        0.2748573124408722,
+        0.690991222858429,
+        0.034151460975408554
+      ],
+      "curr": [
+        0.9615069627761841,
+        0.020269693806767464,
+        0.018223348073661327
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Assistants, Financial Analyst, 2 LLMs, 2 Software Engineers, Biomedical Researcher, 2 Clinical Physicians, and Online Friend agree with this statement. Academic Scholar and Clinical Physician disagree with this statement. Biomedical Researcher is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 11,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Online Friend",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Software Engineer",
+        "Assistant",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 5,
+    "node_id": 5,
+    "catalog_id": 5,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6331148147583008,
+      "curr": 0.608887791633606,
+      "delta": -0.024227023124694824
+    },
+    "complete_scores": {
+      "prev": [
+        0.6331148147583008,
+        0.3551452159881592,
+        0.011739946901798248
+      ],
+      "curr": [
+        0.608887791633606,
+        0.381032258272171,
+        0.010079999454319477
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a LLM in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Strategic Planners, Chemist, Lexicographer, Cybersecurity Analyst, Academic Scholar, and LLM disagree with this statement. 3 Assistants, 2 Mathematicians, LLM, Language Mediator, and Clinical Physician agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 8,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Assistant",
+        "Language Mediator",
+        "Mathematician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Chemist",
+        "Strategic Planner",
+        "Lexicographer",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 27,
+    "node_id": 27,
+    "catalog_id": 27,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.04687326028943062,
+      "curr": 0.4818767309188843,
+      "delta": 0.43500347062945366
+    },
+    "complete_scores": {
+      "prev": [
+        0.04687326028943062,
+        0.9414746761322021,
+        0.011652067303657532
+      ],
+      "curr": [
+        0.4818767309188843,
+        0.5050024390220642,
+        0.013120835646986961
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 3 Cybersecurity Analysts, 3 Strategic Planners, 2 Lexicographers, Academic Scholar, and Chemist disagree with this statement. Assistant, Software Engineer, Financial Analyst, 2 Mathematicians, and Biomedical Researcher agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 6,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Biomedical Researcher",
+        "Assistant",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Lexicographer",
+        "Lexicographer",
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 28,
+    "node_id": 28,
+    "catalog_id": 28,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.795439600944519,
+      "curr": 0.7733685374259949,
+      "delta": -0.02207106351852417
+    },
+    "complete_scores": {
+      "prev": [
+        0.795439600944519,
+        0.1382266730070114,
+        0.06633373722434044
+      ],
+      "curr": [
+        0.7733685374259949,
+        0.18952210247516632,
+        0.03710939176380634
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Mathematicians, Language Mediator, 3 Financial Analysts, Lexicographer, Chemist, Biomedical Researcher, Assistant, and Software Engineer agree with this statement. Lexicographer and Strategic Planner disagree with this statement. Biomedical Researcher is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 11,
+      "n_disagree": 2,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Mathematician",
+        "Lexicographer",
+        "Software Engineer",
+        "Assistant",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Mathematician",
+        "Chemist"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 29,
+    "node_id": 29,
+    "catalog_id": 29,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3705517649650574,
+      "curr": 0.07718552649021149,
+      "delta": -0.2933662384748459
+    },
+    "complete_scores": {
+      "prev": [
+        0.3705517649650574,
+        0.6109365820884705,
+        0.018511669244617224
+      ],
+      "curr": [
+        0.07718552649021149,
+        0.9113818407058716,
+        0.011432645376771688
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Human Participant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Assistant, 3 Mathematicians, Financial Analyst, and Clinical Physician agree with this statement. 2 Storytellers, 2 Strategic Planners, Clinical Physician, Cybersecurity Analyst, Academic Scholar, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 6,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Financial Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Clinical Physician",
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Lexicographer",
+        "Storyteller",
+        "Academic Scholar",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 6,
+    "node_id": 6,
+    "catalog_id": 6,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9996141195297241,
+      "curr": 0.9415185451507568,
+      "delta": -0.058095574378967285
+    },
+    "complete_scores": {
+      "prev": [
+        0.9996141195297241,
+        0.00035142613342031837,
+        3.443842797423713e-05
+      ],
+      "curr": [
+        0.9415185451507568,
+        0.058337438851594925,
+        0.0001440040214220062
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 LLMs, Financial Analyst, Human Participant, Biomedical Researcher, Assistant, Software Engineer, and 2 Clinical Physicians agree with this statement. Online Friend and Biomedical Researcher are unsure about the statement. Strategic Planner, Clinical Physician, Human Participant, LLM, 2 Chemists, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 9,
+      "n_disagree": 7,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Clinical Physician",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Human Participant",
+        "Software Engineer",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "LLM",
+        "Chemist",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 7,
+    "node_id": 7,
+    "catalog_id": 7,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9999475479125977,
+      "curr": 0.978741466999054,
+      "delta": -0.0212060809135437
+    },
+    "complete_scores": {
+      "prev": [
+        0.9999475479125977,
+        3.0241288186516613e-05,
+        2.2229339947443805e-05
+      ],
+      "curr": [
+        0.978741466999054,
+        0.020957939326763153,
+        0.00030056407558731735
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend, Assistant, 2 LLMs, 2 Clinical Physicians, Chemist, Storyteller, and Mathematician agree with this statement. Academic Scholar, Strategic Planner, 2 Cybersecurity Analysts, Human Participant, and Clinical Physician disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 9,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Chemist",
+        "Mathematician",
+        "Storyteller",
+        "Clinical Physician",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Clinical Physician",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Academic Scholar",
+        "Human Participant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 8,
+    "node_id": 8,
+    "catalog_id": 8,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.9302756190299988,
+      "curr": 0.8900650143623352,
+      "delta": -0.040210604667663574
+    },
+    "complete_scores": {
+      "prev": [
+        0.9302756190299988,
+        0.06952809542417526,
+        0.00019628203881438822
+      ],
+      "curr": [
+        0.8900650143623352,
+        0.1096775159239769,
+        0.00025748659390956163
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Assistant in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. LLM, Strategic Planner, Academic Scholar, and Chemist disagree with this statement. Lexicographer, Financial Analyst, LLM, 2 Assistants, 2 Mathematicians, Chemist, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 9,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Chemist",
+        "Mathematician",
+        "Software Engineer",
+        "Lexicographer",
+        "Mathematician",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Academic Scholar",
+        "Strategic Planner",
+        "LLM"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 9,
+    "node_id": 9,
+    "catalog_id": 9,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.4547848403453827,
+      "curr": 0.8924484848976135,
+      "delta": 0.43766364455223083
+    },
+    "complete_scores": {
+      "prev": [
+        0.4547848403453827,
+        0.026471653953194618,
+        0.5187435150146484
+      ],
+      "curr": [
+        0.8924484848976135,
+        0.016864635050296783,
+        0.0906868577003479
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Chemist, Storyteller, and LLM disagree with this statement. Human Participant, LLM, Financial Analyst, Biomedical Researcher, Assistant, Software Engineer, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 7,
+      "n_disagree": 3,
+      "n_neutral": 0,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Financial Analyst",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "LLM",
+        "Chemist",
+        "Storyteller"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 10,
+    "node_id": 10,
+    "catalog_id": 10,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.5891745090484619,
+      "curr": 0.3281260132789612,
+      "delta": -0.26104849576950073
+    },
+    "complete_scores": {
+      "prev": [
+        0.5891745090484619,
+        0.17145954072475433,
+        0.23936593532562256
+      ],
+      "curr": [
+        0.3281260132789612,
+        0.5003324151039124,
+        0.17154154181480408
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Language Mediator, Cybersecurity Analyst, Storyteller, Strategic Planner, and Academic Scholar disagree with this statement. Mathematician, Chemist, and Software Engineer agree with this statement. Online Friend and Biomedical Researcher are unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 3,
+      "n_disagree": 5,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Language Mediator",
+        "Academic Scholar",
+        "Strategic Planner",
+        "Storyteller"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 11,
+    "node_id": 11,
+    "catalog_id": 11,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.8146774768829346,
+      "curr": 0.6777472496032715,
+      "delta": -0.13693022727966309
+    },
+    "complete_scores": {
+      "prev": [
+        0.8146774768829346,
+        0.046684738248586655,
+        0.13863776624202728
+      ],
+      "curr": [
+        0.6777472496032715,
+        0.14206354320049286,
+        0.18018920719623566
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Biomedical Researcher in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Financial Analyst, Human Participant, Assistant, 2 Software Engineers, and Mathematician agree with this statement. Strategic Planner, Human Participant, 2 Chemists, Cybersecurity Analyst, and LLM disagree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 6,
+      "n_disagree": 6,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant",
+        "Software Engineer",
+        "Software Engineer",
+        "Mathematician",
+        "Financial Analyst",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Human Participant",
+        "LLM",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Chemist"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 12,
+    "node_id": 12,
+    "catalog_id": 12,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.28656065464019775,
+      "curr": 0.4622350335121155,
+      "delta": 0.17567437887191772
+    },
+    "complete_scores": {
+      "prev": [
+        0.28656065464019775,
+        0.37374553084373474,
+        0.3396937847137451
+      ],
+      "curr": [
+        0.4622350335121155,
+        0.30314114689826965,
+        0.23462378978729248
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Biomedical Researcher is unsure about the statement. Academic Scholar, Strategic Planner, Language Mediator, and Chemist disagree with this statement. 2 Assistants, Biomedical Researcher, LLM, Lexicographer, 2 Software Engineers, and Chemist agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 8,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "LLM",
+        "Assistant",
+        "Biomedical Researcher",
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Assistant",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Language Mediator",
+        "Strategic Planner",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 13,
+    "node_id": 13,
+    "catalog_id": 13,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3391813635826111,
+      "curr": 0.371058851480484,
+      "delta": 0.031877487897872925
+    },
+    "complete_scores": {
+      "prev": [
+        0.3391813635826111,
+        0.39654314517974854,
+        0.2642754912376404
+      ],
+      "curr": [
+        0.371058851480484,
+        0.42708614468574524,
+        0.20185498893260956
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Academic Scholar, 3 Cybersecurity Analysts, Strategic Planner, Human Participant, Chemist, and Storyteller disagree with this statement. Mathematician, Assistant, Language Mediator, Biomedical Researcher, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 5,
+      "n_disagree": 8,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Assistant",
+        "Mathematician",
+        "Software Engineer",
+        "Biomedical Researcher",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Academic Scholar",
+        "Storyteller",
+        "Human Participant",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 14,
+    "node_id": 14,
+    "catalog_id": 14,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4113251566886902,
+      "curr": 0.39053747057914734,
+      "delta": -0.020787686109542847
+    },
+    "complete_scores": {
+      "prev": [
+        0.4113251566886902,
+        0.26145416498184204,
+        0.3272206783294678
+      ],
+      "curr": [
+        0.39053747057914734,
+        0.3089405596256256,
+        0.30052196979522705
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Chemist in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Biomedical Researcher is unsure about the statement. Software Engineer, Human Participant, 2 Mathematicians, Clinical Physician, Biomedical Researcher, Financial Analyst, and 2 Assistants agree with this statement. Cybersecurity Analyst, Chemist, Clinical Physician, Storyteller, and Language Mediator disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 9,
+      "n_disagree": 5,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Assistant",
+        "Assistant",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Clinical Physician",
+        "Mathematician",
+        "Mathematician",
+        "Financial Analyst",
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Storyteller",
+        "Clinical Physician",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 15,
+    "node_id": 15,
+    "catalog_id": 15,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.4909854829311371,
+      "curr": 0.13868172466754913,
+      "delta": -0.35230375826358795
+    },
+    "complete_scores": {
+      "prev": [
+        0.4909854829311371,
+        0.2144957035779953,
+        0.2945188283920288
+      ],
+      "curr": [
+        0.13868172466754913,
+        0.27580150961875916,
+        0.5855167508125305
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Strategic Planner, Cybersecurity Analyst, LLM, Human Participant, and Chemist disagree with this statement. Biomedical Researcher is unsure about the statement. Lexicographer, Software Engineer, Clinical Physician, and Financial Analyst agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 4,
+      "n_disagree": 5,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Lexicographer",
+        "Clinical Physician",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Chemist",
+        "Human Participant",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 16,
+    "node_id": 16,
+    "catalog_id": 16,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5285705924034119,
+      "curr": 0.46635669469833374,
+      "delta": -0.062213897705078125
+    },
+    "complete_scores": {
+      "prev": [
+        0.5285705924034119,
+        0.2203410118818283,
+        0.25108836591243744
+      ],
+      "curr": [
+        0.46635669469833374,
+        0.44500070810317993,
+        0.08864261955022812
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 3 Cybersecurity Analysts and Chemist disagree with this statement. Mathematician, Biomedical Researcher, Clinical Physician, Language Mediator, Chemist, Assistant, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 11,
+      "n_agree": 7,
+      "n_disagree": 4,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Chemist",
+        "Language Mediator",
+        "Human Participant",
+        "Assistant",
+        "Clinical Physician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 17,
+    "node_id": 17,
+    "catalog_id": 17,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": -1.0,
+      "delta": -2.0
+    },
+    "score": {
+      "prev": 0.5459199547767639,
+      "curr": 0.1378781795501709,
+      "delta": -0.408041775226593
+    },
+    "complete_scores": {
+      "prev": [
+        0.5459199547767639,
+        0.16391490399837494,
+        0.29016512632369995
+      ],
+      "curr": [
+        0.1378781795501709,
+        0.2785215675830841,
+        0.5836002826690674
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Software Engineer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. LLM, 2 Cybersecurity Analysts, 2 Strategic Planners, Academic Scholar, and Chemist disagree with this statement. 2 Financial Analysts, Clinical Physician, 2 Biomedical Researchers, Assistant, LLM, Software Engineer, and Mathematician agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 9,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Biomedical Researcher",
+        "Biomedical Researcher",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "LLM",
+        "Assistant",
+        "Clinical Physician",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Academic Scholar",
+        "LLM"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 18,
+    "node_id": 18,
+    "catalog_id": 18,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.08324545621871948,
+      "curr": 0.000674262351822108,
+      "delta": -0.08257119386689737
+    },
+    "complete_scores": {
+      "prev": [
+        0.08324545621871948,
+        0.5600597858428955,
+        0.356694757938385
+      ],
+      "curr": [
+        0.000674262351822108,
+        0.9949963092803955,
+        0.0043294369243085384
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Strategic Planner, Human Participant, Language Mediator, Clinical Physician, Lexicographer, Storyteller, and Chemist disagree with this statement. 2 Financial Analysts, Assistant, 2 Software Engineers, LLM, Chemist, and Clinical Physician agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 8,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Chemist",
+        "Software Engineer",
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Clinical Physician",
+        "LLM",
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Human Participant",
+        "Clinical Physician",
+        "Language Mediator",
+        "Storyteller",
+        "Lexicographer",
+        "Strategic Planner"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 19,
+    "node_id": 19,
+    "catalog_id": 19,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0014805006794631481,
+      "curr": 4.9064379709307104e-05,
+      "delta": -0.001431436299753841
+    },
+    "complete_scores": {
+      "prev": [
+        0.0014805006794631481,
+        0.9107380509376526,
+        0.08778145164251328
+      ],
+      "curr": [
+        4.9064379709307104e-05,
+        0.9994978904724121,
+        0.00045302839134819806
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. 2 Human Participants, Strategic Planner, Chemist, and Cybersecurity Analyst disagree with this statement. Software Engineer, Assistant, Language Mediator, Financial Analyst, Biomedical Researcher, and Lexicographer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 6,
+      "n_disagree": 5,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Financial Analyst",
+        "Assistant",
+        "Lexicographer",
+        "Biomedical Researcher",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 20,
+    "node_id": 20,
+    "catalog_id": 20,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.00041240491555072367,
+      "curr": 0.00019056406745221466,
+      "delta": -0.00022184084809850901
+    },
+    "complete_scores": {
+      "prev": [
+        0.00041240491555072367,
+        0.9878199100494385,
+        0.011767661198973656
+      ],
+      "curr": [
+        0.00019056406745221466,
+        0.9969823956489563,
+        0.0028270380571484566
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Cybersecurity Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Chemist, Strategic Planner, Human Participant, Lexicographer, and Cybersecurity Analyst disagree with this statement. Biomedical Researcher, 2 Mathematicians, Financial Analyst, Assistant, Language Mediator, 3 Software Engineers, Academic Scholar, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 11,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Software Engineer",
+        "Software Engineer",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Academic Scholar",
+        "Language Mediator",
+        "Mathematician",
+        "LLM",
+        "Mathematician",
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Lexicographer",
+        "Human Participant",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 21,
+    "node_id": 21,
+    "catalog_id": 21,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.6216280460357666,
+      "curr": 0.14952614903450012,
+      "delta": -0.4721018970012665
+    },
+    "complete_scores": {
+      "prev": [
+        0.6216280460357666,
+        0.21149827539920807,
+        0.16687370836734772
+      ],
+      "curr": [
+        0.14952614903450012,
+        0.6101600527763367,
+        0.24031376838684082
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Online Friends are unsure about this statement. Human Participant agrees with this statement. 2 Strategic Planners, Language Mediator, Lexicographer, Cybersecurity Analyst, Storyteller, and Human Participant disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 1,
+      "n_disagree": 7,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Human Participant"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Storyteller",
+        "Language Mediator",
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 22,
+    "node_id": 22,
+    "catalog_id": 22,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5803629755973816,
+      "curr": 0.7231549024581909,
+      "delta": 0.14279192686080933
+    },
+    "complete_scores": {
+      "prev": [
+        0.5803629755973816,
+        0.3465505540370941,
+        0.07308649644255638
+      ],
+      "curr": [
+        0.7231549024581909,
+        0.18572154641151428,
+        0.09112357348203659
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Assistant, Academic Scholar, Financial Analyst, Software Engineer, Human Participant, Mathematician, and Biomedical Researcher agree with this statement. Academic Scholar, 2 Strategic Planners, Human Participant, and Cybersecurity Analyst disagree with this statement. Biomedical Researcher and Online Friend are unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Software Engineer",
+        "Human Participant",
+        "Financial Analyst",
+        "Academic Scholar",
+        "Biomedical Researcher",
+        "Assistant",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Academic Scholar"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 23,
+    "node_id": 23,
+    "catalog_id": 23,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.594413161277771,
+      "curr": 0.6779140830039978,
+      "delta": 0.0835009217262268
+    },
+    "complete_scores": {
+      "prev": [
+        0.594413161277771,
+        0.2942558526992798,
+        0.11133097112178802
+      ],
+      "curr": [
+        0.6779140830039978,
+        0.21000798046588898,
+        0.11207794398069382
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Financial Analyst in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Language Mediator, 2 Cybersecurity Analysts, Academic Scholar, Strategic Planner, and LLM disagree with this statement. 2 Language Mediators, Human Participant, Chemist, Assistant, Mathematician, 2 Software Engineers, and Financial Analyst agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 9,
+      "n_disagree": 6,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Software Engineer",
+        "Human Participant",
+        "Financial Analyst",
+        "Language Mediator",
+        "Chemist",
+        "Mathematician",
+        "Assistant",
+        "Language Mediator",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Academic Scholar",
+        "LLM",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 24,
+    "node_id": 24,
+    "catalog_id": 24,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.0017157591646537185,
+      "curr": 0.0035661489237099886,
+      "delta": 0.0018503897590562701
+    },
+    "complete_scores": {
+      "prev": [
+        0.0017157591646537185,
+        0.9915115237236023,
+        0.006772675551474094
+      ],
+      "curr": [
+        0.0035661489237099886,
+        0.9887942671775818,
+        0.007639611139893532
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Mathematicians, 2 Software Engineers, 2 Financial Analysts, Human Participant, and Lexicographer agree with this statement. 2 Human Participants, Strategic Planner, Clinical Physician, 2 Cybersecurity Analysts, and Chemist disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 15,
+      "n_agree": 8,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Software Engineer",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Software Engineer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Clinical Physician"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 25,
+    "node_id": 25,
+    "catalog_id": 25,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.006941406987607479,
+      "curr": 0.07949472963809967,
+      "delta": 0.07255332265049219
+    },
+    "complete_scores": {
+      "prev": [
+        0.006941406987607479,
+        0.9380043148994446,
+        0.05505429580807686
+      ],
+      "curr": [
+        0.07949472963809967,
+        0.8155117034912109,
+        0.10499359667301178
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 LLMs, 2 Language Mediators, Assistant, 3 Financial Analysts, Software Engineer, Online Friend, and Biomedical Researcher agree with this statement. Lexicographer, Language Mediator, Human Participant, and Storyteller disagree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 11,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Financial Analyst",
+        "Financial Analyst",
+        "Financial Analyst",
+        "Assistant",
+        "LLM",
+        "Software Engineer",
+        "Language Mediator",
+        "Language Mediator",
+        "Online Friend",
+        "Biomedical Researcher",
+        "LLM"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Language Mediator",
+        "Human Participant",
+        "Lexicographer"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 26,
+    "node_id": 26,
+    "catalog_id": 26,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.006567468401044607,
+      "curr": 0.009595912881195545,
+      "delta": 0.003028444480150938
+    },
+    "complete_scores": {
+      "prev": [
+        0.006567468401044607,
+        0.9746988415718079,
+        0.018733680248260498
+      ],
+      "curr": [
+        0.009595912881195545,
+        0.978809654712677,
+        0.011594387236982584
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Strategic Planner in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Chemist, Strategic Planner, 2 Human Participants, and Cybersecurity Analyst disagree with this statement. 2 Assistants, Language Mediator, 2 Mathematicians, LLM, and Biomedical Researcher agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Biomedical Researcher",
+        "LLM",
+        "Assistant",
+        "Assistant",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 30,
+    "node_id": 30,
+    "catalog_id": 30,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.6803295612335205,
+      "curr": 0.7079469561576843,
+      "delta": 0.02761739492416382
+    },
+    "complete_scores": {
+      "prev": [
+        0.6803295612335205,
+        0.21915185451507568,
+        0.10051858425140381
+      ],
+      "curr": [
+        0.7079469561576843,
+        0.19354192912578583,
+        0.09851111471652985
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Language Mediator, 2 Strategic Planners, 2 Lexicographers, Human Participant, and Chemist disagree with this statement. Assistant, Software Engineer, 2 Clinical Physicians, Human Participant, LLM, Language Mediator, Chemist, and Lexicographer agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 9,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Language Mediator",
+        "Clinical Physician",
+        "Chemist",
+        "Assistant",
+        "Clinical Physician",
+        "LLM",
+        "Human Participant",
+        "Software Engineer",
+        "Lexicographer"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Strategic Planner",
+        "Human Participant",
+        "Lexicographer",
+        "Lexicographer",
+        "Chemist",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 31,
+    "node_id": 31,
+    "catalog_id": 31,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.5112178921699524,
+      "curr": 0.7118597030639648,
+      "delta": 0.20064181089401245
+    },
+    "complete_scores": {
+      "prev": [
+        0.5112178921699524,
+        0.2491477131843567,
+        0.23963437974452972
+      ],
+      "curr": [
+        0.7118597030639648,
+        0.19922670722007751,
+        0.08891355246305466
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. Language Mediator, Cybersecurity Analyst, Strategic Planner, 2 Human Participants, and 2 Lexicographers disagree with this statement. Language Mediator, Mathematician, Biomedical Researcher, and Storyteller agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 4,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Mathematician",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Storyteller"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 32,
+    "node_id": 32,
+    "catalog_id": 32,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.7155751585960388,
+      "curr": 0.8169398307800293,
+      "delta": 0.10136467218399048
+    },
+    "complete_scores": {
+      "prev": [
+        0.7155751585960388,
+        0.11681444197893143,
+        0.16761043667793274
+      ],
+      "curr": [
+        0.8169398307800293,
+        0.1282527595758438,
+        0.05480743944644928
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Mathematician in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Assistants, Software Engineer, Language Mediator, Mathematician, Chemist, Lexicographer, 2 Financial Analysts, Storyteller, LLM, Biomedical Researcher, and Human Participant agree with this statement. Lexicographer, Strategic Planner, Cybersecurity Analyst, Storyteller, and 2 Human Participants disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 19,
+      "n_agree": 13,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Assistant",
+        "Storyteller",
+        "Chemist",
+        "Assistant",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Software Engineer",
+        "LLM",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Strategic Planner",
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Storyteller",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 33,
+    "node_id": 33,
+    "catalog_id": 33,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.25353825092315674,
+      "curr": 0.20200935006141663,
+      "delta": -0.05152890086174011
+    },
+    "complete_scores": {
+      "prev": [
+        0.25353825092315674,
+        0.5987772345542908,
+        0.1476844996213913
+      ],
+      "curr": [
+        0.20200935006141663,
+        0.6941506862640381,
+        0.10383997857570648
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. LLM, 3 Mathematicians, 2 Language Mediators, and Lexicographer agree with this statement. Lexicographer, 2 Human Participants, Language Mediator, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 7,
+      "n_disagree": 5,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "LLM",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Human Participant",
+        "Lexicographer",
+        "Language Mediator",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 34,
+    "node_id": 34,
+    "catalog_id": 34,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.28749167919158936,
+      "curr": 0.694560706615448,
+      "delta": 0.40706902742385864
+    },
+    "complete_scores": {
+      "prev": [
+        0.28749167919158936,
+        0.5898945331573486,
+        0.12261376529932022
+      ],
+      "curr": [
+        0.694560706615448,
+        0.22904179990291595,
+        0.07639745622873306
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Storytellers, Language Mediator, Lexicographer, Strategic Planner, Cybersecurity Analyst, and Human Participant disagree with this statement. Storyteller, Human Participant, Financial Analyst, Lexicographer, 2 Mathematicians, and Language Mediator agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 14,
+      "n_agree": 7,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Mathematician",
+        "Mathematician",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Human Participant",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Cybersecurity Analyst",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 35,
+    "node_id": 35,
+    "catalog_id": 35,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4900037348270416,
+      "curr": 0.611091136932373,
+      "delta": 0.12108740210533142
+    },
+    "complete_scores": {
+      "prev": [
+        0.4900037348270416,
+        0.40622735023498535,
+        0.10376893728971481
+      ],
+      "curr": [
+        0.611091136932373,
+        0.33747658133506775,
+        0.05143224820494652
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Lexicographer in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Strategic Planner, Chemist, 2 Storytellers, 2 Lexicographers, 2 Academic Scholars, Language Mediator, and Cybersecurity Analyst disagree with this statement. Storyteller, Language Mediator, 2 Mathematicians, Software Engineer, Assistant, and Human Participant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 7,
+      "n_disagree": 10,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Human Participant",
+        "Mathematician",
+        "Language Mediator",
+        "Storyteller",
+        "Software Engineer",
+        "Assistant",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 36,
+    "node_id": 36,
+    "catalog_id": 36,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.46519234776496887,
+      "curr": 0.4839535653591156,
+      "delta": 0.01876121759414673
+    },
+    "complete_scores": {
+      "prev": [
+        0.46519234776496887,
+        0.3566753566265106,
+        0.17813228070735931
+      ],
+      "curr": [
+        0.4839535653591156,
+        0.37690338492393494,
+        0.13914302736520767
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Strategic Planners, Storyteller, Language Mediator, Cybersecurity Analyst, Chemist, and Lexicographer disagree with this statement. LLM, Lexicographer, Financial Analyst, Software Engineer, Language Mediator, and Clinical Physician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 6,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Software Engineer",
+        "LLM",
+        "Clinical Physician",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "Strategic Planner",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Strategic Planner"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 37,
+    "node_id": 37,
+    "catalog_id": 37,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.43445736169815063,
+      "curr": 0.6488288044929504,
+      "delta": 0.2143714427947998
+    },
+    "complete_scores": {
+      "prev": [
+        0.43445736169815063,
+        0.38944509625434875,
+        0.17609748244285583
+      ],
+      "curr": [
+        0.6488288044929504,
+        0.20737816393375397,
+        0.14379306137561798
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Lexicographers, 2 Academic Scholars, Cybersecurity Analyst, and Strategic Planner disagree with this statement. Storyteller, 2 LLMs, Language Mediator, Academic Scholar, Financial Analyst, 3 Mathematicians, Human Participant, and Online Friend agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 11,
+      "n_disagree": 6,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Mathematician",
+        "Mathematician",
+        "Mathematician",
+        "Language Mediator",
+        "Storyteller",
+        "Human Participant",
+        "Financial Analyst",
+        "LLM",
+        "LLM",
+        "Online Friend",
+        "Academic Scholar"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Lexicographer"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 38,
+    "node_id": 38,
+    "catalog_id": 38,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.2643741965293884,
+      "curr": 0.6535676121711731,
+      "delta": 0.38919341564178467
+    },
+    "complete_scores": {
+      "prev": [
+        0.2643741965293884,
+        0.4862585663795471,
+        0.24936720728874207
+      ],
+      "curr": [
+        0.6535676121711731,
+        0.18148918449878693,
+        0.16494321823120117
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Language Mediator in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Storytellers, 2 Lexicographers, Chemist, Strategic Planner, and Cybersecurity Analyst disagree with this statement. 2 Mathematicians, Language Mediator, Online Friend, 2 Financial Analysts, Chemist, Lexicographer, and Biomedical Researcher agree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 17,
+      "n_agree": 9,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Biomedical Researcher",
+        "Mathematician",
+        "Online Friend",
+        "Chemist",
+        "Financial Analyst",
+        "Mathematician",
+        "Financial Analyst"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Lexicographer",
+        "Storyteller",
+        "Chemist",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Storyteller"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 39,
+    "node_id": 39,
+    "catalog_id": 39,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.44532302021980286,
+      "curr": 0.9947168231010437,
+      "delta": 0.5493938028812408
+    },
+    "complete_scores": {
+      "prev": [
+        0.44532302021980286,
+        0.5542134642601013,
+        0.00046348132309503853
+      ],
+      "curr": [
+        0.9947168231010437,
+        0.005219794809818268,
+        6.33344297966687e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. Human Participant, 2 Academic Scholars, Lexicographer, Language Mediator, and Storyteller disagree with this statement. Lexicographer, Storyteller, Online Friend, Language Mediator, Chemist, and LLM agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 6,
+      "n_disagree": 6,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Storyteller",
+        "LLM",
+        "Chemist",
+        "Online Friend"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Human Participant",
+        "Storyteller",
+        "Language Mediator"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 40,
+    "node_id": 40,
+    "catalog_id": 40,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.011506553739309311,
+      "curr": 0.0004802276671398431,
+      "delta": -0.011026326072169468
+    },
+    "complete_scores": {
+      "prev": [
+        0.011506553739309311,
+        0.9883548021316528,
+        0.00013865816436009482
+      ],
+      "curr": [
+        0.0004802276671398431,
+        0.9993749260902405,
+        0.00014484518760582432
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Biomedical Researcher and Online Friend are unsure about the statement. Mathematician, Financial Analyst, Lexicographer, Online Friend, and Biomedical Researcher agree with this statement. Chemist, Language Mediator, 2 Academic Scholars, Cybersecurity Analyst, Storyteller, Strategic Planner, Human Participant, and Lexicographer disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 5,
+      "n_disagree": 9,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Lexicographer",
+        "Online Friend",
+        "Financial Analyst",
+        "Mathematician",
+        "Biomedical Researcher"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Academic Scholar",
+        "Academic Scholar",
+        "Human Participant",
+        "Cybersecurity Analyst",
+        "Chemist",
+        "Strategic Planner",
+        "Storyteller"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Biomedical Researcher"
+      ]
+    }
+  },
+  {
+    "agent_id": 41,
+    "node_id": 41,
+    "catalog_id": 41,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.9998708963394165,
+      "curr": 9.169740224024281e-05,
+      "delta": -0.9997791989371763
+    },
+    "complete_scores": {
+      "prev": [
+        0.9998708963394165,
+        9.914976544678211e-05,
+        2.9952215527373482e-05
+      ],
+      "curr": [
+        9.169740224024281e-05,
+        0.9998586177825928,
+        4.970630288880784e-05
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are a Storyteller in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Assistant, 2 Mathematicians, Lexicographer, Language Mediator, Clinical Physician, and Online Friend agree with this statement. Clinical Physician, Academic Scholar, Storyteller, and Lexicographer disagree with this statement. 2 Online Friends are unsure about this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 7,
+      "n_disagree": 4,
+      "n_neutral": 2,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Online Friend",
+        "Mathematician",
+        "Clinical Physician",
+        "Assistant",
+        "Mathematician"
+      ],
+      "roles_disagree": [
+        "Lexicographer",
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend",
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 42,
+    "node_id": 42,
+    "catalog_id": 42,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.15635909140110016,
+      "curr": 0.6361908316612244,
+      "delta": 0.4798317402601242
+    },
+    "complete_scores": {
+      "prev": [
+        0.15635909140110016,
+        0.7117880582809448,
+        0.13185285776853561
+      ],
+      "curr": [
+        0.6361908316612244,
+        0.2268408089876175,
+        0.13696835935115814
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. 2 Storytellers and Clinical Physician disagree with this statement. LLM, Lexicographer, Financial Analyst, Online Friend, Academic Scholar, Language Mediator, Storyteller, and Software Engineer agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 12,
+      "n_agree": 8,
+      "n_disagree": 3,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Lexicographer",
+        "Language Mediator",
+        "Academic Scholar",
+        "Online Friend",
+        "Storyteller",
+        "LLM",
+        "Financial Analyst",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Clinical Physician"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 43,
+    "node_id": 43,
+    "catalog_id": 43,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "score": {
+      "prev": 0.42794159054756165,
+      "curr": 0.4032277762889862,
+      "delta": -0.02471381425857544
+    },
+    "complete_scores": {
+      "prev": [
+        0.42794159054756165,
+        0.4020139276981354,
+        0.17004446685314178
+      ],
+      "curr": [
+        0.4032277762889862,
+        0.4225790798664093,
+        0.1741931438446045
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Clinical Physician, Online Friend, Language Mediator, and Financial Analyst agree with this statement. Online Friend is unsure about the statement. 2 Academic Scholars, Clinical Physician, and Cybersecurity Analyst disagree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 9,
+      "n_agree": 4,
+      "n_disagree": 4,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Online Friend",
+        "Clinical Physician",
+        "Financial Analyst",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Academic Scholar",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 44,
+    "node_id": 44,
+    "catalog_id": 44,
+    "round": 2,
+    "belief": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "score": {
+      "prev": 0.2769571840763092,
+      "curr": 0.6355917453765869,
+      "delta": 0.3586345613002777
+    },
+    "complete_scores": {
+      "prev": [
+        0.2769571840763092,
+        0.5338489413261414,
+        0.18919385224580765
+      ],
+      "curr": [
+        0.6355917453765869,
+        0.23382112383842468,
+        0.13058708980679512
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Academic Scholar in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Chemists, 2 Storytellers, 2 Human Participants, and LLM disagree with this statement. LLM, 2 Assistants, Academic Scholar, Lexicographer, Biomedical Researcher, Financial Analyst, Language Mediator, and Clinical Physician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 16,
+      "n_agree": 9,
+      "n_disagree": 7,
+      "n_neutral": 0,
+      "roles_agree": [
+        "Language Mediator",
+        "Academic Scholar",
+        "Clinical Physician",
+        "LLM",
+        "Lexicographer",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Assistant",
+        "Assistant"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Storyteller",
+        "Human Participant",
+        "Human Participant",
+        "LLM",
+        "Chemist",
+        "Chemist"
+      ],
+      "roles_neutral": []
+    }
+  },
+  {
+    "agent_id": 45,
+    "node_id": 45,
+    "catalog_id": 45,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": -1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.3370121419429779,
+      "curr": 0.241949662566185,
+      "delta": -0.09506247937679291
+    },
+    "complete_scores": {
+      "prev": [
+        0.3370121419429779,
+        0.22803382575511932,
+        0.4349540174007416
+      ],
+      "curr": [
+        0.241949662566185,
+        0.31066951155662537,
+        0.4473808705806732
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. 2 Financial Analysts, Academic Scholar, LLM, Online Friend, Biomedical Researcher, 2 Mathematicians, Software Engineer, and Storyteller agree with this statement. 2 Cybersecurity Analysts, Academic Scholar, Language Mediator, Strategic Planner, and 2 Storytellers disagree with this statement. Online Friend is unsure about the statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 18,
+      "n_agree": 10,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Online Friend",
+        "LLM",
+        "Financial Analyst",
+        "Biomedical Researcher",
+        "Financial Analyst",
+        "Mathematician",
+        "Mathematician",
+        "Software Engineer"
+      ],
+      "roles_disagree": [
+        "Language Mediator",
+        "Storyteller",
+        "Storyteller",
+        "Academic Scholar",
+        "Cybersecurity Analyst",
+        "Strategic Planner",
+        "Cybersecurity Analyst"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 46,
+    "node_id": 46,
+    "catalog_id": 46,
+    "round": 2,
+    "belief": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "score": {
+      "prev": 0.4122917354106903,
+      "curr": 0.41511115431785583,
+      "delta": 0.0028194189071655273
+    },
+    "complete_scores": {
+      "prev": [
+        0.4122917354106903,
+        0.29696258902549744,
+        0.29074567556381226
+      ],
+      "curr": [
+        0.41511115431785583,
+        0.28979429602622986,
+        0.2950945794582367
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. LLM, Clinical Physician, Academic Scholar, Language Mediator, 2 Storytellers, and Strategic Planner disagree with this statement. Academic Scholar, Storyteller, Language Mediator, Assistant, and Clinical Physician agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 13,
+      "n_agree": 5,
+      "n_disagree": 7,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician",
+        "Assistant",
+        "Language Mediator"
+      ],
+      "roles_disagree": [
+        "Storyteller",
+        "Academic Scholar",
+        "Clinical Physician",
+        "LLM",
+        "Language Mediator",
+        "Strategic Planner",
+        "Storyteller"
+      ],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  },
+  {
+    "agent_id": 47,
+    "node_id": 47,
+    "catalog_id": 47,
+    "round": 2,
+    "belief": {
+      "prev": -1.0,
+      "curr": 1.0,
+      "delta": 2.0
+    },
+    "score": {
+      "prev": 0.3306066691875458,
+      "curr": 0.666946291923523,
+      "delta": 0.3363396227359772
+    },
+    "complete_scores": {
+      "prev": [
+        0.3306066691875458,
+        0.3010208308696747,
+        0.36837247014045715
+      ],
+      "curr": [
+        0.666946291923523,
+        0.14650866389274597,
+        0.1865450143814087
+      ]
+    },
+    "message": [
+      {
+        "role": "system",
+        "content": "You are an Online Friend in a social network. \nYou may receive short summaries of what your friends believe. \nBased on this information and your own knowledge, reply with the number corresponding to the option you believe is correct."
+      },
+      {
+        "role": "user",
+        "content": "Your friends are discussing the following statement: Methyl nicotinate is indicated for the treatment of aches. Online Friend is unsure about the statement. 2 Financial Analysts, Storyteller, 2 Clinical Physicians, 2 LLMs, Biomedical Researcher, and Assistant agree with this statement. What do you think about the statement your friends are discussing?\n\nSelect one of the following options:\n 1. The statement is correct\n 2. The statement is incorrect\n 3. The statement is neither correct nor incorrect"
+      },
+      {
+        "role": "assistant",
+        "content": "The final answer is number \""
+      }
+    ],
+    "neighbor_info": {
+      "num_neighbors": 10,
+      "n_agree": 9,
+      "n_disagree": 0,
+      "n_neutral": 1,
+      "roles_agree": [
+        "Storyteller",
+        "Clinical Physician",
+        "LLM",
+        "LLM",
+        "Assistant",
+        "Financial Analyst",
+        "Clinical Physician",
+        "Financial Analyst",
+        "Biomedical Researcher"
+      ],
+      "roles_disagree": [],
+      "roles_neutral": [
+        "Online Friend"
+      ]
+    }
+  }
+]

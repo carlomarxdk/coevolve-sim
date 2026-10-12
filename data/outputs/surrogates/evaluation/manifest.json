@@ -1,0 +1,19 @@
+{
+  "model_comparison": "one fit per model x scenario x graph family on all runs; AIC = 2k - 2LL, BIC = k ln(n) - 2LL, n = one-step transitions; delta = difference to the best model in the scenario x graph family; pseudo_r2 = McFadden 1 - LL / LL_null",
+  "behaviour": "5-fold StratifiedGroupKFold per scenario x graph family (group = run, stratified by graph type); fold assignment shared across models; each run scored once by the model fitted on the other folds",
+  "fold_seed": 42,
+  "rollout": "stochastic from round 0, seed 43 + 10000 * fold + run index",
+  "bootstrap": "1000 resamples over network realizations (graph type x seed; clusters of runs), 95% percentile CI",
+  "consensus_fidelity": "1 - mean over runs of the round-averaged |empirical - simulated| consensus fraction",
+  "final_state_mcc": "pooled over agents; one-step prediction of the final round from the true previous state",
+  "versions": {
+    "python": "3.12.6",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.1",
+    "numpy": "2.4.2"
+  },
+  "rows": {
+    "summary.csv": 32,
+    "cv_runs.csv": 10240
+  }
+}

@@ -1,0 +1,24 @@
+defaults:
+  - base
+  - _self_
+
+generator: "WS"
+params:
+  n: 48
+  k: 14     # mean degree (must be even)
+  beta: 0.0175
+
+seed_map:
+  1629526406: 3175353684
+
+# One extension realization of the maximin design; see
+# notebooks/maximin_selection.ipynb and
+# data/resources/seeds/graph_manifest_ws.csv (selection order 3,
+# d_min=2.774). The master seed is the next unused entry of
+# src/seeds.txt, so this realization does not collide with any other config.
+#
+# Run with:
+#   python -m src.experiment ... network=watts-strogatz-03 seed=1629526406
+
+# Summary stats
+#  3175353684 : k=14, beta=0.0175, mean-sp=2.034, glob-clustering-coeff=0.663, mean-deg=14.000, std-deg=0.577, nod0-deg=17.000, diameter=4

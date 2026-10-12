@@ -1,1 +1,0 @@
-These scripts could be used to select a diverse set of statements and graph configurations.
